@@ -4,11 +4,12 @@
     <title>Elex Media Komputindo</title>
     <link rel="stylesheet" href="lib/w3.css">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="script/index.js"></script>
 </head>
 
 <body>
-    <header class="w3-top w3-theme w3-red w3-padding-16">
+    <header class="w3-top w3-theme w3-padding-16" style="background-color: maroon;">
         <div class="dropdown">
             <button class="dropbtn" onclick="dropdown()">
                 ☰
@@ -18,8 +19,9 @@
                     Kategori
                 </a>
                 <div class="dropdown-content" id="kategori"> -->
-                    <a href="#">Komik</a>
-                    <a href="#">Novel</a>
+                <a href="#">Halaman Utama</a>
+                <a href="#">Komik</a>
+                <a href="#">Novel</a>
                 <!-- </div> -->
                 <a href="#">Bakal Terbit</a>
                 <a href="#">Telah Beredar</a>
@@ -27,11 +29,45 @@
                 <a href="#">Tentang Kami</a>
             </div>
         </div>
-        <img src="img/elexmedia.jpg" alt="logo" id="logoElex">
+        <img src="img/elexmediaBanner.png" alt="logo" id="logoElex">
         <button class="btnMasuk  w3-button w3-right  w3-margin-right w3-gray w3-hover-white">Masuk</button>
         <button class="btnDaftar w3-button w3-right  w3-margin-right w3-gray w3-hover-white">Daftar</button>
     </header>
 
+    <div>
+        <!-- <div class="w3-card-4 w3-center w3-display-middle" style="width: 30%; margin-top:-10%;">
+            <img src="img/elexmediaBanner.png" style="width: 50%; ">
+            <div class="w3-container w3-center">
+                <p>Elex Media Komputindo</p>
+                <p>Penerbit Buku dan Multimedia Grup Kompas-Gramedia</p>
+            </div>
+        </div> -->
+        <div class="w3-padding w3-panel w3-round-xlarge w3-border w3-display-middle" style="margin-top: -15%;">
+            <input type="text" placeholder="Cari buku, pengarang, dll" class="w3-padding">
+            <button class="search w3-button w3-large">
+                <i class="fa fa-search"></i>
+            </button>
+        </div>
+        <br>
+        <div class="w3-card-4 w3-display-middle w3-center w3-padding"
+            style="width: 50%; margin-top: -2%;">
+            <img src="img/buku1.jpg" style="width: 100%; ">
+            <div class="w3-container w3-center">
+                <p>Buku keluaran terbaru karya
+                    ......................................................................................</p>
+                <a href="" style="color: blue;">Lanjutkan Membaca</a>
+            </div>
+        </div>
+        <div class="w3-card-4 w3-display-middle w3-display-position w3-center w3-padding"
+            style="width: 50%; margin-top: 22%;">
+            <img src="img/buku2.jpg" style="width: 100%; ">
+            <div class="w3-container w3-center">
+                <p>Buku keluaran terbaru karya
+                    ......................................................................................</p>
+                <a href="" style="color: blue;">Lanjutkan Membaca</a>
+            </div>
+        </div>
+    </div>
 </body>
 
 </HTML>

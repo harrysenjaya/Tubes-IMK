@@ -4,7 +4,7 @@
     margin-left: 10px;
 }
   
-.dropdown .dropbtn {
+.dropdown .dropbtn{
     cursor: pointer;
     font-size: 30px;  
     border: none;
@@ -14,6 +14,16 @@
     font-family: inherit;
     margin: 0;
 }
+
+/* .dropdown .kategori{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: black;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+} */
  
 .dropdown:hover{
     background-color: white;

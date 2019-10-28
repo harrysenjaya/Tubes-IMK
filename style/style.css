@@ -64,12 +64,12 @@
     margin-top: 200px;
 }
 
-#banner1{
+#banner1,#banner2,#banner3{
     height: 400px;
     overflow: hidden;
 }
 
-#komik1,#komik2{
+#komik{
 	margin: auto;
 	height: 310px;
     overflow: hidden;

@@ -26,5 +26,9 @@ function login(){
 }
 
 function register(){
-  location.replace("SignUpPage.html")
+  location.replace("SignUpPage.html");
+}
+
+function home(){
+  location.replace("index.html");
 }

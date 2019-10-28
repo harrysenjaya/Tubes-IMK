@@ -21,3 +21,10 @@ window.onclick = function (e) {
 //   document.getElementById("kategori").classList.toggle("show");
 // }
 
+function login(){
+  location.replace("SignInPage.html");
+}
+
+function register(){
+  location.replace("SignUpPage.html")
+}

@@ -3,14 +3,35 @@
         <title>Sign In</title>
         <link rel="stylesheet" href="lib/w3.css">
         <link rel="stylesheet" href="style/style.css">
+        <script src="script/index.js"></script>
     </head>
 
     <body>
-        <header class="w3-top w3-theme w3-red w3-padding-16">
-            <img src = "img/elexmedia.jpg" alt="logo" id="logoElex">
-            <button class="btnMasuk  w3-button w3-right  w3-margin-right w3-gray w3-hover-white">Masuk</button>
-            <button class="btnDaftar w3-button w3-right  w3-margin-right w3-gray w3-hover-white">Daftar</button>
-        </header>   
+        <header class="w3-top w3-theme w3-padding-16" style="background-color: maroon;">
+            <div class="dropdown">
+                <button class="dropbtn" onclick="dropdown()">
+                    ☰
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                    <!-- <a class="kategori" onclick="dropdownKategori()">
+                        Kategori
+                    </a>
+                    <div class="dropdown-content" id="kategori"> -->
+                    <a href="index.html">Halaman Utama</a>
+                    <a href="#">Komik</a>
+                    <a href="#">Novel</a>
+                    <!-- </div> -->
+                    <a href="BakalTerbit.html">Bakal Terbit</a>
+                    <a href="#">Telah Beredar</a>
+                    <a href="#">Cetak Ulang</a>
+                    <a href="#">Tentang Kami</a>
+                </div>
+            </div>
+            <img src="img/elexmediaBanner.png" alt="logo" id="logoElex">
+            <button class="btnMasuk  w3-button w3-right  w3-margin-right w3-gray w3-hover-white" onclick="login()">Masuk</button>
+            <button class="btnDaftar w3-button w3-right  w3-margin-right w3-gray w3-hover-white" onclick="register()">Daftar</button>
+        </header>
+    
         
             <div class="w3-card-2 w3-center" style="width:50%; margin-left: 25%; height: 40%">
                     <div class="w3-container w3-center" id="kotakMasuk">

@@ -4,27 +4,69 @@
         <title>Sign Up</title>
         <link rel="stylesheet" href="lib/w3.css">
         <link rel="stylesheet" href="style/style.css">
+        <script src="script/index.js"></script>
+        <script src="https://www.google.com/reCAPTCHA/api.js"></script>
     </head>
 
     <body>
-        <header class="w3-top w3-theme w3-red w3-padding-16">
-            <img src = "img/elexmedia.jpg" alt="logo" id="logoElex">
-            <button class="btnMasuk  w3-button w3-right  w3-margin-right w3-gray w3-hover-white">Masuk</button>
-            <button class="btnDaftar w3-button w3-right  w3-margin-right w3-gray w3-hover-white">Daftar</button>
-        </header>   
+        <header class="w3-top w3-theme w3-padding-16" style="background-color: maroon;">
+        <div class="dropdown">
+            <button class="dropbtn" onclick="dropdown()">
+                ☰
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+                <!-- <a class="kategori" onclick="dropdownKategori()">
+                    Kategori
+                </a>
+                <div class="dropdown-content" id="kategori"> -->
+                <a href="index.html">Halaman Utama</a>
+                <a href="#">Komik</a>
+                <a href="#">Novel</a>
+                <!-- </div> -->
+                <a href="BakalTerbit.html">Bakal Terbit</a>
+                <a href="#">Telah Beredar</a>
+                <a href="#">Cetak Ulang</a>
+                <a href="#">Tentang Kami</a>
+            </div>
+        </div>
+        <img src="img/elexmediaBanner.png" alt="logo" id="logoElex">
+        <button class="btnMasuk  w3-button w3-right  w3-margin-right w3-gray w3-hover-white w3-border" onclick="login()">Masuk</button>
+        <button class="btnDaftar w3-button w3-right  w3-margin-right w3-gray w3-hover-white w3-border" onclick="register()">Daftar</button>
+    </header>
 
-        <div class="w3-container" style="margin-top: 80px; margin-left: 20px">
-             <p class="w3-bar-item w3-left w3-margin">Home</p>
+
+        <div class="w3-container" style="margin-top: 80px; margin-left: 40px">
+             <a href="index.html" class="w3-bar-item w3-left w3-margin">Home</a>
         </div>
 
-        <div class="w3-card-2 w3-left">
+        <div class="w3-card-2 w3-left" style="margin-left:60px; width: 55%;margin-bottom: 20px;">
             <div class="w3-container w3-center" id="Panduan">
                 <h2>Panduan Pendaftaran</h2>
             </div>
+       
         </div>
 
-        <div class="w3-card-2">
-            
+        <div class="w3-card-2 w3-right w3-padding-16"  style="margin-right:250px;">
+            <div class="w3-container w3-center" id="kotakDaftar">
+                    <h2>Daftarkan dirimu di sini...</h2>
+                    </div>
+                <form class="w3-container">
+                    <p>      
+                    <input class="w3-input w3-border" name="fullname" type="text" placeholder="Nama Lengkap"></p>
+                    <p>      
+                    <input class="w3-input w3-border" name="email" type="text" placeholder="email"></p>
+                    <p>
+                    <input class="w3-input w3-border" name="pw" type="password" placeholder="Password"></p>
+                    <p>
+
+                        <form action="?" method="POST">
+                        <div class="g-reCAPTCHA" data-sitekey="your_site_key"></div>
+                        <br/>
+                        <input type="submit" value="Submit">
+                        </form>
+                              
+                    <button class="w3-btn w3-gray w3-left w3-margin-bottom w3-margin-left">Daftar</button></p>
+                </form>
         </div>
 
     </body>

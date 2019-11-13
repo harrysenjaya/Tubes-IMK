@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="script/index.js"></script>
+    <script src="script/jquery.js"></script>
 </head>
 
 <body>
@@ -30,10 +31,13 @@
             </div>
         </div>
         <img src="img/elexmediaBanner.png" alt="logo" id="logoElex">
-        <button class="btnMasuk  w3-button w3-right  w3-margin-right w3-gray w3-hover-white" onclick="login()">Masuk</button>
-        <button class="btnDaftar w3-button w3-right  w3-margin-right w3-gray w3-hover-white" onclick="register()">Daftar</button>
+        <button class="btnMasuk  w3-button w3-right  w3-margin-right w3-gray w3-hover-white"
+            onclick="login()">Masuk</button>
+        <button class="btnDaftar w3-button w3-right  w3-margin-right w3-gray w3-hover-white"
+            onclick="register()">Daftar</button>
     </header>
 
+<<<<<<< HEAD
     <div>
         <!-- <div class="w3-card-4 w3-center w3-display-middle" style="width: 30%; margin-top:-10%;">
             <img src="img/elexmediaBanner.png" style="width: 50%; ">
@@ -51,24 +55,46 @@
         </div>
         <br>
         <div class="w3-card-4 w3-display-middle w3-center w3-padding"
-            style="width: 50%; margin-top: 3%;">
-            <img src="img/buku1.jpg" style="width: 100%; ">
+            style="width: 50%; margin-top: 15%;">
+            <img src="img/maintenance.jpg" style="width: 100%; ">
             <div class="w3-container w3-center">
-                <p>Buku keluaran terbaru karya
-                    ......................................................................................</p>
-                <a href="" style="color: blue;">Lanjutkan Membaca</a>
+                <p>Akan diadakan maintenance pada tanggal 30 Oktober 2019 pada jam 18.00-24.00</p>
             </div>
         </div>
         <div class="w3-card-4 w3-display-middle w3-display-position w3-center w3-padding"
-            style="width: 50%; margin-top: 27%; margin-bottom: 1%;">
+            style="width: 50%; margin-top: 50%; margin-bottom: 20%;">
             <img src="img/buku2.jpg" style="width: 100%; ">
             <div class="w3-container w3-center">
-                <p>Buku keluaran terbaru karya
-                    ......................................................................................</p>
-                <a href="" style="color: blue;">Lanjutkan Membaca</a>
+                <p>Akhirnya, buku yang kita tunggu-tunggu sudah rilis!!! Buku Sukses CPNS sudah dapat dibeli di seluruh gramedia di Indonesia!</p>
             </div>
         </div>
+=======
+    <div id="konten">
+
+>>>>>>> 9ef289be5b453b5a29ad1c7b917356d3e809f03b
     </div>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // $('#myDropdown a').click(function () {
+            //     var menu = $(this).attr('href');
+            //     if (menu == "index") {
+            //         $('.badan').load('home.php');
+            //     } else if (menu == "tentang") {
+            //         $('.badan').load('tentang.php');
+            //     } else if (menu == "tutorial") {
+            //         $('.badan').load('tutorial.php');
+            //     } else if (menu == "sosmed") {
+            //         $('.badan').load('sosmed.php');
+            //     }
+            // });
+
+
+            // halaman yang di load default pertama kali
+            $('#konten').load('home.html');
+
+        });
+    </script>
 </body>
 
 </HTML>

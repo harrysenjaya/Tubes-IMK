@@ -9,12 +9,6 @@ window.onclick = function (e) {
       myDropdown.classList.remove('show');
     }
   }
-  // else if (!e.target.matches('.kategori')) {
-  //   var myDropdown = document.getElementById("kategori");
-  //   if (myDropdown.classList.contains('show')) {
-  //     myDropdown.classList.remove('show');
-  //   }
-  // }
 }
 
 function dropdownKategori() {
@@ -29,9 +23,9 @@ function dropdownKategori() {
     var kategori = document.getElementById('dropKategori');
     kategori.innerHTML = "Kategori <i class='fa fa-caret-right'></i>"
   }
-
-
 }
+
+
 
 function login() {
   location.replace("SignInPage.html");

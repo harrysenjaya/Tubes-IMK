@@ -34,21 +34,6 @@ function removeSpaces(string) {
     return string.split(' ').join('');
 }
 
-// $('#email').on('change', function () {
-//     var temp = document.getElementById("wrongEmail");
-//     if (!validateEmail($(this).val())) {
-//         temp.className = temp.className.replace("w3-hide", "w3-show");
-//     } else {
-//         this.checkEmail = true;
-//         temp.className = temp.className.replace("w3-hide", "w3-show");
-//     }
-// });
-
-// function validateEmail() {
-//     var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-//     this.checkEmail = true;
-// }
-
 function check() {
     if (checkCaptcha) {
         console.log("true");

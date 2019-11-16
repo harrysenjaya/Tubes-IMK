@@ -28,8 +28,8 @@ function dropdownKategori() {
 function pageCetakUlang(id1, id2) {
   var x = document.getElementById(id1);
   var y = document.getElementById(id2);
-  x.className = x.className.replace("w3-hide","w3-show");
-  y.className = y.className.replace("w3-show","w3-hide");
+  x.className = x.className.replace("w3-hide", "w3-show");
+  y.className = y.className.replace("w3-show", "w3-hide");
 }
 
 function login() {
@@ -43,3 +43,4 @@ function register() {
 function home() {
   location.replace("index.html");
 }
+

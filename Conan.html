@@ -1,0 +1,151 @@
+<HTML>
+
+<head>
+    <title>Naruto 72</title>
+    <link rel="stylesheet" href="lib/w3.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script/index.js"></script>
+    <script src="script/jquery.js"></script>
+</head>
+
+<body>
+    <header class="w3-top w3-theme w3-padding-16" style="background-color: maroon;">
+        <div class="dropdown">
+            <button class="dropbtn" onclick="dropdown()">
+                ☰
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="index.html" class="w3-button">Halaman Utama</a>
+                <a onclick="dropdownKategori()" id="dropKategori" style="cursor: pointer;">
+                    Kategori <i class="fa fa-caret-right "></i>
+                </a>
+                <div id="kategori" class="w3-hide">
+                    <a href="">Komik</a>
+                    <a href="">Novel</a>
+                </div>
+                <a href="BakalTerbit.html">Bakal Terbit</a>
+                <a href="TelahBeredar.html">Telah Beredar</a>
+                <a href="CetakUlang.html">Cetak Ulang</a>
+                <a href="TentangKami.html">Tentang Kami</a>
+            </div>
+        </div>
+        <img src="img/elexmediaBanner.png" alt="logo" id="logoElex">
+        <button class="btnMasuk  w3-button w3-right  w3-margin-right w3-gray w3-hover-white"
+            onclick="login()">Masuk</button>
+        <button class="btnDaftar w3-button w3-right  w3-margin-right w3-gray w3-hover-white"
+            onclick="register()">Daftar</button>
+    </header>
+
+    <div style="margin-top: 100px;margin-left: 200px">
+        <h1 style="font-weight: bold;">Detektif Conan : Toru Amuro Selection</h1>
+    </div>
+    <div class="w3-container" style="margin-top: 20px;">
+        <div style="float: left;margin-left: 200px;">
+            <img src="img/conan.jpg" style="max-width: 300px;">
+            <div class="w3-container w3-center" style="margin-top:10px">
+                <h3 style="border-bottom: 1px solid #000000;border-top: 1px solid #000000;">Info Produk</h3>
+            </div>
+            <div class="info">
+                <strong>Harga:</strong>
+                Rp 60.000
+                <br>
+                <strong>Halaman:</strong>
+                448
+                <br>
+                <strong>Warna:</strong>
+                Satu Warna
+                <br>
+                <strong>Kertas:</strong>
+                Koran
+                <br>
+                <Strong>Dimensi:</Strong>
+                11.4 x 17.2 cm
+            </div>
+            <div class="w3-center w3-container" style="margin-top: 20px;">
+                <div class="w3-button w3-grey w3-round-large w3-xlarge"
+                    onclick="window.location.href ='https://www.gramedia.com/products/detektif-conan-toru-amuro-selection';">
+                    Pesan di sini
+                </div>
+            </div>
+            <div
+                style="margin-top:20px; margin-bottom: 50px; height:250px; width:300px; border:1px solid#ccc; font: 16px; overflow: auto;">
+                <p style=" padding:10px">
+                    Tersedia di 49 gerai
+                </p>
+                <ul>
+                    <li>Gramedia Bandung Mal Trans Studio (34)</li>
+                    <li>Gramedia Banjarmasin (19)</li>
+                    <li>Gramedia Basuki Rahmat Malang (33)</li>
+                    <li>Gramedia Cinere (28)</li>
+                    <li>Gramedia Gajah Mada Medan (35)</li>
+                    <li>Gramedia Gajah Mada (19)</li>
+                    <li>Gramedia Gatsu Hardy's Mall (19)</li>
+                    <li>Gramedia Grage Mall (39)</li>
+                    <li>Gramedia Istana Plaza (39)</li>
+                    <li>Gramedia Jayapura (10)</li>
+                    <li>Gramedia Jember(20)</li>
+                    <li>Gramedia JKT Mal Artha Gading (27)</li>
+                    <li>Gramedia JKT Mal Ciputra(36)</li>
+                    <li>Gramedia Kol. Atmo (33)</li>
+                    <li>Gramedia Kupang (5)</li>
+                    <li>Gramedia Mal Artha Gading (47)</li>
+                    <li>Gramedia Mal Daan Mogot (20)</li>
+                    <li>Gramedia Mal Galeria (36)</li>
+                    <li>Gramedia Mal Lembuswana (30)</li>
+                    <li>Gramedia Mal Metropolitan (46)</li>
+                    <li>Gramedia Mal Paris Van Java (29)</li>
+                    <li>Gramedia Mal Pondok Indah (50)</li>
+                    <li>Gramedia Mal Puri Indah (45)</li>
+                    <li>Gramedia Mal Taman Anggrek (48)</li>
+                    <li>Gramedia Malang Town Square (36)</li>
+                    <li>Gramedia Malioboro Shopping Mall (16)</li>
+                    <li>Gramedia Mall Panakkukang (20)</li>
+                    <li>Gramedia Mall Ratu Indah (20)</li>
+                    <li>Gramedia Manyar Kertoarjo (39)</li>
+                    <li>Gramedia Margonda Depok (45)</li>
+                    <li>Gramedia Matahari Duta Plaza (19)</li>
+                    <li>Gramedia Matraman (69)</li>
+                    <li>Gramedia Medan Sun Plaza (10)</li>
+                    <li>Gramedia Mega Mall Ayani Pontianak (19)</li>
+                    <li>Gramedia Merdeka (49)</li>
+                    <li>Gramedia Padang (29)</li>
+                    <li>Gramedia Pajajaran Bogor (15)</li>
+                    <li>Gramedia Pandanaran (40)</li>
+                    <li>Gramedia Pekanbaru Sudirman (38)</li>
+                    <li>Gramedia Pintu Air (19)</li>
+                    <li>Gramedia Plaza Bintaro Jaya (46)</li>
+                    <li>Gramedia Pluit Village (18)</li>
+                    <li>Gramedia Raden Intan (36)</li>
+                    <li>Gramedia Royal Plaza (11)</li>
+                    <li>Gramedia Sam Ratulangi Manado (20)</li>
+                    <li>Gramedia Slamet Riyadi Solo (33)</li>
+                    <li>Gramedia Supermal Karawaci (39)</li>
+                    <li>Gramedia Tunjungan Plaza (38)</li>
+                    <li>Gramedia World Emerald Bintaro (19)</li>
+                </ul>
+            </div>
+        </div>
+        <div style="float: left;">
+            <div style="margin-left: 300px;">
+                Sinopsis
+            </div>
+            <div style="width: 800px;margin-left: 50px;">
+                <p>
+
+                    Toru Amuro muncul di hadapan Conan dkk. sebagai detektif, dan ingin menjadi murid Kogoro Mouri. Tapi
+                    ternyata, identitas sesungguhnya adalah Bourbon! Anggota organisasi hitam yang ahli dalam
+                    mengumpulkan informasi. Ditambah lagi, dia juga masih menyimpan rahasia lain…
+                </p>
+                <p>
+                    Kumpulan kasus Toru Amuro, si karakter populer yang penuh pesona. Simak episode negosiasi
+                    menegangkan dengan Shuichi Akai yang memperlihatkan kemampuan tak terduga dari seorang Toru Amuro
+                    dan episode terbaik lainnya!
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</HTML>

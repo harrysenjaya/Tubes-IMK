@@ -1,81 +1,84 @@
 <head>
-        <title>Elex Media Komputindo</title>
-        <link rel="stylesheet" href="lib/w3.css">
-        <link rel="stylesheet" href="style/style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="script/index.js"></script>
-        <script src="script/jquery.js"></script>
+    <title>Elex Media Komputindo</title>
+    <link rel="stylesheet" href="lib/w3.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script/index.js"></script>
+    <script src="script/jquery.js"></script>
 
-    </head>
-    
-    <body>
-        <header class="w3-top w3-theme w3-padding-16" style="background-color: maroon;">
-            <div class="dropdown">
-                <button class="dropbtn" onclick="dropdown()">
-                    ☰
-                </button>
-                <div class="dropdown-content" id="myDropdown">
-                    <a href="index.html" class="w3-button">Halaman Utama</a>
-                    <a onclick="dropdownKategori()" id="dropKategori" style="cursor: pointer;">
-                        Kategori <i class="fa fa-caret-right "></i>
-                    </a>
-                    <div id="kategori" class="w3-hide">
+</head>
+
+<body>
+    <header class="w3-top w3-theme w3-padding-16" style="background-color: maroon;">
+        <div class="dropdown">
+            <button class="dropbtn" onclick="dropdown()">
+                ☰
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="index.html" class="w3-button">Halaman Utama</a>
+                <a onclick="dropdownKategori()" id="dropKategori" style="cursor: pointer;">
+                    Kategori <i class="fa fa-caret-right "></i>
+                </a>
+                <div id="kategori" class="w3-hide">
                     <a href="">Komik</a>
                     <a href="">Novel</a>
-                    </div>
-                    <a href="BakalTerbit.html">Bakal Terbit</a>
-                    <a href="TelahBeredar.html">Telah Beredar</a>
-                    <a href="CetakUlang.html" >Cetak Ulang</a>
-                    <a href="TentangKami.html">Tentang Kami</a>
                 </div>
-            </div>
-            <img src="img/elexmediaBanner.png" alt="logo" id="logoElex">
-            <button class="btnMasuk  w3-button w3-right  w3-margin-right w3-gray w3-hover-white"
-                onclick="login()">Masuk</button>
-            <button class="btnDaftar w3-button w3-right  w3-margin-right w3-gray w3-hover-white"
-                onclick="register()">Daftar</button>
-        </header>
-        
-        <div>
-             <div class="w3-center" style="width: 75%; margin-top: 100px; margin-left: 180px;">
-                <img src="img/bakalterbit.jpg" id="banner1" style="width:100%">
-                <div class="w3-container">
-                    <div class="w3-left w3-margin-top">
-                        <h1>Bakal Terbit</h1>
-                    </div>
-                    <p>
-                                <div class="w3-padding w3-panel w3-round-xlarge w3-border w3-right">
-                                        <input type="text" placeholder="Cari buku, pengarang, dll" class="w3-padding">
-                                        <button class="search w3-button w3-medium">
-                                            <i class="fa fa-search"></i>
-                                        </button>
-                                </div>
-                    </p>
-                </div>
-            </div>
-            
-            <br>
-            <div class="w3-card-4 w3-center w3-padding " style="width: 50%;margin-left:350px; margin-bottom: 30px;">
-                <div class="w3-container" id="komik">
-                <img src="img/conan.jpg" style="width: 100%;">
-                </div>
-                <div class="w3-container w3-center">
-                    <p>Buku keluaran terbaru karya
-                        ......................................................................................</p>
-                    <a href="" style="color: blue;">Lanjutkan Membaca</a>
-                </div>
-            </div>
-            <div class="w3-card-4 w3-center w3-padding" style="width: 50%; margin-left:350px; margin-bottom: 30px;">
-                <div class="w3-container" id="komik">
-                <img src="img/noragami.jpg" style="width: 100%;">
-                </div>
-                <div class="w3-container w3-center">
-                    <p>Buku keluaran terbaru karya
-                        ......................................................................................</p>
-                    <a href="" style="color: blue;">Lanjutkan Membaca</a>
-                </div>
+                <a href="BakalTerbit.html">Bakal Terbit</a>
+                <a href="TelahBeredar.html">Telah Beredar</a>
+                <a href="CetakUlang.html">Cetak Ulang</a>
+                <a href="TentangKami.html">Tentang Kami</a>
             </div>
         </div>
-    </body>
-    
-    </HTML>
+        <img src="img/elexmediaBanner.png" alt="logo" id="logoElex">
+        <button class="btnMasuk  w3-button w3-right  w3-margin-right w3-gray w3-hover-white"
+            onclick="login()">Masuk</button>
+        <button class="btnDaftar w3-button w3-right  w3-margin-right w3-gray w3-hover-white"
+            onclick="register()">Daftar</button>
+    </header>
+
+    <div>
+        <div class="w3-center" style="width: 75%; margin-top: 100px; margin-left: 180px;">
+            <img src="img/bakalterbit.jpg" id="banner1" style="width:100%">
+            <div class="w3-container">
+                <div class="w3-left w3-margin-top">
+                    <h1>Bakal Terbit</h1>
+                </div>
+                <p>
+                    <div class="w3-padding w3-panel w3-round-xlarge w3-border w3-right">
+                        <input type="text" placeholder="Cari buku, pengarang, dll" class="w3-padding">
+                        <button class="search w3-button w3-medium">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </p>
+            </div>
+        </div>
+
+        <br>
+        <div class="w3-card-4 w3-center w3-padding " style="width: 50%;margin-left:350px; margin-bottom: 30px;">
+            <div class="w3-container" id="komik">
+                <img src="img/conan.jpg" style="width: 100%;">
+            </div>
+            <div class="w3-container w3-center">
+                <h4 style="font-weight: bold;">Detektif Conan: Toru Amuro Selection </h4>
+                <p>
+                    Toru Amuro muncul di hadapan Conan dkk. sebagai detektif, dan ingin menjadi murid Kogoro Mouri. Tapi
+                    ternyata, identitas sesungguhnya adalah Bourbon! Anggota organisasi hitam yang ahli dalam
+                    mengumpulkan informasi. Ditambah lagi, dia juga masih menyimpan rahasia lain…</p>
+                <a href="Conan.html" style="color: blue;">Lanjutkan Membaca</a>
+            </div>
+        </div>
+        <div class="w3-card-4 w3-center w3-padding" style="width: 50%; margin-left:350px; margin-bottom: 30px;">
+            <div class="w3-container" id="komik">
+                <img src="img/noragami.jpg" style="width: 100%;">
+            </div>
+            <div class="w3-container w3-center">
+                <p>Buku keluaran terbaru karya
+                    ......................................................................................</p>
+                <a href="" style="color: blue;">Lanjutkan Membaca</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</HTML>

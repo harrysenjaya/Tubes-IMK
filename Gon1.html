@@ -1,0 +1,95 @@
+<html>
+
+<head>
+    <title>Gon 1</title>
+    <link rel="stylesheet" href="lib/w3.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script/index.js"></script>
+    <script src="script/jquery.js"></script>
+</head>
+
+<body>
+    <header class="w3-top w3-theme w3-padding-16" style="background-color: maroon;">
+        <div class="dropdown">
+            <button class="dropbtn" onclick="dropdown()">
+                ☰
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="index.html" class="w3-button">Halaman Utama</a>
+                <a onclick="dropdownKategori()" id="dropKategori" style="cursor: pointer;">
+                    Kategori <i class="fa fa-caret-right "></i>
+                </a>
+                <div id="kategori" class="w3-hide">
+                    <a href="">Komik</a>
+                    <a href="">Novel</a>
+                </div>
+                <a href="BakalTerbit.html">Bakal Terbit</a>
+                <a href="TelahBeredar.html">Telah Beredar</a>
+                <a href="CetakUlang.html">Cetak Ulang</a>
+                <a href="TentangKami.html">Tentang Kami</a>
+            </div>
+        </div>
+        <img src="img/elexmediaBanner.png" alt="logo" id="logoElex">
+        <button class="btnMasuk  w3-button w3-right  w3-margin-right w3-gray w3-hover-white"
+            onclick="login()">Masuk</button>
+        <button class="btnDaftar w3-button w3-right  w3-margin-right w3-gray w3-hover-white"
+            onclick="register()">Daftar</button>
+    </header>
+
+    <div style="margin-top: 100px;margin-left: 200px">
+        <h1 style="font-weight: bold;">Gon 1</h1>
+    </div>
+    <div class="w3-container" style="margin-top: 20px;">
+        <div style="float: left;margin-left: 200px;">
+            <img src="img/gon.jpg" style="max-width: 300px;">
+            <div class="w3-container w3-center" style="margin-top:10px">
+                <h3 style="border-bottom: 1px solid #000000;border-top: 1px solid #000000;">Info Produk</h3>
+            </div>
+            <div class="info">
+                <strong>Harga:</strong>
+                Rp 20.000
+                <br>
+                <strong>Halaman:</strong>
+                160 halaman
+                <br>
+                <strong>Warna:</strong>
+                Satu Warna
+                <br>
+                <strong>Kertas:</strong>
+                Koran
+                <br>
+                <Strong>Dimensi:</Strong>
+                11.4 x 17.2 cm
+            </div>
+            <div class="w3-center w3-container" style="margin-top: 20px;">
+                <div class="w3-button w3-grey w3-round-large w3-xlarge" onclick="">
+                    habis
+                </div>
+            </div>
+            <div
+                style="margin-top:20px; margin-bottom: 50px; height:250px; width:300px; border:1px solid#ccc; font: 16px; overflow: auto;">
+                <p style=" padding:10px">
+                    Tersedia di 0 gerai
+                </p>
+            </div>
+        </div>
+        <div style="float: left;">
+            <div style="margin-left: 300px;">
+                Sinopsis
+                </div>
+                    <div style="width: 800px;margin-left: 50px;">
+                        <p>
+                            Buku ini menceritakan tentang anak dinosaurus yang bernama GON. Tingkah lakunya amat lucu dan
+                            menghibur. Walaupun tanpa teks dan yang bercerita hanyalah gambar, namun pembaca bisa mengikuti alur
+                            cerita komik ini dan menangkap kelucuan dari tingkah laku GON si anak dinosaurus.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

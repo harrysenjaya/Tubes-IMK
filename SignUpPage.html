@@ -81,41 +81,44 @@
                 <h2>Daftarkan dirimu di sini...</h2>
             </div>
             <div class="w3-container">
-                <p>
-                    <input class="w3-input w3-border" name="fullname" type="text" placeholder="Nama Lengkap"></p>
-                <p>
-                    <input class="w3-input w3-border" name="email" type="email" placeholder="Email"></p>
-                <p>
-                    <input class="w3-input w3-border" name="pw" type="password" placeholder="Password"></p>
-                <table>
-                    <tr>
-                        <td>
-                            Text Captcha<br />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h3 id="mainCaptcha"></h3>
-                        </td>
-                        <td>
-                            <i class="fa fa-refresh" id="refresh" onclick="Captcha();"
-                                style="cursor: pointer; margin-left: -20px;"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="text" id="txtInput" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input id="Button1" type="button" value="Check" onclick="ValidCaptcha();" />
-                        </td>
-                    </tr>
-                </table>
-                <p style="color: red;" class="w3-hide" id="wrongCaptcha">Captcha Salah!</p>
-                <p>
-                    <button class="w3-btn w3-gray w3-margin-bottom w3-left" onclick="check()">Daftar</button></p>
+                <form action="index.html" onsubmit="return check()">
+                    <p>
+                        <input class="w3-input w3-border" name="fullname" type="text" placeholder="Nama Lengkap" required></p>
+                    <p>
+                        <input class="w3-input w3-border" name="email" type="email" placeholder="Email" id="email" required></p>
+                    <p style="color: red;" class="w3-hide" id="wrongEmail">Email Tidak Valid!</p>
+                    <p>
+                        <input class="w3-input w3-border" name="pw" type="password" placeholder="Password" required></p>
+                    <table>
+                        <tr>
+                            <td>
+                                <b style="color: red;">Verifikasi Captcha</b><br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3 id="mainCaptcha"></h3>
+                            </td>
+                            <td>
+                                <i class="fa fa-refresh" id="refresh" onclick="Captcha();"
+                                    style="cursor: pointer; margin-left: -20px;"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" id="txtInput"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input id="Button1" type="button" value="Check" onclick="ValidCaptcha();" />
+                            </td>
+                        </tr>
+                    </table>
+                    <p style="color: red;" class="w3-hide" id="wrongCaptcha">Captcha Salah!</p>
+                    <br>
+                    <input type="submit" class="w3-btn w3-gray w3-margin-bottom w3-left" value="Daftar">
+                </form>
             </div>
         </div>
     </div>

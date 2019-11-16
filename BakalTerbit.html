@@ -44,8 +44,8 @@
                     <h1>Bakal Terbit</h1>
                 </div>
                 <p>
-                    <div class="w3-padding w3-panel w3-round-xlarge w3-border w3-right">
-                        <input type="text" placeholder="Cari buku, pengarang, dll" class="w3-padding">
+                    <div class="w3-padding w3-panel w3-round-xlarge w3-border w3-right autocomplete">
+                        <input type="text" placeholder="Cari Buku Bakal Terbit" class="w3-padding" id="searchBar">
                         <button class="search w3-button w3-medium">
                             <i class="fa fa-search"></i>
                         </button>
@@ -82,6 +82,11 @@
             </div>
         </div>
     </div>
+
+    <script>
+        var data = ["Detektif Conan : Toru Amuro Selection (Buku)", "Noragami 20 (Buku)"];
+        autocomplete(document.getElementById("searchBar"), data);
+    </script>
 </body>
 
 </HTML>

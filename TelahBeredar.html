@@ -44,8 +44,8 @@
                     <h1>Telah Beredar</h1>
                 </div>
                 <p>
-                    <div class="w3-padding w3-panel w3-round-xlarge w3-border w3-right">
-                        <input type="text" placeholder="Cari buku, pengarang, dll" class="w3-padding">
+                    <div class="w3-padding w3-panel w3-round-xlarge w3-border w3-right autocomplete">
+                        <input type="text" placeholder="Cari Buku Telah Beredar" class="w3-padding" id="searchBar">
                         <button class="search w3-button w3-medium">
                             <i class="fa fa-search"></i>
                         </button>
@@ -84,6 +84,11 @@
             </div>
         </div>
     </div>
+
+    <script>
+        var data = ["Aplikasi SPSS untuk Penelitian dan Riset Pasar (Buku)", "Kolaborasi Macro Excel dan Access untuk Membuat Aplikasi Penjualan (Buku)"];
+        autocomplete(document.getElementById("searchBar"), data);
+    </script>
 </body>
 
 </HTML>

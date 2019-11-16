@@ -56,34 +56,8 @@
         </div>
 
         <br>
-        <div class="w3-card-4 w3-center w3-padding " style="width: 50%;margin-left:350px; margin-bottom: 30px;">
-            <div class="w3-container" id="komik">
-                <img src="img/naruto.jpg" style="width: 100%;">
-            </div>
-            <div class="w3-container w3-center" style="margin-bottom: 20px;">
-                <h4 style="font-weight: bold;">Naruto 72</h4>
-                <p>
-                    Kaguya berhasil disegel dan perang besar pun berakhir. Namun, Sasuke memulai pemberontakan! Demi
-                    menyampaikan perasaan mereka yang selalu bertentangan, Naruto dan Sasuke pun saling
-                    berhadapan.Inilah
-                    akhir pertarungan yang mempertaruhkan segalanya di antara dua orang pahlawan! </p>
-                <a href="Naruto72.html" style="color: blue;">Lanjutkan Membaca</a>
-            </div>
-        </div>
-        <div class="w3-card-4 w3-center w3-padding" style="width: 50%; margin-left:350px; margin-bottom: 30px;">
-            <div class="w3-container" id="komik">
-                <img src="img/gon.jpg" style="width: 100%;">
-            </div>
-            <div class="w3-container w3-center">
-                <h4 style="font-weight: bold;">Gon 1</h4>
-                <p>Gon 1
-                    Buku ini menceritakan tentang anak dinosaurus yang bernama GON. Tingkah lakunya amat lucu dan
-                    menghibur. Walaupun tanpa teks dan yang bercerita hanyalah gambar, namun pembaca bisa mengikuti alur
-                    cerita komik ini dan menangkap kelucuan dari tingkah laku GON si anak dinosaurus.</p>
-                <a href="Gon1.html" style="color: blue;">Lanjutkan Membaca</a>
-            </div>
-        </div>
-        <div class="w3-card-4 w3-center w3-padding " style="width: 50%;margin-left:350px; margin-bottom: 30px;">
+        <div id="page1" class="w3-show">
+            <div class="w3-card-4 w3-center w3-padding " style="width: 50%;margin-left:350px; margin-bottom: 30px;">
                 <div class="w3-container" id="komik">
                     <img src="img/naruto.jpg" style="width: 100%;">
                 </div>
@@ -105,11 +79,51 @@
                     <h4 style="font-weight: bold;">Gon 1</h4>
                     <p>Gon 1
                         Buku ini menceritakan tentang anak dinosaurus yang bernama GON. Tingkah lakunya amat lucu dan
-                        menghibur. Walaupun tanpa teks dan yang bercerita hanyalah gambar, namun pembaca bisa mengikuti alur
+                        menghibur. Walaupun tanpa teks dan yang bercerita hanyalah gambar, namun pembaca bisa mengikuti
+                        alur
                         cerita komik ini dan menangkap kelucuan dari tingkah laku GON si anak dinosaurus.</p>
                     <a href="Gon1.html" style="color: blue;">Lanjutkan Membaca</a>
                 </div>
             </div>
+            <div class="w3-card-4 w3-center w3-padding " style="width: 50%;margin-left:350px; margin-bottom: 30px;">
+                <div class="w3-container" id="komik">
+                    <img src="img/naruto.jpg" style="width: 100%;">
+                </div>
+                <div class="w3-container w3-center" style="margin-bottom: 20px;">
+                    <h4 style="font-weight: bold;">Naruto 72</h4>
+                    <p>
+                        Kaguya berhasil disegel dan perang besar pun berakhir. Namun, Sasuke memulai pemberontakan! Demi
+                        menyampaikan perasaan mereka yang selalu bertentangan, Naruto dan Sasuke pun saling
+                        berhadapan.Inilah
+                        akhir pertarungan yang mempertaruhkan segalanya di antara dua orang pahlawan! </p>
+                    <a href="Naruto72.html" style="color: blue;">Lanjutkan Membaca</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="page2" class = "w3-hide">
+            <div class="w3-card-4 w3-center w3-padding" style="width: 50%; margin-left:350px; margin-bottom: 30px;">
+                <div class="w3-container" id="komik">
+                    <img src="img/gon.jpg" style="width: 100%;">
+                </div>
+                <div class="w3-container w3-center">
+                    <h4 style="font-weight: bold;">Gon 1</h4>
+                    <p>Gon 1
+                        Buku ini menceritakan tentang anak dinosaurus yang bernama GON. Tingkah lakunya amat lucu dan
+                        menghibur. Walaupun tanpa teks dan yang bercerita hanyalah gambar, namun pembaca bisa mengikuti
+                        alur
+                        cerita komik ini dan menangkap kelucuan dari tingkah laku GON si anak dinosaurus.</p>
+                    <a href="Gon1.html" style="color: blue;">Lanjutkan Membaca</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-center" id="paginationCetakulang">
+            <div class="w3-bar">
+                <a onclick="pageCetakUlang('page1','page2')" style="cursor: pointer;" class="w3-button">1</a>
+                <a onclick="pageCetakUlang('page2','page1')" style="cursor: pointer;" class="w3-button">2</a>
+            </div>
+        </div>
     </div>
 </body>
 

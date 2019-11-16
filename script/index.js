@@ -32,8 +32,6 @@ function pageCetakUlang(id1, id2) {
   y.className = y.className.replace("w3-show","w3-hide");
 }
 
-
-
 function login() {
   location.replace("SignInPage.html");
 }

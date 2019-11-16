@@ -4,13 +4,14 @@
     <title>Sign Up</title>
     <link rel="stylesheet" href="lib/w3.css">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="script/index.js"></script>
-    <script src="https://www.google.com/reCAPTCHA/api.js"></script>
+    <script src="script/signup.js" defer></script>
     <script src="script/jquery.js"></script>
 
 </head>
 
-<body>
+<body onload="Captcha();">
     <header class="w3-top w3-theme w3-padding-16" style="background-color: maroon;">
         <div class="dropdown">
             <button class="dropbtn" onclick="dropdown()">
@@ -22,12 +23,12 @@
                     Kategori <i class="fa fa-caret-right "></i>
                 </a>
                 <div id="kategori" class="w3-hide">
-                <a href="">Komik</a>
-                <a href="">Novel</a>
+                    <a href="">Komik</a>
+                    <a href="">Novel</a>
                 </div>
                 <a href="BakalTerbit.html">Bakal Terbit</a>
                 <a href="TelahBeredar.html">Telah Beredar</a>
-                <a href="CetakUlang.html" >Cetak Ulang</a>
+                <a href="CetakUlang.html">Cetak Ulang</a>
                 <a href="TentangKami.html">Tentang Kami</a>
             </div>
         </div>
@@ -45,28 +46,32 @@
                     Sebelum mendaftar, kami memiliki patokan bernama Term and Conditions di sini. Namun sebagian besar
                     pengguna biasanya tidak suka membaca teks yang panjang. Oleh karena itu, kami ringkas saja bagian
                     terpenting di sini.
-                <ul>
-                    <li>
-                    Layanan portal Elex Media saat ini mencakup timeline (linimasa), informasi kegiatan,
-                    informasi penulis, manajemen naskah, dan layanan lain.
-                    </li>
-                    <br>
-                    <li>
-                    Anda bisa melihat seluruh lingkungan portal Elex Media sebagai anggota dan hanya sebagian saja
-                    apabila tidak sebagai anggota.
-                    </li>
-                    <br>
-                    <li>
-                    Isi informasi yang Anda sebarkan adalah tanggung jawab pribadi. Segala tindakan melawan hukum seperti
-                    menyebar barang bajakan, pornografi, kabar bohong, fitnah, atau kebencian adalah tanggungjawab
-                    pribadi pengirim dan penyebarluas secara pribadi.
-                    </li>
-                    <br>
-                    <li>
-                    Dengan mendaftarkan diri, berarti Anda sudah memahami segala konsekuensi berkomunikasi di kawasan
-                    portal Elex Media.
-                    </li>
-                </ul>
+                    <ul>
+                        <li>
+                            Layanan portal Elex Media saat ini mencakup timeline (linimasa), informasi kegiatan,
+                            informasi penulis, manajemen naskah, dan layanan lain.
+                        </li>
+                        <br>
+                        <li>
+                            Anda bisa melihat seluruh lingkungan portal Elex Media sebagai anggota dan hanya sebagian
+                            saja
+                            apabila tidak sebagai anggota.
+                        </li>
+                        <br>
+                        <li>
+                            Isi informasi yang Anda sebarkan adalah tanggung jawab pribadi. Segala tindakan melawan
+                            hukum seperti
+                            menyebar barang bajakan, pornografi, kabar bohong, fitnah, atau kebencian adalah
+                            tanggungjawab
+                            pribadi pengirim dan penyebarluas secara pribadi.
+                        </li>
+                        <br>
+                        <li>
+                            Dengan mendaftarkan diri, berarti Anda sudah memahami segala konsekuensi berkomunikasi di
+                            kawasan
+                            portal Elex Media.
+                        </li>
+                    </ul>
                 </p>
             </div>
         </div>
@@ -82,11 +87,40 @@
                     <input class="w3-input w3-border" name="email" type="email" placeholder="Email"></p>
                 <p>
                     <input class="w3-input w3-border" name="pw" type="password" placeholder="Password"></p>
+                <table>
+                    <tr>
+                        <td>
+                            Text Captcha<br />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3 id="mainCaptcha"></h3>
+                        </td>
+                        <td>
+                            <i class="fa fa-refresh" id="refresh" onclick="Captcha();"
+                                style="cursor: pointer; margin-left: -20px;"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" id="txtInput" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="Button1" type="button" value="Check" onclick="ValidCaptcha();" />
+                        </td>
+                    </tr>
+                </table>
+                <p style="color: red;" class="w3-hide" id="wrongCaptcha">Captcha Salah!</p>
                 <p>
-                    <button class="w3-btn w3-gray w3-margin-bottom w3-left" onclick="home()">Daftar</button></p>
+                    <button class="w3-btn w3-gray w3-margin-bottom w3-left" onclick="check()">Daftar</button></p>
             </div>
         </div>
     </div>
+    <script>
+    </script>
 </body>
 
 </html>

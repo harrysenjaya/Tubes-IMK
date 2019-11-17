@@ -42,10 +42,18 @@ function search(id){
 }
 
 function login() {
-  location.replace("SignInPage.html");
+  location.replace("../SignInPage.html");
 }
 
 function register() {
+  location.replace("../SignUpPage.html");
+}
+
+function login0(){
+  location.replace("SignInPage.html");
+}
+
+function register0(){
   location.replace("SignUpPage.html");
 }
 

@@ -1,0 +1,281 @@
+<HTML>
+
+<head>
+    <title>Functional Food</title>
+    <link rel="stylesheet" href="../lib/w3.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../script/index.js"></script>
+    <script src="../script/jquery.js"></script>
+</head>
+
+<body>
+    <header class="w3-top w3-theme w3-padding-16" style="background-color: maroon;">
+        <div class="dropdown">
+            <button class="dropbtn" onclick="dropdown()">
+                ☰
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="../index.html" class="w3-button">Halaman Utama</a>
+                <a onclick="dropdownKategori()" id="dropKategori" style="cursor: pointer;">
+                    Kategori <i class="fa fa-caret-right "></i>
+                </a>
+                <div id="kategori" class="w3-hide w3-gray">
+                    <a href="../KategoriKomik.html">Komik</a>
+                    <a href="../KategoriNovel.html">Novel</a>
+                    <a href="../KategoriQuanta.html">Quanta</a>
+                    <a href="../KategoriAnak.html">Anak dan Pendidikan</a>
+                    <a href="../KategoriParenting.html">Parenting</a>
+                    <a href="../KategoriManajemen.html">Manajemen Bisnis</a>
+                    <a href="../KategoriKomputer.html">Komputer</a>
+                    <a href="../KategoriHumaniora.html">Humaniora dan Sosial</a>
+                    <a href="../KategoriRupa.html">Rupa-Rupa</a>
+                    <a href="../KategoriPendidikan.html">Komik Pendidikan</a>
+                </div>
+                <a href="../BakalTerbit.html">Bakal Terbit</a>
+                <a href="../TelahBeredar.html">Telah Beredar</a>
+                <a href="../CetakUlang.html">Cetak Ulang</a>
+                <a href="../TentangKami.html">Tentang Kami</a>
+            </div>
+        </div>
+        <img src="../img/elexmediaBanner.png" alt="logo" id="logoElex">
+        <button class="btnMasuk  w3-button w3-right  w3-margin-right w3-gray w3-hover-white"
+            onclick="login()">Masuk</button>
+        <button class="btnDaftar w3-button w3-right  w3-margin-right w3-gray w3-hover-white"
+            onclick="register()">Daftar</button>
+    </header>
+
+    <div style="margin-top: 100px;margin-left: 200px">
+        <h1 style="font-weight: bold;">Functional Food</h1>
+    </div>
+    <div class="w3-container" style="margin-top: 20px;">
+        <div style="float: left;margin-left: 200px;">
+            <img src="../img/Parenting/Food.jpg" class="w3-border" style="max-width: 300px;">
+            <div class="w3-container w3-center" style="margin-top:10px">
+                <h3 style="border-bottom: 1px solid #000000;border-top: 1px solid #000000;">Info Produk</h3>
+            </div>
+            <div class="info w3-border w3-padding">
+                <strong>Harga:</strong>
+                Rp 55.000
+                <br>
+                <strong>Terbit:</strong>
+                Senin, 13 Mei 2019
+                <br>
+                <strong>Halaman:</strong>
+                164
+                <br>
+                <strong>Warna:</strong>
+                Satu Warna
+                <br>
+                <strong>Kertas:</strong>
+                Book Paper 60
+                <br>
+                <Strong>Dimensi:</Strong>
+                14 x 21 cm
+            </div>
+            <div class="w3-center w3-container" style="margin-top: 20px;margin-bottom: 20px;">
+                <div class="w3-button w3-grey w3-round-large w3-xlarge"
+                    onclick="window.location.href ='https://www.gramedia.com/products/functional-food';">
+                    Pesan di sini
+                </div>
+            </div>
+            <div
+                style="margin-top:20px; margin-bottom: 50px; height:250px; width:300px; border:1px solid#ccc; font: 16px; overflow: auto;">
+                <p style=" padding:10px">
+                    Tersedia di 116 gerai
+                </p>
+                <ul>
+                    <li>Anugerah Rosyada (3)</li>
+                    <li>DINAS PERPURTAKAAN KEARSIPAN KOTA BANDUNG (5)</li>
+                    <li>Gramedia AEON Mall BSD City (10)</li>
+                    <li>Gramedia Ambarrukmo Plaza (6)</li>
+                    <li>Gramedia Balikpapan Center (7)</li>
+                    <li>Gramedia Bandung Mal Trans Studio (12)</li>
+                    <li>Gramedia Banjarmasin (6)</li>
+                    <li>Gramedia Barlian Palembang (10)</li>
+                    <li>Gramedia Basuki Rahmat Malang (14)</li>
+                    <li>Gramedia Batam City Square Mall (12)</li>
+                    <li>Gramedia Big Mall Samarinda (9)</li>
+                    <li>Gramedia Boemi Kedaton Mall (6)</li>
+                    <li>Gramedia Book Store The Plaza Semanggi (20)</li>
+                    <li>Gramedia Botani Square (24)</li>
+                    <li>Gramedia Central Park (5)</li>
+                    <li>Gramedia Cibinong City Mall (30)</li>
+                    <li>Gramedia Cikupa Tangerang (15)</li>
+                    <li>Gramedia Cinere (9)</li>
+                    <li>Gramedia Cirebon Cipto (9)</li>
+                    <li>Gramedia Duta Mall (14)</li>
+                    <li>Gramedia Expo (21)</li>
+                    <li>Gramedia Festival City Link (18)</li>
+                    <li>Gramedia Gajah Mada Medan (43)</li>
+                    <li>Gramedia Gandaria City (16)</li>
+                    <li>Gramedia Gatsu Hardy's Mall (9)</li>
+                    <li>Gramedia Grage Mall (35)</li>
+                    <li>Gramedia Grand Indonesia Shopping Town (17)</li>
+                    <li>Gramedia Harapan Indah (13)</li>
+                    <li>Gramedia Jambi (10)</li>
+                    <li>Gramedia Jember (7)</li>
+                    <li>Gramedia JKT Mal Artha Gading (5)</li>
+                    <li>Gramedia Jogja City Mall (9)</li>
+                    <li>Gramedia Kol. Atmo (27)</li>
+                    <li>Gramedia Level 21 Mall (5)</li>
+                    <li>Gramedia Lombok (17)</li>
+                    <li>Gramedia Madiun Plaza (7)</li>
+                    <li>Gramedia Mal Alam Sutera (3)</li>
+                    <li>Gramedia Mal Artha Gading (15)</li>
+                    <li>Gramedia Mal Ciputra Cibubur (13)</li>
+                    <li>Gramedia Mal Ciputra World (6)</li>
+                    <li>Gramedia Mal Daan Mogot (13)</li>
+                    <li>Gramedia Mal Galeria (13)</li>
+                    <li>Gramedia Mal Lembuswana (18)</li>
+                    <li>Gramedia Mal Metropolitan (33)</li>
+                    <li>Gramedia Mal of Indonesia (9)</li>
+                    <li>Gramedia Mal Pondok Indah (37)</li>
+                    <li>Gramedia Mal Taman Anggrek (7)</li>
+                    <li>Gramedia Malang Town Square (9)</li>
+                    <li>Gramedia Malioboro Shopping Mall (8)</li>
+                    <li>Gramedia Mall Bale Kota Tangerang (14)</li>
+                    <li>Gramedia Mall Cijantung (12)</li>
+                    <li>Gramedia Mall Panakkukang (40)</li>
+                    <li>Gramedia Mall Ratu Indah (32)</li>
+                    <li>Gramedia Manado Town Square (7)</li>
+                    <li>Gramedia Manhattan Times Square (5)</li>
+                    <li>Gramedia Manyar Kertoarjo (12)</li>
+                    <li>Gramedia Margonda Depok (30)</li>
+                    <li>Gramedia Matahari Duta Plaza (14)</li>
+                    <li>Gramedia Matraman (55)</li>
+                    <li>Gramedia Medan Sun Plaza (8)</li>
+                    <li>Gramedia Mega Bekasi Hypermall (23)</li>
+                    <li>Gramedia Mega Mall Ayani Pontianak (24)</li>
+                    <li>Gramedia Melawai (17)</li>
+                    <li>Gramedia Merdeka (32)</li>
+                    <li>Gramedia Metropolitan Cileungsi (4)</li>
+                    <li>Gramedia Padang (10)</li>
+                    <li>Gramedia Pajajaran Bogor (12)</li>
+                    <li>Gramedia Pandanaran (26)</li>
+                    <li>Gramedia Pejaten Village (8)</li>
+                    <li>Gramedia Pekanbaru (8)</li>
+                    <li>Gramedia Plaza Asia (18)</li>
+                    <li>Gramedia Plaza Bintaro Jaya (24)</li>
+                    <li>Gramedia Pluit Village (3)</li>
+                    <li>Gramedia Pondok Gede Plaza (17)</li>
+                    <li>Gramedia Raden Intan (33)</li>
+                    <li>Gramedia Rita Supermall Purwokerto (12)</li>
+                    <li>Gramedia Rita Supermall Tegal (13)</li>
+                    <li>Gramedia Royal Plaza (12)</li>
+                    <li>Gramedia Sidoarjo Mal Lippo (5)</li>
+                    <li>Gramedia SKA Mall (8)</li>
+                    <li>Gramedia Slamet Riyadi Solo (34)</li>
+                    <li>Gramedia Sudirman Yogyakarta (36)</li>
+                    <li>Gramedia Supermal Karawaci (42)</li>
+                    <li>Gramedia Teras kota (5)</li>
+                    <li>Gramedia UFO Elektronik (9)</li>
+                    <li>Gramedia World BSD (8)</li>
+                    <li>Gramedia World Emerald Bintaro (29)</li>
+                    <li>Gramedia World Galuh Mas Karawang (35)</li>
+                    <li>Gramedia (14)</li>
+                    <li>Gudang Jakarta (56)</li>
+                    <li>Gudang Surabaya (35)</li>
+                    <li>JENDELA TOKO BUKU BOYOLALI (3)</li>
+                    <li>Jingga Unggul Lohjinawi Bintaro (5)</li>
+                    <li>Jingga Unggul Lohjinawi Kota Cassablanca (4)</li>
+                    <li>Jingga Unggul Lohjinawi Mall Kelapa Gading (4)</li>
+                    <li>Jingga Unggul Lohjinawi SMS Serpong (5)</li>
+                    <li>Jingga (5)</li>
+                    <li>KURNIA AGUNG SUKABUMIWH (3)</li>
+                    <li>Medan Centre Point (5)</li>
+                    <li>METROMEDIA PUSTAKA PT (9)</li>
+                    <li>PT GRIYA PRATAMAWH (3)</li>
+                    <li>TB JENDELA MAGELANGWH (8)</li>
+                    <li>TB JENDELA SALATIGAWH (4)</li>
+                    <li>TB SANTOSO JAYAWH (5)</li>
+                    <li>TB URANUS HR MUHAMMADWH (3)</li>
+                    <li>THE LOTUS BOOKSHOPWH (3)</li>
+                    <li>TOGAMAS AFFANDI KONSWH (4)</li>
+                    <li>TOGAMAS PARAHYANGAN KONSWH (9)</li>
+                    <li>Togamas (3)</li>
+                    <li>TOKO BUKU LOTUS BINTAN CENTREWH (3)</li>
+                    <li>Toko Gunung Agung Mall Galaxy (9)</li>
+                    <li>Toko Togamas (6)</li>
+                    <li>Toko Togamas (7)</li>
+                    <li>Toko Togamas Margorejo (5)</li>
+                    <li>Toko Togamas Petra (6)</li>
+                    <li>Toko Togamas Suroto (5)</li>
+                    </ul>
+            </div>
+        </div>
+        <div style="float: left;margin-left: 20px;margin-bottom: 50px;">
+            <div class="w3-border w3-padding">
+                <div class="w3-center w3-padding w3-border-bottom">
+                    Sinopsis
+                </div>
+                <div style="width: 800px;" class="w3-padding">
+                    <p>
+                        “It is not what you know but what can you do with you know”
+                    </P>
+                    <p>
+                        Kata-kata bijak ini mengandung makna dalam tentang arti memiliki ilmu pengetahuan, khususnya
+                        mungkin bagi para cendekiawan. Seperti yang dituliskan Les Giblin dalam bukunya Skill with
+                        People, “Ilmu sendiri tidaklah punya nilai. Penggunaan ilmu itulah yang membuatnya bernilai”.
+                        Apalah artinya memiliki ilmu seluas samudera dan setinggi awan di langit, jika tidak mampu
+                        mengamalkannya. Dampaknya akan luar biasa, ilmu yang dimiliki bisa membawa kemaslahatan bagi
+                        orang banyak, atau bisa jadi petaka yang membawa derita berkepanjangan bagi umat manusia.
+                    </p>
+                    <p>
+                        Berpijak pada nilai kata-kata bijak di atas, sekelompok alumni Akademi Gizi angkatan tahun 1971
+                        serta didorong oleh motivasi yang ditaburkan oleh sesepuh Gizi Indonesia, Prof. Soekirman,
+                        kelompok ini tergerak untuk berdedikasi terhadap profesi yang diembannya sebagai Ahli Gizi
+                        dengan menorehkan buah pikirannya dalam untaian bunga rampai kumpulan artikel gizi praktis.
+                    </p>
+                    <p>
+                        Adalah Djoko Sutopo yang buah pikirannya tentang hal-hal praktis terkait gizi telah tersebar di
+                        seantero wilayah Indonesia melalui dunia maya, mengawali langkah berbagi informasi kepada
+                        khalayak akun Face Booknya. Lebih dari 14.600 pembacanya mendapat manfaat dari artikel-artikel
+                        pendek yang dituliskannya. Bahkan sebagian besar pembacanya meminta dan mendorong
+                        artikel-artikel pendek ini dihimpun dan diterbitkan sebagai suatu bacaan praktis bagi para
+                        praktisi dan pemerhati gizi maupun masyarakat banyak.
+                    </p>
+                    <p>
+                        Langkah ini telah menggugah semangat angkatan 1971 untuk bertekad dan berkiprah lebih jauh lagi
+                        dengan menuangkan berbagai pengalaman dan ilmu yang diperoleh mereka dalam bentuk tulisan yang
+                        memperkaya kancah dunia pergizian. Mengapa tidak, teladan nyata telah diberikan oleh Prof.
+                        Soekirman, sebagai pejuang sejati yang mendedikasikan begitu banyak tahun-tahun kehidupannya
+                        bagi perkembangan ilmu gizi di Indonesia. Jadi, mengapa tidak bagi para anak didiknya juga
+                        meneladani perjuangan yang telah dirintis beliau.
+                    </p>
+                    <p>
+                        “Bunga Rampai, Kumpulan Artikel Gizi Praktis” adalah edisi perdana yang diluncurkan untuk
+                        memperkaya khazanah ilmu pengetahuan gizi dengan diiringi harapan dapat menjangkau alam pikiran
+                        masyarakat secara sederhana. isi pesan yang disampaikan dalam simbol aksara, diyakini akan
+                        menimbulkan kesamaan makna tentang apa, dan bagaimana pengetahuan tentang gizi yang diterapkan
+                        dalam kehidupan sehari-hari membawa manfaat bagi kesehatan.
+                    </p>
+                    <p>
+                        Disadari apa yang disajikan masih jauh dari sempurna, mengingat pesatnya perkembangan ilmu
+                        pengetahuan dan teknologi informasi yang setiap saat menyajikan perkembangan dan
+                        penemuan-penemuan baru dari berbagai disiplin ilmu termasuk di dalamnya ilmu gizi. Tentu saran
+                        dan nasukan dari berbagai pihak, khususnya insan gizi di Indonesia diyakini akan menambah
+                        khazanah pengetahuan dan memperluas wawasan khususnya di bidang gizi.
+                    </p>
+                    <p>
+                        Semoga edisi perdana ini menjadi suatu batu loncatan bagi para ahli gizi khususnya untuk lebih
+                        menggali dan memperdalam ilmu gizi, utamanya dapat mengolah dan menyajikannya dalam bentuk yang
+                        sederhana, praktis dan mudah diterapkan oleh masyarakat banyak. Selain itu kiranya juga dapat
+                        diikuti oleh terbitnya edisi-edisi berikutnya sebagai buah karya tulis para alumni Akademi Gizi
+                        Tahun 1971, yang meskipun telah purna tugas masih bersemangat tinggi, bahkan akan menginspirasi
+                        gerakan berkarya tulis bagi insan gizi di Indonesia.
+                    </p>
+                    <br>
+                    “Old soldier will never die”
+                    <br>
+                    Knowledge is power, but character is more.
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</HTML>

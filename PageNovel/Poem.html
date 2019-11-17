@@ -1,0 +1,265 @@
+<HTML>
+
+<head>
+    <title>A Poem</title>
+    <link rel="stylesheet" href="../lib/w3.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../script/index.js"></script>
+    <script src="../script/jquery.js"></script>
+</head>
+
+<body>
+    <header class="w3-top w3-theme w3-padding-16" style="background-color: maroon;">
+        <div class="dropdown">
+            <button class="dropbtn" onclick="dropdown()">
+                ☰
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="../index.html" class="w3-button">Halaman Utama</a>
+                <a onclick="dropdownKategori()" id="dropKategori" style="cursor: pointer;">
+                    Kategori <i class="fa fa-caret-right "></i>
+                </a>
+                <div id="kategori" class="w3-hide w3-gray">
+                    <a href="../KategoriKomik.html">Komik</a>
+                    <a href="../KategoriNovel.html">Novel</a>
+                    <a href="../KategoriQuanta.html">Quanta</a>
+                    <a href="../KategoriAnak.html">Anak dan Pendidikan</a>
+                    <a href="../KategoriParenting.html">Parenting</a>
+                    <a href="../KategoriManajemen.html">Manajemen Bisnis</a>
+                    <a href="../KategoriKomputer.html">Komputer</a>
+                    <a href="../KategoriHumaniora.html">Humaniora dan Sosial</a>
+                    <a href="../KategoriRupa.html">Rupa-Rupa</a>
+                    <a href="../KategoriPendidikan.html">Komik Pendidikan</a>
+                </div>
+                <a href="../BakalTerbit.html">Bakal Terbit</a>
+                <a href="../TelahBeredar.html">Telah Beredar</a>
+                <a href="../CetakUlang.html">Cetak Ulang</a>
+                <a href="../TentangKami.html">Tentang Kami</a>
+            </div>
+        </div>
+        <img src="../img/elexmediaBanner.png" alt="logo" id="logoElex">
+        <button class="btnMasuk  w3-button w3-right  w3-margin-right w3-gray w3-hover-white"
+            onclick="login()">Masuk</button>
+        <button class="btnDaftar w3-button w3-right  w3-margin-right w3-gray w3-hover-white"
+            onclick="register()">Daftar</button>
+    </header>
+
+    <div style="margin-top: 100px;margin-left: 200px">
+        <h1 style="font-weight: bold;">A Poem I Wrote for You (A Poem with Your Name #2)</h1>
+    </div>
+    <div class="w3-container" style="margin-top: 20px;">
+        <div style="float: left;margin-left: 200px;">
+            <img src="../img/Novel/Poem.jpg" class="w3-border" style="max-width: 300px;">
+            <div class="w3-container w3-center" style="margin-top:10px">
+                <h3 style="border-bottom: 1px solid #000000;border-top: 1px solid #000000;">Info Produk</h3>
+            </div>
+            <div class="info w3-border w3-padding">
+                <strong>Harga:</strong>
+                Rp 79.800
+                <br>
+                <strong>Terbit:</strong>
+                Senin, 1 April 2019
+                <br>
+                <strong>Halaman:</strong>
+                192
+                <br>
+                <strong>Warna:</strong>
+                Dua Warna
+                <br>
+                <strong>Kertas:</strong>
+                HVS 80 gram
+                <br>
+                <Strong>Dimensi:</Strong>
+                10 x 10 cm
+            </div>
+            <div class="w3-center w3-container" style="margin-top: 20px;margin-bottom: 20px;">
+                <div class="w3-button w3-grey w3-round-large w3-xlarge"
+                    onclick="window.location.href ='https://www.gramedia.com/products/a-poem-i-wrote-for-you-a-poem-with-your-name-2-hard-cover';">
+                    Pesan di sini
+                </div>
+            </div>
+            <div
+                style="margin-top:20px; margin-bottom: 50px; height:250px; width:300px; border:1px solid#ccc; font: 16px; overflow: auto;">
+                <p style=" padding:10px">
+                    Tersedia di 148 gerai
+                </p>
+                <ul>
+                    <li>Gramedia AEON Mall BSD City (22)</li>
+                    <li>Gramedia Ambarrukmo Plaza (17)</li>
+                    <li>Gramedia Banda Aceh (34)</li>
+                    <li>Gramedia Banjarmasin (29)</li>
+                    <li>Gramedia Barlian Palembang (55)</li>
+                    <li>Gramedia Basuki Rahmat Malang (57)</li>
+                    <li>Gramedia Batam City Square Mall (42)</li>
+                    <li>Gramedia Baywalk Pluit (16)</li>
+                    <li>Gramedia Bengkulu (37)</li>
+                    <li>Gramedia Big Mall Samarinda (5)</li>
+                    <li>Gramedia Boemi Kedaton Mall (28)</li>
+                    <li>Gramedia Book Store The Plaza Semanggi (40)</li>
+                    <li>Gramedia Botani Square (67)</li>
+                    <li>Gramedia Central Park (47)</li>
+                    <li>Gramedia Cibinong City Mall (38)</li>
+                    <li>Gramedia Cikupa Tangerang (15)</li>
+                    <li>Gramedia Cinere (20)</li>
+                    <li>Gramedia Cirebon Cipto (36)</li>
+                    <li>Gramedia Duta Mall (12)</li>
+                    <li>Gramedia Expo (29)</li>
+                    <li>Gramedia Festival City Link (21)</li>
+                    <li>Gramedia Gajah Mada Medan (48)</li>
+                    <li>Gramedia Gajah Mada (10)</li>
+                    <li>Gramedia Gandaria City (27)</li>
+                    <li>Gramedia Gatsu Hardy's Mall (36)</li>
+                    <li>Gramedia Grage Mall (19)</li>
+                    <li>Gramedia Grand Indonesia Shopping Town (46)</li>
+                    <li>Gramedia Harapan Indah (46)</li>
+                    <li>Gramedia Istana Plaza (48)</li>
+                    <li>Gramedia Jambi (26)</li>
+                    <li>Gramedia Jatiland Mall (4)</li>
+                    <li>Gramedia Jayapura (7)</li>
+                    <li>Gramedia Jember (25)</li>
+                    <li>Gramedia JKT Mal Artha Gading (13)</li>
+                    <li>Gramedia JKT Mal Ciputra (31)</li>
+                    <li>Gramedia Jogja City Mall (30)</li>
+                    <li>Gramedia Kol. Atmo (46)</li>
+                    <li>Gramedia Kupang (4)</li>
+                    <li>Gramedia Level 21 Mall (61)</li>
+                    <li>Gramedia Lipppo Plaza Kendari (14)</li>
+                    <li>Gramedia Lombok (32)</li>
+                    <li>Gramedia Madiun Plaza (29)</li>
+                    <li>Gramedia Mal Alam Sutera (17)</li>
+                    <li>Gramedia Mal Artha Gading (45)</li>
+                    <li>Gramedia Mal Ciputra Cibubur (44)</li>
+                    <li>Gramedia Mal Ciputra World (20)</li>
+                    <li>Gramedia Mal Daan Mogot (21)</li>
+                    <li>Gramedia Mal Galeria (43)</li>
+                    <li>Gramedia Mal Gorontalo (9)</li>
+                    <li>Gramedia Mal Lippo Mal Puri St. Moritz (38)</li>
+                    <li>Gramedia Mal Metropolitan (95)</li>
+                    <li>Gramedia Mal Paris Van Java (55)</li>
+                    <li>Gramedia Mal Pondok Indah (47)</li>
+                    <li>Gramedia Mal Puri Indah (52)</li>
+                    <li>Gramedia Mal Taman Anggrek (24)</li>
+                    <li>Gramedia Malang Town Square (51)</li>
+                    <li>Gramedia Malioboro Shopping Mall (32)</li>
+                    <li>Gramedia Mall Bale Kota Tangerang (11)</li>
+                    <li>Gramedia Mall Cijantung (32)</li>
+                    <li>Gramedia Mall Emporium (13)</li>
+                    <li>Gramedia Mall Ratu Indah (8)</li>
+                    <li>Gramedia Maluku CIty Mall (9)</li>
+                    <li>Gramedia Manyar Kertoarjo (27)</li>
+                    <li>Gramedia Margonda Depok (82)</li>
+                    <li>Gramedia Matahari Duta Plaza (63)</li>
+                    <li>Gramedia Matraman (110)</li>
+                    <li>Gramedia Maumere (5)</li>
+                    <li>Gramedia Medan Sun Plaza (23)</li>
+                    <li>Gramedia Mega Bekasi Hypermall (37)</li>
+                    <li>Gramedia Mega Mall Ayani Pontianak (30)</li>
+                    <li>Gramedia Melawai (25)</li>
+                    <li>Gramedia Merdeka (106)</li>
+                    <li>Gramedia Metropolitan Cileungsi (20)</li>
+                    <li>Gramedia Padang (58)</li>
+                    <li>Gramedia Pajajaran Bogor (21)</li>
+                    <li>Gramedia Palmerah Barat (163)</li>
+                    <li>Gramedia Pandanaran (65)</li>
+                    <li>Gramedia Pejaten Village (25)</li>
+                    <li>Gramedia Pekanbaru Sudirman (28)</li>
+                    <li>Gramedia Pekanbaru (25)</li>
+                    <li>Gramedia Pintu Air (14)</li>
+                    <li>Gramedia Plaza Asia (40)</li>
+                    <li>Gramedia Plaza Bintaro Jaya (47)</li>
+                    <li>Gramedia Plaza Kalibata (17)</li>
+                    <li>Gramedia Pluit Village (20)</li>
+                    <li>Gramedia Pondok Gede Plaza (54)</li>
+                    <li>Gramedia Raden Intan (37)</li>
+                    <li>Gramedia Rita Supermall Purwokerto (71)</li>
+                    <li>Gramedia Rita Supermall Tegal (19)</li>
+                    <li>Gramedia Royal Plaza (19)</li>
+                    <li>Gramedia Semarang Balaikota (41)</li>
+                    <li>Gramedia Showroom Meruya (35)</li>
+                    <li>Gramedia Sidoarjo Mal Lippo (42)</li>
+                    <li>Gramedia SKA Mall (12)</li>
+                    <li>Gramedia Slamet Riyadi Solo (41)</li>
+                    <li>Gramedia Solo Square (30)</li>
+                    <li>Gramedia Sudirman Yogyakarta (78)</li>
+                    <li>Gramedia Sumarecon Mall serpong (26)</li>
+                    <li>Gramedia Supermal Karawaci (54)</li>
+                    <li>Gramedia Tarakan (8)</li>
+                    <li>Gramedia Teras kota (24)</li>
+                    <li>Gramedia Trans Studio Mall (11)</li>
+                    <li>Gramedia Tunjungan Plaza (50)</li>
+                    <li>Gramedia UFO Elektronik (26)</li>
+                    <li>Gramedia World BSD (13)</li>
+                    <li>Gramedia World Emerald Bintaro (30)</li>
+                    <li>Gramedia World Galuh Mas Karawang (54)</li>
+                    <li>Gramedia (31)</li>
+                    <li>Gramedia (18)</li>
+                    <li>Grobmart (17)</li>
+                    <li>GS Medan Fair (10)</li>
+                    <li>GSGENTENGBANYUWANGI (20)</li>
+                    <li>Gudang Jakarta (15)</li>
+                    <li>Jakarta TB MITRA MEDIAWH (5)</li>
+                    <li>Jingga Unggul Lohjinawi Bintaro (5)</li>
+                    <li>Jingga Unggul Lohjinawi Cibubur Junction (7)</li>
+                    <li>Jingga Unggul Lohjinawi Gandaria City (9)</li>
+                    <li>Jingga Unggul Lohjinawi Grand Galaxy (10)</li>
+                    <li>Jingga Unggul Lohjinawi SMS Serpong (5)</li>
+                    <li>Jingga Unggul Lohjinawi (8)</li>
+                    <li>Jingga (6)</li>
+                    <li>KINOKUNIA BUKINDO (5)</li>
+                    <li>Medan Centre Point (3)</li>
+                    <li>METROMEDIA PUSTAKA PT (9)</li>
+                    <li>PAPERCLIP 62 PEKANBARUWH (9)</li>
+                    <li>PT GRATIA PRIMA INDONESIAWH (20)</li>
+                    <li>PT WIRA VIONA TRONA (5)</li>
+                    <li>TB JENDELA MAGELANGWH (4)</li>
+                    <li>TB JENDELAWH (6)</li>
+                    <li>TB URANUS HR MUHAMMADWH (3)</li>
+                    <li>TOGAMAS AFFANDI KONSWH (6)</li>
+                    <li>TOGAMAS BANDUNG SUPRATMAN KONSWH (49)</li>
+                    <li>TOGAMAS PARAHYANGAN KONSWH (7)</li>
+                    <li>Togamas (5)</li>
+                    <li>TOKO BUKU ZANAFA IIWH (3)</li>
+                    <li>Toko Togamas (3)</li>
+                    <li>Toko Togamas (3)</li>
+                    <li>Toko Togamas (3)</li>
+                    <li>Toko Togamas (24)</li>
+                    <li>Toko Togamas Bali (5)</li>
+                    <li>Toko Togamas Diponegoro (15)</li>
+                    <li>Toko Togamas Margorejo (7)</li>
+                    <li>Toko Togamas Soehat (4)</li>
+                    <li>Toko Togamas Sudirman (14)</li>
+                    <li>Toko Togamas Suroto (19)</li>
+                    <li>WAREHOUSE GRAMEDIA COMPACT (5)</li>
+                    <li>Wholesale TB Gramedia Gajah Mada (4)</li>
+                    <li>Widya Asri Media (40)</li>
+                </ul>
+            </div>
+        </div>
+        <div style="float: left;margin-left: 20px;">
+            <div class="w3-border w3-padding">
+                <div class="w3-center w3-padding w3-border-bottom">
+                    Sinopsis
+                </div>
+                <div style="width: 800px;" class="w3-padding">
+                    <p>
+                        Dalam setiap embusan napas, ada puisi yang layak dituliskan di antara bintang-bintang.
+                    </p>
+                        <p>
+                        Kombinasi puisi klasik dan modern dalam buku ini akan membuat kita memandang cinta dan kehidupan
+                        pada tingkatan yang berbeda. Setiap kata dalam buku ini akan melahirkan beragam pertanyaan dan
+                        emosi.
+                    </p>
+                    <p>
+                        Buku ini melukiskan kehidupan dan cinta dalam kata-kata yang indah, pun cerita dan ilustrasi
+                        yang surrealis; teman yang sempurna untuk jiwa yang sepi.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</HTML>

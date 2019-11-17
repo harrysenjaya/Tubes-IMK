@@ -1,0 +1,295 @@
+<HTML>
+
+<head>
+    <title>Hewan Buas</title>
+    <link rel="stylesheet" href="../lib/w3.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../script/index.js"></script>
+    <script src="../script/jquery.js"></script>
+</head>
+
+<body>
+    <header class="w3-top w3-theme w3-padding-16" style="background-color: maroon;">
+        <div class="dropdown">
+            <button class="dropbtn" onclick="dropdown()">
+                ☰
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="../index.html" class="w3-button">Halaman Utama</a>
+                <a onclick="dropdownKategori()" id="dropKategori" style="cursor: pointer;">
+                    Kategori <i class="fa fa-caret-right "></i>
+                </a>
+                <div id="kategori" class="w3-hide w3-gray">
+                    <a href="../KategoriKomik.html">Komik</a>
+                    <a href="../KategoriNovel.html">Novel</a>
+                    <a href="../KategoriQuanta.html">Quanta</a>
+                    <a href="../KategoriAnak.html">Anak dan Pendidikan</a>
+                    <a href="../KategoriParenting.html">Parenting</a>
+                    <a href="../KategoriManajemen.html">Manajemen Bisnis</a>
+                    <a href="../KategoriKomputer.html">Komputer</a>
+                    <a href="../KategoriHumaniora.html">Humaniora dan Sosial</a>
+                    <a href="../KategoriRupa.html">Rupa-Rupa</a>
+                    <a href="../KategoriPendidikan.html">Komik Pendidikan</a>
+                </div>
+                <a href="../BakalTerbit.html">Bakal Terbit</a>
+                <a href="../TelahBeredar.html">Telah Beredar</a>
+                <a href="../CetakUlang.html">Cetak Ulang</a>
+                <a href="../TentangKami.html">Tentang Kami</a>
+            </div>
+        </div>
+        <img src="../img/elexmediaBanner.png" alt="logo" id="logoElex">
+        <button class="btnMasuk  w3-button w3-right  w3-margin-right w3-gray w3-hover-white"
+            onclick="login()">Masuk</button>
+        <button class="btnDaftar w3-button w3-right  w3-margin-right w3-gray w3-hover-white"
+            onclick="register()">Daftar</button>
+    </header>
+
+    <div style="margin-top: 100px;margin-left: 200px">
+        <h1 style="font-weight: bold;">Segala Sesuatu tentang Hewan Buas dan Ganas</h1>
+    </div>
+    <div class="w3-container" style="margin-top: 20px;">
+        <div style="float: left;margin-left: 200px;">
+            <img src="../img/Anak/HewanBuas.jpg" class="w3-border" style="max-width: 300px;">
+            <div class="w3-container w3-center" style="margin-top:10px">
+                <h3 style="border-bottom: 1px solid #000000;border-top: 1px solid #000000;">Info Produk</h3>
+            </div>
+            <div class="info w3-border w3-padding">
+                <strong>Harga:</strong>
+                Rp 80.000
+                <br>
+                <strong>Terbit:</strong>
+                Senin, 4 November 2019
+                <br>
+                <strong>Halaman:</strong>
+                80
+                <br>
+                <strong>Warna:</strong>
+                Berwarna
+                <br>
+                <strong>Kertas:</strong>
+                hvs 80 gram
+                <br>
+                <Strong>Dimensi:</Strong>
+                18 x 24 cm
+            </div>
+            <div class="w3-center w3-container" style="margin-top: 20px;margin-bottom: 20px;">
+                <div class="w3-button w3-grey w3-round-large w3-xlarge"
+                    onclick="window.location.href ='https://www.gramedia.com/products/segala-sesuatu-tentang-hewan-buas-dan-ganas';">
+                    Pesan di sini
+                </div>
+            </div>
+            <div
+                style="margin-top:20px; margin-bottom: 50px; height:250px; width:300px; border:1px solid#ccc; font: 16px; overflow: auto;">
+                <p style=" padding:10px">
+                    Tersedia di 170 gerai
+                </p>
+                <ul>
+                    <li>ABDUL HARISWH (3)</li>
+                    <li>Anugerah Rosyada (3)</li>
+                    <li>CV_TROPI (5)</li>
+                    <li>Gramedia AEON Mall BSD City (10)</li>
+                    <li>Gramedia Ambarrukmo Plaza (30)</li>
+                    <li>Gramedia Banda Aceh (29)</li>
+                    <li>Gramedia Bandung Mal Trans Studio (30)</li>
+                    <li>Gramedia Barlian Palembang (21)</li>
+                    <li>Gramedia Basuki Rahmat Malang (30)</li>
+                    <li>Gramedia Batam City Square Mall (25)</li>
+                    <li>Gramedia Baywalk Pluit (4)</li>
+                    <li>Gramedia Boemi Kedaton Mall (10)</li>
+                    <li>Gramedia Book Store The Plaza Semanggi (10)</li>
+                    <li>Gramedia Botani Square (60)</li>
+                    <li>Gramedia Central Park (10)</li>
+                    <li>Gramedia Cibinong City Mall (25)</li>
+                    <li>Gramedia Cikupa Tangerang (10)</li>
+                    <li>Gramedia Cinere (10)</li>
+                    <li>Gramedia Cirebon Cipto (10)</li>
+                    <li>Gramedia Expo (10)</li>
+                    <li>Gramedia Festival City Link (14)</li>
+                    <li>Gramedia Gajah Mada Medan (60)</li>
+                    <li>Gramedia Gajah Mada (5)</li>
+                    <li>Gramedia Gandaria City (25)</li>
+                    <li>Gramedia Grage Mall (10)</li>
+                    <li>Gramedia Grand Indonesia Shopping Town (30)</li>
+                    <li>Gramedia Harapan Indah (19)</li>
+                    <li>Gramedia Istana Plaza (10)</li>
+                    <li>Gramedia Jambi (9)</li>
+                    <li>Gramedia Jember (10)</li>
+                    <li>Gramedia JKT Mal Artha Gading (15)</li>
+                    <li>Gramedia JKT Mal Ciputra (10)</li>
+                    <li>Gramedia Jogja City Mall (10)</li>
+                    <li>Gramedia Kol. Atmo (15)</li>
+                    <li>Gramedia Level 21 Mall (5)</li>
+                    <li>Gramedia Lombok (10)</li>
+                    <li>Gramedia Madiun Plaza (10)</li>
+                    <li>Gramedia Mal Alam Sutera (10)</li>
+                    <li>Gramedia Mal Artha Gading (49)</li>
+                    <li>Gramedia Mal Ciputra Cibubur (25)</li>
+                    <li>Gramedia Mal Ciputra World (10)</li>
+                    <li>Gramedia Mal Daan Mogot (10)</li>
+                    <li>Gramedia Mal Galeria (15)</li>
+                    <li>Gramedia Mal Lembuswana (10)</li>
+                    <li>Gramedia Mal Lippo Mal Puri St. Moritz (10)</li>
+                    <li>Gramedia Mal Metropolitan (60)</li>
+                    <li>Gramedia Mal of Indonesia (10)</li>
+                    <li>Gramedia Mal Paris Van Java (20)</li>
+                    <li>Gramedia Mal Pondok Indah (58)</li>
+                    <li>Gramedia Mal Puri Indah (29)</li>
+                    <li>Gramedia Mal Taman Anggrek (10)</li>
+                    <li>Gramedia Malang Town Square (14)</li>
+                    <li>Gramedia Malioboro Shopping Mall (10)</li>
+                    <li>Gramedia Mall Bale Kota Tangerang (10)</li>
+                    <li>Gramedia Mall Cijantung (10)</li>
+                    <li>Gramedia Mall Emporium (10)</li>
+                    <li>Gramedia Mall Panakkukang (25)</li>
+                    <li>Gramedia Manyar Kertoarjo (10)</li>
+                    <li>Gramedia Margonda Depok (60)</li>
+                    <li>Gramedia Matahari Duta Plaza (30)</li>
+                    <li>Gramedia Matraman (99)</li>
+                    <li>Gramedia Medan Sun Plaza (10)</li>
+                    <li>Gramedia Mega Bekasi Hypermall (10)</li>
+                    <li>Gramedia Mega Mall Ayani Pontianak (30)</li>
+                    <li>Gramedia Melawai (10)</li>
+                    <li>Gramedia Merdeka (60)</li>
+                    <li>Gramedia Metropolitan Cileungsi (10)</li>
+                    <li>Gramedia Padang (28)</li>
+                    <li>Gramedia Pajajaran Bogor (10)</li>
+                    <li>Gramedia Palmerah Barat (20)</li>
+                    <li>Gramedia Pandanaran (57)</li>
+                    <li>Gramedia Pejaten Village (27)</li>
+                    <li>Gramedia Pekanbaru Sudirman (30)</li>
+                    <li>Gramedia Pekanbaru (10)</li>
+                    <li>Gramedia Pintu Air (5)</li>
+                    <li>Gramedia Plaza Asia (20)</li>
+                    <li>Gramedia Plaza Bintaro Jaya (49)</li>
+                    <li>Gramedia Plaza Kalibata (10)</li>
+                    <li>Gramedia Pluit Village (10)</li>
+                    <li>Gramedia Pondok Gede Plaza (15)</li>
+                    <li>Gramedia Raden Intan (24)</li>
+                    <li>Gramedia Rita Supermall Purwokerto (10)</li>
+                    <li>Gramedia Rita Supermall Tegal (10)</li>
+                    <li>Gramedia Royal Plaza (9)</li>
+                    <li>Gramedia Semarang Balaikota (10)</li>
+                    <li>Gramedia Showroom Meruya (20)</li>
+                    <li>Gramedia Sidoarjo Mal Lippo (10)</li>
+                    <li>Gramedia SKA Mall (10)</li>
+                    <li>Gramedia Slamet Riyadi Solo (29)</li>
+                    <li>Gramedia Solo Square (9)</li>
+                    <li>Gramedia Sudirman Yogyakarta (20)</li>
+                    <li>Gramedia Sumarecon Mall serpong (15)</li>
+                    <li>Gramedia Supermal Karawaci (29)</li>
+                    <li>Gramedia Supermal Pakuwon Indah (10)</li>
+                    <li>Gramedia Teras kota (10)</li>
+                    <li>Gramedia Trans Studio Mall (5)</li>
+                    <li>Gramedia Tunjungan Plaza (24)</li>
+                    <li>Gramedia UFO Elektronik (10)</li>
+                    <li>Gramedia World BSD (13)</li>
+                    <li>Gramedia World Emerald Bintaro (20)</li>
+                    <li>Gramedia World Galuh Mas Karawang (24)</li>
+                    <li>Gramedia (10)</li>
+                    <li>Gramedia (10)</li>
+                    <li>Grand Media (3)</li>
+                    <li>Grobmart (3)</li>
+                    <li>GS Malioboro Hartono (10)</li>
+                    <li>GS Solo Hartono (10)</li>
+                    <li>GS (5)</li>
+                    <li>GSGENTENGBANYUWANGI (10)</li>
+                    <li>GSMOJOKERTO (10)</li>
+                    <li>GSROXYJEMBER (10)</li>
+                    <li>HAGERRA BAKTI INDONESIA PT (5)</li>
+                    <li>Jakarta TB KUTU BUKUWH (3)</li>
+                    <li>Jakarta TB LENTERAWH (3)</li>
+                    <li>Jakarta TOKO BUKU NUSANTARAWH (3)</li>
+                    <li>Jingga Unggul Lohjinawi Bintaro (5)</li>
+                    <li>Jingga Unggul Lohjinawi Cibubur Junction (5)</li>
+                    <li>Jingga Unggul Lohjinawi Citra Grand (5)</li>
+                    <li>Jingga Unggul Lohjinawi Fatmawati (5)</li>
+                    <li>Jingga Unggul Lohjinawi Gandaria City (5)</li>
+                    <li>Jingga Unggul Lohjinawi Grand Galaxy (5)</li>
+                    <li>Jingga Unggul Lohjinawi Kota Cassablanca (5)</li>
+                    <li>Jingga Unggul Lohjinawi Mall Kelapa Gading (5)</li>
+                    <li>Jingga Unggul Lohjinawi SMS Serpong (5)</li>
+                    <li>Jingga Unggul Lohjinawi Supermall Pakuwon (5)</li>
+                    <li>Jingga Unggul Lohjinawi (5)</li>
+                    <li>Jingga (5)</li>
+                    <li>KURNIA AGUNG SUKABUMIWH (3)</li>
+                    <li>Medan Centre Point (5)</li>
+                    <li>METROMEDIA PUSTAKA PT (10)</li>
+                    <li>MINORYA MANGGARAIWH (3)</li>
+                    <li>PT GRIYA PRATAMAWH (3)</li>
+                    <li>PT JAMESON JUMBO PERMAIWH (3)</li>
+                    <li>PT WIRA VIONA TRONA (5)</li>
+                    <li>SANTOSO JAYA ONLINE (5)</li>
+                    <li>TB JENDELA MAGELANGWH (5)</li>
+                    <li>TB JENDELA SALATIGAWH (3)</li>
+                    <li>TB SANTOSO JAYAWH (5)</li>
+                    <li>TB URANUS HR MUHAMMADWH (4)</li>
+                    <li>THE LOTUS BOOKSHOPWH (3)</li>
+                    <li>TOGAMAS AFFANDI KONSWH (10)</li>
+                    <li>TOGAMAS BANDUNG SUPRATMAN KONSWH (15)</li>
+                    <li>TOGAMAS PARAHYANGAN KONSWH (10)</li>
+                    <li>Togamas (3)</li>
+                    <li>TOKO BUKU LOTUS BINTAN CENTREWH (3)</li>
+                    <li>TOKO BUKU MINORIYAWH (3)</li>
+                    <li>TOKO BUKU ZANAFA IIWH (3)</li>
+                    <li>TOKO BUKU ZANAFAWH (3)</li>
+                    <li>Toko Gunung Agung Mall Galaxy (5)</li>
+                    <li>Toko Gunung Agung Margo City (5)</li>
+                    <li>Toko Gunung Agung Senayan City (5)</li>
+                    <li>Toko Gunung Agung (5)</li>
+                    <li>Toko Gunung Agung ARION PLAZA (5)</li>
+                    <li>Toko Togamas (3)</li>
+                    <li>Toko Togamas (3)</li>
+                    <li>Toko Togamas (3)</li>
+                    <li>Toko Togamas (3)</li>
+                    <li>Toko Togamas (10)</li>
+                    <li>Toko Togamas (3)</li>
+                    <li>Toko Togamas (5)</li>
+                    <li>Toko Togamas (3)</li>
+                    <li>Toko Togamas (5)</li>
+                    <li>Toko Togamas (3)</li>
+                    <li>Toko Togamas Bali (3)</li>
+                    <li>Toko Togamas Diponegoro (5)</li>
+                    <li>Toko Togamas Margorejo (5)</li>
+                    <li>Toko Togamas Petra (10)</li>
+                    <li>Toko Togamas Soehat (3)</li>
+                    <li>Toko Togamas Sudirman (5)</li>
+                    <li>URANUSWH (3)</li>
+                    </ul>
+            </div>
+        </div>
+        <div style="float: left;margin-left: 20px;">
+            <div class="w3-border w3-padding">
+                <div class="w3-center w3-padding w3-border-bottom">
+                    Sinopsis
+                </div>
+                <div style="width: 800px;" class="w3-padding">
+                    <p>
+                        Tahukah kamu?
+
+                        Ternyata hewan yang paling banyak menewaskan manusia ternyata bukan pemangsa ganas seperti
+                        singa, harimau, atau ikan hiu, melainkan kuda nil!
+
+                        Dalam perkelahian antar singa,mereka saling menerkam tengkuk lawan.
+
+                        Harimau adalah pemangsa terbesar di darat setelah beruang kutub dan beruang cokelat.
+
+                        Jaguar sanggup memangsa ular raksasa anakonda.
+
+                        Citah adalah pemburu tercepat di dunia.
+
+                        Buaya muara pernah memangsa 400 tentara Jepang.
+
+                        Paus pembunuh merupakan pemangsa tertinggi di lautan.
+
+                        Hiu putih besar paling sering menyerang manusia.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</HTML>

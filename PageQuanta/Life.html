@@ -1,0 +1,208 @@
+<HTML>
+
+<head>
+    <title>Puzzles of Life</title>
+    <link rel="stylesheet" href="../lib/w3.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../script/index.js"></script>
+    <script src="../script/jquery.js"></script>
+</head>
+
+<body>
+    <header class="w3-top w3-theme w3-padding-16" style="background-color: maroon;">
+        <div class="dropdown">
+            <button class="dropbtn" onclick="dropdown()">
+                ☰
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="../index.html" class="w3-button">Halaman Utama</a>
+                <a onclick="dropdownKategori()" id="dropKategori" style="cursor: pointer;">
+                    Kategori <i class="fa fa-caret-right "></i>
+                </a>
+                <div id="kategori" class="w3-hide w3-gray">
+                    <a href="../KategoriKomik.html">Komik</a>
+                    <a href="../KategoriNovel.html">Novel</a>
+                    <a href="../KategoriQuanta.html">Quanta</a>
+                    <a href="../KategoriAnak.html">Anak dan Pendidikan</a>
+                    <a href="../KategoriParenting.html">Parenting</a>
+                    <a href="../KategoriManajemen.html">Manajemen Bisnis</a>
+                    <a href="../KategoriKomputer.html">Komputer</a>
+                    <a href="../KategoriHumaniora.html">Humaniora dan Sosial</a>
+                    <a href="../KategoriRupa.html">Rupa-Rupa</a>
+                    <a href="../KategoriPendidikan.html">Komik Pendidikan</a>
+                </div>
+                <a href="../BakalTerbit.html">Bakal Terbit</a>
+                <a href="../TelahBeredar.html">Telah Beredar</a>
+                <a href="../CetakUlang.html">Cetak Ulang</a>
+                <a href="../TentangKami.html">Tentang Kami</a>
+            </div>
+        </div>
+        <img src="../img/elexmediaBanner.png" alt="logo" id="logoElex">
+        <button class="btnMasuk  w3-button w3-right  w3-margin-right w3-gray w3-hover-white"
+            onclick="login()">Masuk</button>
+        <button class="btnDaftar w3-button w3-right  w3-margin-right w3-gray w3-hover-white"
+            onclick="register()">Daftar</button>
+    </header>
+
+    <div style="margin-top: 100px;margin-left: 200px">
+        <h1 style="font-weight: bold;">The Puzzles of Life</h1>
+    </div>
+    <div class="w3-container" style="margin-top: 20px;">
+        <div style="float: left;margin-left: 200px;">
+            <img src="../img/Quanta/Life.jpg" class="w3-border" style="max-width: 300px;">
+            <div class="w3-container w3-center" style="margin-top:10px">
+                <h3 style="border-bottom: 1px solid #000000;border-top: 1px solid #000000;">Info Produk</h3>
+            </div>
+            <div class="info w3-border w3-padding">
+                <strong>Harga:</strong>
+                Rp 64.800
+                <br>
+                <strong>Terbit:</strong>
+                Senin, 11 Maret 2019
+                <br>
+                <strong>Halaman:</strong>
+                216
+                <br>
+                <strong>Warna:</strong>
+                Satu Warna
+                <br>
+                <strong>Kertas:</strong>
+                Book Paper 60
+                <br>
+                <Strong>Dimensi:</Strong>
+                14 x 21 cm
+            </div>
+            <div class="w3-center w3-container" style="margin-top: 20px;margin-bottom: 20px;">
+                <div class="w3-button w3-grey w3-round-large w3-xlarge"
+                    onclick="window.location.href ='https://www.gramedia.com/products/the-puzzles-of-life';">
+                    Pesan di sini
+                </div>
+            </div>
+            <div
+                style="margin-top:20px; margin-bottom: 50px; height:250px; width:300px; border:1px solid#ccc; font: 16px; overflow: auto;">
+                <p style=" padding:10px">
+                    Tersedia di 95 gerai
+                </p>
+                <ul>
+                    <li>Gramedia Balikpapan Center (14)</li>
+                    <li>Gramedia Banda Aceh (27)</li>
+                    <li>Gramedia Bandung Mal Trans Studio (15)</li>
+                    <li>Gramedia Banjarmasin (10)</li>
+                    <li>Gramedia Basuki Rahmat Malang (18)</li>
+                    <li>Gramedia Botani Square (29)</li>
+                    <li>Gramedia Central Park (5)</li>
+                    <li>Gramedia Cibinong City Mall (19)</li>
+                    <li>Gramedia Cikupa Tangerang (14)</li>
+                    <li>Gramedia Duta Mall (20)</li>
+                    <li>Gramedia Expo (15)</li>
+                    <li>Gramedia Festival City Link (12)</li>
+                    <li>Gramedia Gajah Mada Medan (16)</li>
+                    <li>Gramedia Gajah Mada (5)</li>
+                    <li>Gramedia Gandaria City (13)</li>
+                    <li>Gramedia Grage Mall (18)</li>
+                    <li>Gramedia Grand Indonesia Shopping Town (14)</li>
+                    <li>Gramedia Harapan Indah (15)</li>
+                    <li>Gramedia Jatiland Mall (15)</li>
+                    <li>Gramedia Jember (10)</li>
+                    <li>Gramedia JKT Mal Artha Gading (14)</li>
+                    <li>Gramedia Jogja City Mall (10)</li>
+                    <li>Gramedia Kol. Atmo (15)</li>
+                    <li>Gramedia Lombok (14)</li>
+                    <li>Gramedia Mal Alam Sutera (10)</li>
+                    <li>Gramedia Mal Artha Gading (15)</li>
+                    <li>Gramedia Mal Ciputra Cibubur (12)</li>
+                    <li>Gramedia Mal Daan Mogot (15)</li>
+                    <li>Gramedia Mal Paris Van Java (9)</li>
+                    <li>Gramedia Mal Pondok Indah (24)</li>
+                    <li>Gramedia Mal Puri Indah (10)</li>
+                    <li>Gramedia Mal Taman Anggrek (5)</li>
+                    <li>Gramedia Malioboro Shopping Mall (12)</li>
+                    <li>Gramedia Mall Bale Kota Tangerang (15)</li>
+                    <li>Gramedia Mall Panakkukang (33)</li>
+                    <li>Gramedia Mall Ratu Indah (5)</li>
+                    <li>Gramedia Maluku CIty Mall (10)</li>
+                    <li>Gramedia Manyar Kertoarjo (13)</li>
+                    <li>Gramedia Margonda Depok (30)</li>
+                    <li>Gramedia Matahari Duta Plaza (9)</li>
+                    <li>Gramedia Matraman (43)</li>
+                    <li>Gramedia Medan Sun Plaza (10)</li>
+                    <li>Gramedia Mega Bekasi Hypermall (19)</li>
+                    <li>Gramedia Mega Mall Ayani Pontianak (20)</li>
+                    <li>Gramedia Melawai (9)</li>
+                    <li>Gramedia Merdeka (31)</li>
+                    <li>Gramedia Padang (32)</li>
+                    <li>Gramedia Pandanaran (25)</li>
+                    <li>Gramedia Pekanbaru Sudirman (28)</li>
+                    <li>Gramedia Pekanbaru (10)</li>
+                    <li>Gramedia Plaza Asia (17)</li>
+                    <li>Gramedia Plaza Bintaro Jaya (20)</li>
+                    <li>Gramedia Plaza Kalibata (14)</li>
+                    <li>Gramedia Pondok Gede Plaza (15)</li>
+                    <li>Gramedia Rita Supermall Purwokerto (13)</li>
+                    <li>Gramedia Rita Supermall Tegal (15)</li>
+                    <li>Gramedia Royal Plaza (14)</li>
+                    <li>Gramedia Showroom Meruya (10)</li>
+                    <li>Gramedia Sidoarjo Mal Lippo (14)</li>
+                    <li>Gramedia Slamet Riyadi Solo (29)</li>
+                    <li>Gramedia Solo Square (14)</li>
+                    <li>Gramedia Sudirman Yogyakarta (28)</li>
+                    <li>Gramedia Supermal Karawaci (19)</li>
+                    <li>Gramedia Teras kota (13)</li>
+                    <li>Gramedia Trans Studio Mall (10)</li>
+                    <li>Gramedia Tunjungan Plaza (20)</li>
+                    <li>Gramedia World Emerald Bintaro (15)</li>
+                    <li>Gramedia World Galuh Mas Karawang (29)</li>
+                    <li>GS Medan Fair (9)</li>
+                    <li>GS Solo Hartono (10)</li>
+                    <li>GSGENTENGBANYUWANGI (5)</li>
+                    <li>GSROXYJEMBER (4)</li>
+                    <li>Gudang Jakarta (43)</li>
+                    <li>Gudang Surabaya (16)</li>
+                    <li>Jingga Unggul Lohjinawi Cibubur Junction (5)</li>
+                    <li>Jingga (5)</li>
+                    <li>KURNIA AGUNG SUKABUMIWH (10)</li>
+                    <li>Medan Centre Point (5)</li>
+                    <li>METROMEDIA PUSTAKA PT (10)</li>
+                    <li>PT Mizan Media UtamaWH (14)</li>
+                    <li>TB JENDELA MAGELANGWH (5)</li>
+                    <li>TB JENDELA SALATIGAWH (3)</li>
+                    <li>TB JENDELAWH (4)</li>
+                    <li>TB URANUS HR MUHAMMADWH (4)</li>
+                    <li>TOGAMAS AFFANDI KONSWH (10)</li>
+                    <li>TOGAMAS PARAHYANGAN KONSWH (15)</li>
+                    <li>Togamas (3)</li>
+                    <li>TOKO BUKU ZANAFA IIWH (3)</li>
+                    <li>Toko Togamas (3)</li>
+                    <li>Toko Togamas (3)</li>
+                    <li>Toko Togamas (5)</li>
+                    <li>Toko Togamas Diponegoro (8)</li>
+                    <li>Toko Togamas Soehat (5)</li>
+                    <li>Toko Togamas Sudirman (4)</li>
+                    <li>Widya Asri Media (9)</li>
+                </ul>
+            </div>
+        </div>
+        <div style="float: left;margin-left: 20px;">
+            <div class="w3-border w3-padding">
+                <div class="w3-center w3-padding w3-border-bottom">
+                    Sinopsis
+                </div>
+                <div style="width: 800px;" class="w3-padding">
+                    <p>
+                        Seperti halnya kepingan puzzle, hidup ini juga memiliki potongan kisah. Ketika sebuah potongan
+                        puzzle ditemukan, maka potongan kehidupan akan terlihat jelas. Buku ini menceritakan
+                        kepingan-kepingan puzzle kehidupan yang dirangkai menjadi satu guna mencapai tujuan hidup yang
+                        utuh. Dalam buku ini juga terdapat arahan-arahan yang membantu seseorang untuk menemukan
+                        kepingan puzzle tersebut dalam hidupnya. Setiap orang harus melewati jalan yang panjang dan
+                        penuh rintangan untuk mencapainya, karena sejatinya sukses itu membutuhkan perjuangan.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</HTML>

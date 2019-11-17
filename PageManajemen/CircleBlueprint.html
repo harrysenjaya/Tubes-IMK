@@ -1,0 +1,239 @@
+<HTML>
+
+<head>
+    <title>The Circle Blueprint</title>
+    <link rel="stylesheet" href="../lib/w3.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../script/index.js"></script>
+    <script src="../script/jquery.js"></script>
+</head>
+
+<body>
+    <header class="w3-top w3-theme w3-padding-16" style="background-color: maroon;">
+        <div class="dropdown">
+            <button class="dropbtn" onclick="dropdown()">
+                ☰
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="../index.html" class="w3-button">Halaman Utama</a>
+                <a onclick="dropdownKategori()" id="dropKategori" style="cursor: pointer;">
+                    Kategori <i class="fa fa-caret-right "></i>
+                </a>
+                <div id="kategori" class="w3-hide w3-gray">
+                    <a href="../KategoriKomik.html">Komik</a>
+                    <a href="../KategoriNovel.html">Novel</a>
+                    <a href="../KategoriQuanta.html">Quanta</a>
+                    <a href="../KategoriAnak.html">Anak dan Pendidikan</a>
+                    <a href="../KategoriParenting.html">Parenting</a>
+                    <a href="../KategoriManajemen.html">Manajemen Bisnis</a>
+                    <a href="../KategoriKomputer.html">Komputer</a>
+                    <a href="../KategoriHumaniora.html">Humaniora dan Sosial</a>
+                    <a href="../KategoriRupa.html">Rupa-Rupa</a>
+                    <a href="../KategoriPendidikan.html">Komik Pendidikan</a>
+                </div>
+                <a href="../BakalTerbit.html">Bakal Terbit</a>
+                <a href="../TelahBeredar.html">Telah Beredar</a>
+                <a href="../CetakUlang.html">Cetak Ulang</a>
+                <a href="../TentangKami.html">Tentang Kami</a>
+            </div>
+        </div>
+        <img src="../img/elexmediaBanner.png" alt="logo" id="logoElex">
+        <button class="btnMasuk  w3-button w3-right  w3-margin-right w3-gray w3-hover-white"
+            onclick="login()">Masuk</button>
+        <button class="btnDaftar w3-button w3-right  w3-margin-right w3-gray w3-hover-white"
+            onclick="register()">Daftar</button>
+    </header>
+
+    <div style="margin-top: 100px;margin-left: 200px">
+        <h1 style="font-weight: bold;">The Circle Blueprint</h1>
+    </div>
+    <div class="w3-container" style="margin-top: 20px;">
+        <div style="float: left;margin-left: 200px;">
+            <img src="../img/Manajemen/TheCircleBlueprint.jpg" class="w3-border" style="max-width: 300px;">
+            <div class="w3-container w3-center" style="margin-top:10px">
+                <h3 style="border-bottom: 1px solid #000000;border-top: 1px solid #000000;">Info Produk</h3>
+            </div>
+            <div class="info w3-border w3-padding">
+                <strong>Harga:</strong>
+                Rp 94.000
+                <br>
+                <strong>Terbit:</strong>
+                Senin, 23 September 2019
+                <br>
+                <strong>Halaman:</strong>
+                308
+                <br>
+                <strong>Warna:</strong>
+                Satu Warna
+                <br>
+                <strong>Kertas:</strong>
+                Book Paper 60
+                <br>
+                <Strong>Dimensi:</Strong>
+                14 x 21 cm
+            </div>
+            <div class="w3-center w3-container" style="margin-top: 20px;margin-bottom: 20px;">
+                <div class="w3-button w3-grey w3-round-large w3-xlarge"
+                    onclick="window.location.href ='https://www.gramedia.com/products/the-circle-blueprint';">
+                    Pesan di sini
+                </div>
+            </div>
+            <div
+                style="margin-top:20px; margin-bottom: 50px; height:250px; width:300px; border:1px solid#ccc; font: 16px; overflow: auto;">
+                <p style=" padding:10px">
+                    Tersedia di 114 gerai
+                </p>
+                <ul>
+                    <li>Gramedia AEON Mall BSD City (8)</li>
+                    <li>Gramedia Ambarrukmo Plaza (18)</li>
+                    <li>Gramedia Balikpapan Center (15)</li>
+                    <li>Gramedia Banda Aceh (19)</li>
+                    <li>Gramedia Bandung Mal Trans Studio (17)</li>
+                    <li>Gramedia Banjarmasin (12)</li>
+                    <li>Gramedia Barlian Palembang (20)</li>
+                    <li>Gramedia Basuki Rahmat Malang (18)</li>
+                    <li>Gramedia Batam City Square Mall (19)</li>
+                    <li>Gramedia Baywalk Pluit (5)</li>
+                    <li>Gramedia Bengkulu (10)</li>
+                    <li>Gramedia Big Mall Samarinda (10)</li>
+                    <li>Gramedia Boemi Kedaton Mall (7)</li>
+                    <li>Gramedia Book Store The Plaza Semanggi (26)</li>
+                    <li>Gramedia Botani Square (27)</li>
+                    <li>Gramedia Central Park (43)</li>
+                    <li>Gramedia Cibinong City Mall (19)</li>
+                    <li>Gramedia Cikupa Tangerang (10)</li>
+                    <li>Gramedia Cinere (7)</li>
+                    <li>Gramedia Cirebon Cipto (10)</li>
+                    <li>Gramedia Duta Mall (20)</li>
+                    <li>Gramedia Expo (16)</li>
+                    <li>Gramedia Festival City Link (18)</li>
+                    <li>Gramedia Gajah Mada Medan (23)</li>
+                    <li>Gramedia Gajah Mada (9)</li>
+                    <li>Gramedia Gandaria City (18)</li>
+                    <li>Gramedia Gatsu Hardy's Mall (14)</li>
+                    <li>Gramedia Grage Mall (9)</li>
+                    <li>Gramedia Grand Indonesia Shopping Town (29)</li>
+                    <li>Gramedia Harapan Indah (10)</li>
+                    <li>Gramedia Istana Plaza (8)</li>
+                    <li>Gramedia Jambi (9)</li>
+                    <li>Gramedia Jatiland Mall (10)</li>
+                    <li>Gramedia Jayapura (10)</li>
+                    <li>Gramedia Jember (12)</li>
+                    <li>Gramedia JKT Mal Artha Gading (17)</li>
+                    <li>Gramedia JKT Mal Ciputra (9)</li>
+                    <li>Gramedia Jogja City Mall (17)</li>
+                    <li>Gramedia Kol. Atmo (10)</li>
+                    <li>Gramedia Kupang (10)</li>
+                    <li>Gramedia Level 21 Mall (19)</li>
+                    <li>Gramedia Lipppo Plaza Kendari (9)</li>
+                    <li>Gramedia Lombok (9)</li>
+                    <li>Gramedia Madiun Plaza (9)</li>
+                    <li>Gramedia Mal Alam Sutera (9)</li>
+                    <li>Gramedia Mal Artha Gading (33)</li>
+                    <li>Gramedia Mal Ciputra Cibubur (19)</li>
+                    <li>Gramedia Mal Ciputra World (10)</li>
+                    <li>Gramedia Mal Daan Mogot (9)</li>
+                    <li>Gramedia Mal Galeria (20)</li>
+                    <li>Gramedia Mal Gorontalo (9)</li>
+                    <li>Gramedia Mal Lembuswana (10)</li>
+                    <li>Gramedia Mal Lippo Mal Puri St. Moritz (8)</li>
+                    <li>Gramedia Mal Metropolitan (29)</li>
+                    <li>Gramedia Mal of Indonesia (9)</li>
+                    <li>Gramedia Mal Paris Van Java (12)</li>
+                    <li>Gramedia Mal Pondok Indah (48)</li>
+                    <li>Gramedia Mal Taman Anggrek (20)</li>
+                    <li>Gramedia Malang Town Square (19)</li>
+                    <li>Gramedia Malioboro Shopping Mall (10)</li>
+                    <li>Gramedia Mall Bale Kota Tangerang (9)</li>
+                    <li>Gramedia Mall Cijantung (9)</li>
+                    <li>Gramedia Mall Emporium (9)</li>
+                    <li>Gramedia Mall Panakkukang (19)</li>
+                    <li>Gramedia Mall Ratu Indah (18)</li>
+                    <li>Gramedia Manado Town Square (10)</li>
+                    <li>Gramedia Manhattan Times Square (9)</li>
+                    <li>Gramedia Manyar Kertoarjo (20)</li>
+                    <li>Gramedia Margonda Depok (29)</li>
+                    <li>Gramedia Matahari Duta Plaza (29)</li>
+                    <li>Gramedia Matraman (48)</li>
+                    <li>Gramedia Medan Sun Plaza (29)</li>
+                    <li>Gramedia Mega Bekasi Hypermall (7)</li>
+                    <li>Gramedia Mega Mall Ayani Pontianak (18)</li>
+                    <li>Gramedia Melawai (7)</li>
+                    <li>Gramedia Merdeka (43)</li>
+                    <li>Gramedia Metropolitan Cileungsi (10)</li>
+                    <li>Gramedia Padang (20)</li>
+                    <li>Gramedia Pajajaran Bogor (9)</li>
+                    <li>Gramedia Pandanaran (28)</li>
+                    <li>Gramedia Pejaten Village (17)</li>
+                    <li>Gramedia Pekanbaru Sudirman (20)</li>
+                    <li>Gramedia Pekanbaru (10)</li>
+                    <li>Gramedia Plaza Asia (8)</li>
+                    <li>Gramedia Plaza Bintaro Jaya (19)</li>
+                    <li>Gramedia Plaza Kalibata (8)</li>
+                    <li>Gramedia Pluit Village (10)</li>
+                    <li>Gramedia Pondok Gede Plaza (9)</li>
+                    <li>Gramedia Raden Intan (10)</li>
+                    <li>Gramedia Rita Supermall Purwokerto (19)</li>
+                    <li>Gramedia Rita Supermall Tegal (10)</li>
+                    <li>Gramedia Sam Ratulangi Manado (14)</li>
+                    <li>Gramedia Semarang Balaikota (6)</li>
+                    <li>Gramedia Sidoarjo Mal Lippo (8)</li>
+                    <li>Gramedia SKA Mall (10)</li>
+                    <li>Gramedia Slamet Riyadi Solo (28)</li>
+                    <li>Gramedia Solo Square (10)</li>
+                    <li>Gramedia Sudirman Yogyakarta (26)</li>
+                    <li>Gramedia Sumarecon Mall serpong (13)</li>
+                    <li>Gramedia Supermal Karawaci (32)</li>
+                    <li>Gramedia Supermal Pakuwon Indah (8)</li>
+                    <li>Gramedia Tarakan (10)</li>
+                    <li>Gramedia Teras kota (9)</li>
+                    <li>Gramedia Trans Studio Mall (9)</li>
+                    <li>Gramedia Tunjungan Plaza (30)</li>
+                    <li>Gramedia UFO Elektronik (10)</li>
+                    <li>Gramedia World BSD (18)</li>
+                    <li>Gramedia World Emerald Bintaro (20)</li>
+                    <li>Gramedia World Galuh Mas Karawang (9)</li>
+                    <li>Gramedia (8)</li>
+                    <li>Gramedia (10)</li>
+                    <li>Gramedia_QMALL_Banjarbaru (9)</li>
+                    <li>Gudang Jakarta (40)</li>
+                    <li>Gudang Surabaya (29)</li>
+                    </ul>
+            </div>
+        </div>
+        <div style="float: left;margin-left: 20px;">
+            <div class="w3-border w3-padding">
+                <div class="w3-center w3-padding w3-border-bottom">
+                    Sinopsis
+                </div>
+                <div style="width: 800px;" class="w3-padding">
+                    <p>
+                        Lingkaran Perencanaan adalah sebuah buku pengembangan diri. Seperti yang sudah dijelaskan oleh
+                        penulis bukunya, proses perkembangan tidak terkait dengan kesuksesan secara materi. Tentu saja
+                        kita memerlukan uang untuk mendukung kehidupan kita, tetapi kekayaan yang berlebihan tidak
+                        menambah kepuasan kita akan kehidupan itu sendiri. Rasa aman, damai, dan kesuksesan tidak
+                        terkait dengan peningkatan kekayaan secara finansial. Lingkaran Perencanaan mengungkapkan cara
+                        untuk membuat hidup Anda lebih bersinar, untuk berkembang, untuk menjalani kehidupan yang
+                        memiliki tujuan dan bermakna. Merupakan hak Anda untuk terbangun setiap hari sambil berkata:
+                        “Wow, hidup saya sangat luar biasa.” Menemukan hal-hal yang diperlukan untuk memancarkan
+                        kegembiraan, kekuatan, dan kedamaian setiap saat setiap hari selama sisa hidup Anda. Anda
+                        memiliki hak untuk berkembang.
+                    </P>
+                    <p>
+                        Ketika Anda sudah menguasai Lingkaran ini: sebuah peta pilihan hidup individual yang membentuk
+                        kualitas, kepuasan, dan dampak hidup Anda, Anda akan menemukan kepuasan. Kita semua ingin
+                        menjalani kehidupan yang bermakna; buku ini membantu untuk membimbing Anda ke jalur pemenuhan
+                        dan pemuasan seumur hidup. Berdasarkan penilaian penulis, yang divalidasi secara ilmiah,
+                        Lingkaran Perencanaan ini dengan jelas menunjukkan kepada Anda bagaimana mengevaluasi ukuran,
+                        kualitas, dan keseimbangan Lingkaran unik Anda saat ini.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</HTML>

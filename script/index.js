@@ -36,8 +36,8 @@ function search(id){
   var temp = document.getElementById(id);
   var value = temp.value;
   var regex = value.replace(/\s+/g, '');
-  var conan = "Conan";
-  location.replace("PageKomik/"+conan+".html");
+  regex = regex.replace("?","");
+  location.replace("PageBuku/"+regex+".html");
 }
 
 function login() {

@@ -73,6 +73,7 @@ function search(id) {
   var value = temp.value;
   var regex = value.replace(/\s+/g, '');
   regex = regex.replace("?", "");
+  regex = regex.replace("#", "");
   regex = regex.substring(0, regex.length - 6);
   location.replace("PageBuku/" + regex + ".html");
 }

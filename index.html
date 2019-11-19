@@ -5,8 +5,8 @@
     <link rel="stylesheet" href="lib/w3.css">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="script/index.js"></script>
     <script src="script/jquery.js"></script>
+    <script src="script/index.js"></script>
 </head>
 
 <body>
@@ -32,7 +32,7 @@
                     <a href="KategoriRupa.html">Rupa-Rupa</a>
                     <a href="KategoriPendidikan.html">Komik Pendidikan</a>
                 </div>
-                <a href="BakalTerbit.html">Bakal Terbit</a>
+                <a onclick="changePage('bakalterbit','searchBarBakalTerbit')">Bakal Terbit</a>
                 <a href="TelahBeredar.html">Telah Beredar</a>
                 <a href="CetakUlang.html">Cetak Ulang</a>
                 <a href="TentangKami.html">Tentang Kami</a>
@@ -47,17 +47,19 @@
 
 
 
-    <div>
-        <div class="w3-center" style="width: 75%; margin-top: 100px; margin-left: 180px;margin-bottom: 30px;">
-            <h1>Halaman Utama</h1>
-        </div>
-            <div class="w3-container w3-center w3-padding w3-panel w3-round-xlarge w3-border autocomplete" style="width: 20%;margin-left: 600px;margin-bottom: 50px; ">
-                <input type="text" placeholder="Cari Buku / User" class="w3-padding" id="searchBar">
+    <div id="index" class="w3-show">
+        <div>
+            <div class="w3-center" style="width: 75%; margin-top: 100px; margin-left: 180px;margin-bottom: 30px;">
+                <h1>Halaman Utama</h1>
+            </div>
+            <div class="w3-container w3-center w3-padding w3-panel w3-round-xlarge w3-border autocomplete"
+                style="width: 20%;margin-left: 600px;margin-bottom: 50px; ">
+                <input type="text" placeholder="Cari Buku / User" class="w3-padding" id="searchBarIndex">
                 <button class="search w3-button w3-large">
-                    <i class="fa fa-search"onclick="search('searchBar')"></i>
+                    <i class="fa fa-search" onclick="search('searchBarIndex')"></i>
                 </button>
             </div>
-        
+
             <br>
 
             <div class="w3-card-4 w3-center w3-padding" style="width:60%;margin-left:290px; margin-bottom: 50px;">
@@ -88,7 +90,9 @@
                         yang akhir-akhir ini semakin dibutuhkan di banyak bidang pekerjaan lebih-lebih yang menyangkut
                         manajemen.
                     </p>
-                    <a href="PageBuku/PenulisanBusinessReportMenggunakanMicrosoftWord.html" style="color: blue;">Lanjutkan Membaca</a>
+                    <a href="PageBuku/PenulisanBusinessReportMenggunakanMicrosoftWord.html"
+                        style="color: blue;">Lanjutkan
+                        Membaca</a>
                 </div>
             </div>
         </div>
@@ -97,15 +101,69 @@
                 <a onclick="pageCetakUlang('page1','page2')" style="cursor: pointer;" class="w3-button w3-border">1</a>
             </div>
         </div>
+    </div>
 
-        <script>
-            var data = ["Christopher (User)","Harry (User)", "Detektif Conan : Toru Amuro Selection (Buku)", "Aplikasi SPSS untuk Penelitian dan Riset Pasar (Buku)", "Gon 1 (Buku)", "Kolaborasi Macro Excel dan Access untuk Membuat Aplikasi Penjualan (Buku)", "Naruto 72 (Buku)", "Noragami 20 (Buku)",
-            "Atlas Binatang Paling Berbahaya Sedunia (Buku)", "Segala Sesuatu tentang Hewan Buas dan Ganas (Buku)", "Opredo Fugo & Stoples Mimpi (Buku)", "Hitler - Sosok Pria di Balik Monster (Buku)", "Shakai Kaizo - Seratus Tahun Reformasi Jepang (Buku)", "The New Seikatsu Kaizen (Buku)", "Kolaborasi Macro Excel dan Access untuk Membuat Aplikasi Penjualan (Buku)",
-            "Aplikasi SPSS untuk Penelitian dan Riset Pasar (Buku)", "Penulisan Business Report Menggunakan Microsoft Word (Buku)", "Quarter Life Crisis (Buku)", "The Circle Blueprint (Buku)", "Kerja Kerja Kaya (Buku)", "City Lite: STARTING OVER (Buku)", "Le Mariage: Over the Rain(Collector's Edition) (Buku)", "A Poem I Wrote for You (A Poem with Your Name #2) (Buku)",
-            "City Lite: Algoritme Rasa(Job Series #3) (Buku)", "Adaptive Parenting (Buku)", "Functional Food (Buku)", "Obat Malas Dosis Tinggi for Millenial Edition (Buku)", "Pemuda Hebat Penuh Manfaat (Buku)", "Obat Malas Dosis Tinggi (Buku)", "The Puzzles of Life (Buku)", "Why? People - Jean-Henri Fabre (Buku)", "Cookie Run Sweet Escape Adventure! – Fenomena Horor (Buku)",
-            "Why? Veterinary Medicine (Buku)", "Basic Railway Photography (Buku)", "Food Photography Series (Buku)"];
-            autocomplete(document.getElementById("searchBar"), data);
-        </script>
+    <!-- Bakal terbit -->
+    <div id="bakalterbit" class="w3-hide">
+        <div>
+            <div class="w3-center w3-border" style="width: 75%; margin-top: 100px; margin-left: 180px;">
+                <img src="img/bakalterbit.jpg" id="banner1" style="width:100%">
+                <div class="w3-container">
+                    <div class="w3-left w3-margin-top">
+                        <h1>Bakal Terbit</h1>
+                    </div>
+                    <p>
+                        <div class="w3-padding w3-panel w3-round-xlarge w3-border w3-right autocomplete">
+                            <input type="text" placeholder="Cari Buku Bakal Terbit" class="w3-padding" id="searchBarBakalTerbit">
+                            <button class="search w3-button w3-medium">
+                                <i class="fa fa-search" onclick="search('searchBarBakalTerbit')"></i>
+                            </button>
+                        </div>
+                    </p>
+                </div>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="w3-card-4 w3-center w3-padding" style="width:60%;margin-left:290px; margin-bottom: 50px;">
+                <div class="w3-container" id="komik">
+                    <img src="img/Komik/conan.jpg" class="w3-border" style="width: 100%;margin-top: 10px;">
+                </div>
+                <div class="w3-container w3-center" style="margin-bottom: 20px;">
+                    <h4 style="font-weight: bold;">Detektif Conan: Toru Amuro Selection </h4>
+                    <p>
+                        Toru Amuro muncul di hadapan Conan dkk. sebagai detektif, dan ingin menjadi murid Kogoro Mouri.
+                        Tapi
+                        ternyata, identitas sesungguhnya adalah Bourbon! Anggota organisasi hitam yang ahli dalam
+                        mengumpulkan informasi. Ditambah lagi, dia juga masih menyimpan rahasia lain…</p>
+                    <a href="PageBuku/DetektifConanToruAmuroSelection.html" style="color: blue;">Lanjutkan Membaca</a>
+                </div>
+            </div>
+            <div class="w3-card-4 w3-center w3-padding" style="width: 60%; margin-left:290px; margin-bottom: 50px;">
+                <div class="w3-container" id="komik">
+                    <img src="img/Komik/noragami.jpg" class="w3-border" style="width: 100%;margin-top: 10px;">
+                </div>
+                <div class="w3-container w3-center" style="margin-bottom: 20px;">
+                    <h4 style="font-weight: bold;">Noragami 20</h4>
+                    <p>Sang Pengguna Mantra, orang yang telah mengacaukan langit dan bumi, ternyata juga ayah dari Yato
+                        sekaligus penyambung nyawanya! Yato yang telah membulatkan tekad untuk melawan dan membunuh
+                        ayahnya
+                        sendiri, menghilang dari hadapan Hiyori dan Yukine. Yang ia butuhkan sekarang adalah Shinki yang
+                        mampu mengalahkan Nora!!</p>
+                    <a href="PageBuku/Noragami20.html" style="color: blue;">Lanjutkan Membaca</a>
+                </div>
+            </div>
+        </div>
+        <div class="w3-center" id="paginationCetakulang" style="margin-bottom: 50px;">
+            <div class="w3-bar">
+                <a onclick="pageCetakUlang('page1','page2')" style="cursor: pointer;" class="w3-button w3-border">1</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        changePage("index","searchBarIndex");
+    </script>
 </body>
 
 </HTML>

@@ -29,9 +29,6 @@ function changePage(id, id2) {
     else if(id2 == 'searchBarTelahBeredar'){
       this.data = ["Aplikasi SPSS untuk Penelitian dan Riset Pasar (Buku)", "Kolaborasi Macro Excel dan Access untuk Membuat Aplikasi Penjualan (Buku)"];
     }
-    else if(id2 == 'searchBarCetakUlang'){
-      this.data = ["Gon 1 (Buku)","Naruto 72 (Buku)"];
-    }
     var searchBar = document.getElementById(id2);
     autocomplete(document.getElementById(id2));
   }

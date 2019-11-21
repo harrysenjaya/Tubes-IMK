@@ -34,7 +34,7 @@
                 </div>
                 <a onclick="changePage('bakalterbit','searchBarBakalTerbit')">Bakal Terbit</a>
                 <a onclick="changePage('telahberedar','searchBarTelahBeredar')">Telah Beredar</a>
-                <a href="CetakUlang.html">Cetak Ulang</a>
+                <a onclick="changePage('cetakulang','searchBarCetakUlang')">Cetak Ulang</a>
                 <a href="TentangKami.html">Tentang Kami</a>
             </div>
         </div>
@@ -101,6 +101,9 @@
             </div>
         </div>
     </div>
+
+   
+
 
     <!-- Bakal terbit -->
     <div id="bakalterbit" class="w3-hide">
@@ -224,6 +227,73 @@
             </div>
         </div>
     </div>
+
+     <!-- Cetak Ulang -->
+     <div id="cetakulang" class="w3-hide">
+            <div>
+                    <div class="w3-center w3-border" style="width: 75%; margin-top: 100px; margin-left: 180px;">
+                        <div class="w3-container" id="banner2">
+                            <img src="img/cetakulang.jpg" style="width:100%">
+                        </div>
+                        <div class="w3-container">
+                            <div class="w3-left w3-margin-top">
+                                <h1>Cetak-Ulang</h1>
+                            </div>
+                            <p>
+                                <div class="w3-padding w3-panel w3-round-xlarge w3-border w3-right autocomplete">
+                                    <input type="text" placeholder="Cari Buku Cetak Ulang" class="w3-padding" id="searchBar">
+                                    <button class="search w3-button w3-medium">
+                                        <i class="fa fa-search"onclick="search('searchBarCetakUlang')"></i>
+                                    </button>
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+            
+                    <br>
+                    <br>
+            
+                    <div id="page1" class="w3-show">
+                        <div class="w3-card-4 w3-center w3-padding" style="width:60%;margin-left:290px; margin-bottom: 50px;">
+                            <div class="w3-container" id="komik">
+                                <img src="img/Komik/naruto.jpg" class="w3-border" style="width: 100%;margin-top: 10px;">
+                            </div>
+                            <div class="w3-container w3-center" style="margin-bottom: 20px;">
+                                <h4 style="font-weight: bold;">Naruto 72</h4>
+                                <p>
+                                    Kaguya berhasil disegel dan perang besar pun berakhir. Namun, Sasuke memulai pemberontakan! Demi
+                                    menyampaikan perasaan mereka yang selalu bertentangan, Naruto dan Sasuke pun saling
+                                    berhadapan.Inilah
+                                    akhir pertarungan yang mempertaruhkan segalanya di antara dua orang pahlawan! </p>
+                                <a href="PageBuku/Naruto72.html" style="color: blue;">Lanjutkan Membaca</a>
+                            </div>
+                        </div>
+                        <div class="w3-card-4 w3-center w3-padding" style="width:60%;margin-left:290px; margin-bottom: 50px;">
+                            <div class="w3-container" id="komik">
+                                <img src="img/Komik/gon.jpg" class="w3-border" style="width: 100%;margin-top:10px">
+                            </div>
+                            <div class="w3-container w3-center" style="margin-bottom: 20px;">
+                                <h4 style="font-weight: bold;">Gon 1</h4>
+                                <p>
+                                    Buku ini menceritakan tentang anak dinosaurus yang bernama GON. Tingkah lakunya amat lucu dan
+                                    menghibur. Walaupun tanpa teks dan yang bercerita hanyalah gambar, namun pembaca bisa mengikuti
+                                    alur
+                                    cerita komik ini dan menangkap kelucuan dari tingkah laku GON si anak dinosaurus.</p>
+                                <a href="PageBuku/Gon1.html" style="color: blue;">Lanjutkan Membaca</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+            
+                   
+            
+                    <div class="w3-center" id="paginationCetakulang" style="margin-bottom: 50px;">
+                        <div class="w3-bar">
+                            <a onclick="pageCetakUlang('page1','page2')" style="cursor: pointer;" class="w3-button w3-border">1</a>
+                        </div>
+                    </div>
+                </div>
+                </div>
     <script>
         changePage("index", "searchBarIndex");
     </script>

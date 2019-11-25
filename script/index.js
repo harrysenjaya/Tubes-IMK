@@ -16,6 +16,7 @@ function changePage(id, id2) {
     this.pageActive.className = this.pageActive.className.replace("w3-show", "w3-hide");
     this.pageActive = page;
     this.pageActive.className = this.pageActive.className.replace("w3-hide", "w3-show");
+    
     if(id2 == 'searchBarIndex') {
       this.data = ["Christopher (User)", "Harry (User)", "Detektif Conan : Toru Amuro Selection (Buku)", "Aplikasi SPSS untuk Penelitian dan Riset Pasar (Buku)", "Gon 1 (Buku)", "Kolaborasi Macro Excel dan Access untuk Membuat Aplikasi Penjualan (Buku)", "Naruto 72 (Buku)", "Noragami 20 (Buku)",
       "Atlas Binatang Paling Berbahaya Sedunia (Buku)", "Segala Sesuatu tentang Hewan Buas dan Ganas (Buku)", "Opredo Fugo & Stoples Mimpi (Buku)", "Hitler - Sosok Pria di Balik Monster (Buku)", "Shakai Kaizo - Seratus Tahun Reformasi Jepang (Buku)", "The New Seikatsu Kaizen (Buku)", "Kolaborasi Macro Excel dan Access untuk Membuat Aplikasi Penjualan (Buku)",
@@ -34,9 +35,12 @@ function changePage(id, id2) {
       autocomplete(document.getElementById(id2));
     }
     else if(id2 == 'searchBarCetakUlang') {
+      
       this.data = ["Gon 1 (Buku)", "Naruto 72 (Buku)"];
       var searchBar = document.getElementById(id2);
       autocomplete(document.getElementById(id2));
+      console.log(pageActive);
+    console.log(searchBar);
     }
   }
 }

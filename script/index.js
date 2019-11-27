@@ -16,31 +16,31 @@ function changePage(id, id2) {
     this.pageActive.className = this.pageActive.className.replace("w3-show", "w3-hide");
     this.pageActive = page;
     this.pageActive.className = this.pageActive.className.replace("w3-hide", "w3-show");
-    
-    if(id2 == 'searchBarIndex') {
+
+    if (id2 == 'searchBarIndex') {
       this.data = ["Christopher (User)", "Harry (User)", "Detektif Conan : Toru Amuro Selection (Buku)", "Aplikasi SPSS untuk Penelitian dan Riset Pasar (Buku)", "Gon 1 (Buku)", "Kolaborasi Macro Excel dan Access untuk Membuat Aplikasi Penjualan (Buku)", "Naruto 72 (Buku)", "Noragami 20 (Buku)",
-      "Atlas Binatang Paling Berbahaya Sedunia (Buku)", "Segala Sesuatu tentang Hewan Buas dan Ganas (Buku)", "Opredo Fugo & Stoples Mimpi (Buku)", "Hitler - Sosok Pria di Balik Monster (Buku)", "Shakai Kaizo - Seratus Tahun Reformasi Jepang (Buku)", "The New Seikatsu Kaizen (Buku)", "Kolaborasi Macro Excel dan Access untuk Membuat Aplikasi Penjualan (Buku)",
-      "Aplikasi SPSS untuk Penelitian dan Riset Pasar (Buku)", "Penulisan Business Report Menggunakan Microsoft Word (Buku)", "Quarter Life Crisis (Buku)", "The Circle Blueprint (Buku)", "Kerja Kerja Kaya (Buku)", "City Lite: STARTING OVER (Buku)", "Le Mariage: Over the Rain(Collector's Edition) (Buku)", "A Poem I Wrote for You (A Poem with Your Name #2) (Buku)",
-      "City Lite: Algoritme Rasa(Job Series #3) (Buku)", "Adaptive Parenting (Buku)", "Functional Food (Buku)", "Obat Malas Dosis Tinggi for Millenial Edition (Buku)", "Pemuda Hebat Penuh Manfaat (Buku)", "Obat Malas Dosis Tinggi (Buku)", "The Puzzles of Life (Buku)", "Why? People - Jean-Henri Fabre (Buku)", "Cookie Run Sweet Escape Adventure! – Fenomena Horor (Buku)",
-      "Why? Veterinary Medicine (Buku)", "Basic Railway Photography (Buku)", "Food Photography Series (Buku)"];
+        "Atlas Binatang Paling Berbahaya Sedunia (Buku)", "Segala Sesuatu tentang Hewan Buas dan Ganas (Buku)", "Opredo Fugo & Stoples Mimpi (Buku)", "Hitler - Sosok Pria di Balik Monster (Buku)", "Shakai Kaizo - Seratus Tahun Reformasi Jepang (Buku)", "The New Seikatsu Kaizen (Buku)", "Kolaborasi Macro Excel dan Access untuk Membuat Aplikasi Penjualan (Buku)",
+        "Aplikasi SPSS untuk Penelitian dan Riset Pasar (Buku)", "Penulisan Business Report Menggunakan Microsoft Word (Buku)", "Quarter Life Crisis (Buku)", "The Circle Blueprint (Buku)", "Kerja Kerja Kaya (Buku)", "City Lite: STARTING OVER (Buku)", "Le Mariage: Over the Rain(Collector's Edition) (Buku)", "A Poem I Wrote for You (A Poem with Your Name #2) (Buku)",
+        "City Lite: Algoritme Rasa(Job Series #3) (Buku)", "Adaptive Parenting (Buku)", "Functional Food (Buku)", "Obat Malas Dosis Tinggi for Millenial Edition (Buku)", "Pemuda Hebat Penuh Manfaat (Buku)", "Obat Malas Dosis Tinggi (Buku)", "The Puzzles of Life (Buku)", "Why? People - Jean-Henri Fabre (Buku)", "Cookie Run Sweet Escape Adventure! – Fenomena Horor (Buku)",
+        "Why? Veterinary Medicine (Buku)", "Basic Railway Photography (Buku)", "Food Photography Series (Buku)"];
     }
     else if (id2 == 'searchBarBakalTerbit') {
       this.data = ["Detektif Conan : Toru Amuro Selection (Buku)", "Noragami 20 (Buku)"];
       var searchBar = document.getElementById(id2);
       autocomplete(document.getElementById(id2));
     }
-    else if(id2 == 'searchBarTelahBeredar') {
+    else if (id2 == 'searchBarTelahBeredar') {
       this.data = ["Aplikasi SPSS untuk Penelitian dan Riset Pasar (Buku)", "Kolaborasi Macro Excel dan Access untuk Membuat Aplikasi Penjualan (Buku)"];
       var searchBar = document.getElementById(id2);
       autocomplete(document.getElementById(id2));
     }
-    else if(id2 == 'searchBarCetakUlang') {
-      
+    else if (id2 == 'searchBarCetakUlang') {
+
       this.data = ["Gon 1 (Buku)", "Naruto 72 (Buku)"];
       var searchBar = document.getElementById(id2);
       autocomplete(document.getElementById(id2));
       console.log(pageActive);
-    console.log(searchBar);
+      console.log(searchBar);
     }
   }
 }
@@ -97,12 +97,19 @@ function register() {
   location.replace("../SignUpPage.html");
 }
 
-function post(id){
-  var value = document.getElementById(id);
-  var isivalue = value.value;
-  var input = document.createElement("p");
-  input.innerHTML = isivalue;
-  document.getElementById("temp").appendChild(input);
+function post(id) {
+  var idInput = document.getElementById(id);
+  var value = idInput.value;
+  var div = document.createElement("div");
+  div.style.marginTop = "5%";
+  div.style.border = "1px solid black";
+  var p = document.createElement("p");
+  p.style.marginLeft = "1%";
+  p.innerHTML = value;
+  div.appendChild(p);
+  var feed = document.getElementById("feed");
+  var children = feed.childNodes;
+  feed.insertBefore(div,children[5]);
 }
 
 /*

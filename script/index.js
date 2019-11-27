@@ -89,13 +89,14 @@ function search(id) {
   location.replace("PageBuku/" + regex + ".html");
 }
 
+/*
 function login() {
   location.replace("../SignInPage.html");
 }
 
 function register() {
   location.replace("../SignUpPage.html");
-}
+}*/
 
 function post(id) {
   var idInput = document.getElementById(id);
@@ -117,14 +118,13 @@ function post(id) {
   feed.insertBefore(div,children[5]);
 }
 
-/*
 function login0() {
   location.replace("SignInPage.html");
 }
 
 function register0() {
   location.replace("SignUpPage.html");
-}*/
+}
 
 function home() {
   location.replace("index.html");

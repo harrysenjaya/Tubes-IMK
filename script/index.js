@@ -102,10 +102,15 @@ function post(id) {
   var value = idInput.value;
   var div = document.createElement("div");
   div.style.marginTop = "5%";
+  div.style.padding = "1%";
   div.style.border = "1px solid black";
+  var name = document.createElement("b");
+  name.style.marginLeft = "1%";
+  name.innerHTML = "Harry<br><br>";
   var p = document.createElement("p");
   p.style.marginLeft = "1%";
   p.innerHTML = value;
+  div.appendChild(name);
   div.appendChild(p);
   var feed = document.getElementById("feed");
   var children = feed.childNodes;

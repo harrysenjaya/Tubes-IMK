@@ -97,6 +97,14 @@ function register() {
   location.replace("../SignUpPage.html");
 }
 
+function post(id){
+  var value = document.getElementById(id);
+  var isivalue = value.value;
+  var input = document.createElement("p");
+  input.innerHTML = isivalue;
+  document.getElementById("temp").appendChild(input);
+}
+
 /*
 function login0() {
   location.replace("SignInPage.html");

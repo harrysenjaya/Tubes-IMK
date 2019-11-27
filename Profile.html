@@ -1,58 +1,75 @@
 <HTML>
-    <head>
-        <title>Profile</title>
-        <link rel="stylesheet" href="lib/w3.css">
-        <link rel="stylesheet" href="style/style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="script/jquery.js"></script>
-        <script src="script/index.js"></script>
-    </head>
-    
-    <body>
-        <header class="w3-top w3-theme w3-padding-16" style="background-color: maroon;">
-            <div class="dropdown">
-                <button class="dropbtn" onclick="dropdown()">
-                    ☰
-                </button>
-                <div class="dropdown-content" id="myDropdown">
-                    <a href="index.html" class="w3-button">Halaman Utama</a>
-                    <a onclick="dropdownKategori()" id="dropKategori" style="cursor: pointer;">
-                        Kategori <i class="fa fa-caret-right "></i>
-                    </a>
-                    <div id="kategori" class="w3-hide w3-gray">
-                        <a href="KategoriKomik.html">Komik</a>
-                        <a href="KategoriNovel.html">Novel</a>
-                        <a href="KategoriQuanta.html">Quanta</a>
-                        <a href="KategoriAnak.html">Anak dan Pendidikan</a>
-                        <a href="KategoriParenting.html">Parenting</a>
-                        <a href="KategoriManajemen.html">Manajemen Bisnis</a>
-                        <a href="KategoriKomputer.html">Komputer</a>
-                        <a href="KategoriHumaniora.html">Humaniora dan Sosial</a>
-                        <a href="KategoriRupa.html">Rupa-Rupa</a>
-                        <a href="KategoriPendidikan.html">Komik Pendidikan</a>
-                    </div>
-                    <a onclick="changePage('bakalterbit','searchBarBakalTerbit')">Bakal Terbit</a>
-                    <a onclick="changePage('telahberedar','searchBarTelahBeredar')">Telah Beredar</a>
-                    <a onclick="changePage('cetakulang','searchBarCetakUlang')">Cetak Ulang</a>
-                    <a onclick="changePage('tentangkami')">Tentang Kami</a>
-                </div>
-            </div>
-            <img src="img/elexmediaBanner.png" alt="logo" id="logoElex">
-            <button class="btnMasuk  w3-button w3-right  w3-margin-right w3-gray w3-hover-white"
-                onclick="changePage('signin')">Masuk</button>
-            <button class="btnDaftar w3-button w3-right  w3-margin-right w3-gray w3-hover-white"
-                onclick="changePage('signup')">Daftar</button>
-        </header>
 
-        <div class="w3-container" style="margin-top: 100px;margin-left: 20px;">
-            <div class="w3-card-4" style="width: 90%;max-width: 300px;float: left;">
-                <img src="img/Komik/noragami.jpg" style="width:100%; height: 300px;">
-                <div class="w3-container">
-                    <h4><b>Harry</b></h4>
+<head>
+    <title>Profile</title>
+    <link rel="stylesheet" href="lib/w3.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script/jquery.js"></script>
+    <script src="script/index.js"></script>
+</head>
+
+<body>
+    <header class="w3-top w3-theme w3-padding-16" style="background-color: maroon;">
+        <div class="dropdown">
+            <button class="dropbtn" onclick="dropdown()">
+                ☰
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="index.html" class="w3-button">Halaman Utama</a>
+                <a onclick="dropdownKategori()" id="dropKategori" style="cursor: pointer;">
+                    Kategori <i class="fa fa-caret-right "></i>
+                </a>
+                <div id="kategori" class="w3-hide w3-gray">
+                    <a href="KategoriKomik.html">Komik</a>
+                    <a href="KategoriNovel.html">Novel</a>
+                    <a href="KategoriQuanta.html">Quanta</a>
+                    <a href="KategoriAnak.html">Anak dan Pendidikan</a>
+                    <a href="KategoriParenting.html">Parenting</a>
+                    <a href="KategoriManajemen.html">Manajemen Bisnis</a>
+                    <a href="KategoriKomputer.html">Komputer</a>
+                    <a href="KategoriHumaniora.html">Humaniora dan Sosial</a>
+                    <a href="KategoriRupa.html">Rupa-Rupa</a>
+                    <a href="KategoriPendidikan.html">Komik Pendidikan</a>
                 </div>
+                <a onclick="changePage('bakalterbit','searchBarBakalTerbit')">Bakal Terbit</a>
+                <a onclick="changePage('telahberedar','searchBarTelahBeredar')">Telah Beredar</a>
+                <a onclick="changePage('cetakulang','searchBarCetakUlang')">Cetak Ulang</a>
+                <a onclick="changePage('tentangkami')">Tentang Kami</a>
             </div>
-            <input type="text" id="post">
-            <button onclick="post('post')">KLIK</button>
         </div>
-        <div id="temp" ></div>
+        <img src="img/elexmediaBanner.png" alt="logo" id="logoElex">
+        <button class="btnMasuk  w3-button w3-right  w3-margin-right w3-gray w3-hover-white"
+            onclick="changePage('signin')">Masuk</button>
+        <button class="btnDaftar w3-button w3-right  w3-margin-right w3-gray w3-hover-white"
+            onclick="changePage('signup')">Daftar</button>
+    </header>
+
+    <div class="w3-container" style="margin-top: 100px;margin-left: 20px;">
+        <div class="w3-card-4" style="width: 90%;max-width: 300px; float: left;">
+            <img src="img/Komik/noragami.jpg" style="width:100%; height: 300px;">
+            <div class="w3-container">
+                <h4><b>Harry</b></h4>
+            </div>
+        </div>
+
+        <div class="w3-container" style="margin-left: 30px; float: left;">
+            <div class="w3-border" style="width: 850px;height: 170px;">
+                <div class="w3-container w3-padding-16" style="margin-left: 8px;">
+                    <input type="text" id="post" style=" width: 800px; height: 100px">
+                    <div class="w3-container" style="margin-top: 10px; margin-left: 720px;">
+                        <button onclick="post('post')">KIRIM</button>
+                    </div>
+                </div>
+                <div class="w3-container w3-border" style="margin-top: 20px;">
+                        <div class="w3-container" style="margin-top: 10px;">
+                        <div id="temp"></div>
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
 </HTML>

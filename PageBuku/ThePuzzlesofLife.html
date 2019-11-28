@@ -16,21 +16,21 @@
                 ☰
             </button>
             <div class="dropdown-content" id="myDropdown">
-                <a href="../index.html" class="w3-button">Halaman Utama</a>
+                <a onclick="changePageFromBook('index', 'searchBarIndex');" class="w3-button">Halaman Utama</a>
                 <a onclick="dropdownKategori()" id="dropKategori" style="cursor: pointer;">
                     Kategori <i class="fa fa-caret-right "></i>
                 </a>
                 <div id="kategori" class="w3-hide w3-gray">
-                        <a onclick="changePage('kategorikomik','searchBarKategoriKomik')">Komik</a>
-                        <a onclick="changePage('kategorinovel','searchBarKategoriNovel')">Novel</a>
-                        <a onclick="changePage('kategoriquanta','searchBarKategoriNovel')">Quanta</a>
-                        <a onclick="changePage('kategorianak','searchBarKategoriAnak')">Anak dan Pendidikan</a>
-                        <a onclick="changePage('kategoriparenting','searchBarKategoriNovel')">Parenting</a>
-                        <a onclick="changePage('kategorimanajemen','searchBarKategoriManajemen')">Manajemen Bisnis</a>
-                        <a onclick="changePage('kategorikomputer','searchBarKategoriKomputer')">Komputer</a>
-                        <a onclick="changePage('kategorihumaniora','searchBarKategoriHumaniora')">Humaniora dan Sosial</a>
-                        <a onclick="changePage('kategorirupa','searchBarKategoriNovel')">Rupa-Rupa</a>
-                        <a onclick="changePage('kategoripendidikan','searchBarKategoriNovel')">Komik Pendidikan</a>
+                    <a onclick="changePageFromBook('kategorikomik','searchBarKategoriKomik')">Komik</a>
+                    <a onclick="changePageFromBook('kategorinovel','searchBarKategoriNovel')">Novel</a>
+                    <a onclick="changePageFromBook('kategoriquanta','searchBarKategoriNovel')">Quanta</a>
+                    <a onclick="changePageFromBook('kategorianak','searchBarKategoriAnak')">Anak dan Pendidikan</a>
+                    <a onclick="changePageFromBook('kategoriparenting','searchBarKategoriNovel')">Parenting</a>
+                    <a onclick="changePageFromBook('kategorimanajemen','searchBarKategoriManajemen')">Manajemen Bisnis</a>
+                    <a onclick="changePageFromBook('kategorikomputer','searchBarKategoriKomputer')">Komputer</a>
+                    <a onclick="changePageFromBook('kategorihumaniora','searchBarKategoriHumaniora')">Humaniora dan Sosial</a>
+                    <a onclick="changePageFromBook('kategorirupa','searchBarKategoriNovel')">Rupa-Rupa</a>
+                    <a onclick="changePageFromBook('kategoripendidikan','searchBarKategoriNovel')">Komik Pendidikan</a>
                 </div>
                 <a onclick="changePageFromBook('bakalterbit','searchBarBakalTerbit')">Bakal Terbit</a>
                 <a onclick="changePageFromBook('telahberedar','searchBarTelahBeredar')">Telah Beredar</a>
@@ -38,7 +38,7 @@
                 <a onclick="changePageFromBook('tentangkami')">Tentang Kami</a>
             </div>
         </div>
-        <img src="../img/elexmediaBanner.png" alt="logo" id="logoElex" onclick="home()"> 
+        <img src="../img/elexmediaBanner.png" alt="logo" id="logoElex" onclick="changePage('index', 'searchBarIndex');" style="cursor: pointer;"> 
         <button class="btnMasuk  w3-button w3-right  w3-margin-right w3-gray w3-hover-white"
         onclick="changePageFromBook('signin')">Masuk</button>
     <button class="btnDaftar w3-button w3-right  w3-margin-right w3-gray w3-hover-white"

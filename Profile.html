@@ -55,15 +55,12 @@
             <div class="w3-border" style="width: 850px;height: 170px;">
                 <div class="w3-container w3-padding-16" style="margin-left: 8px;" id="feed">
                     <input type="text" id="post" style=" width: 800px; height: 100px">
-                    <div class="w3-container" style="margin-top: 10px; margin-left: 720px;">
-                        <button onclick="post('post')">KIRIM</button>
+                    <input type='file' id="image" accept="image/gif, image/jpeg, image/png"/>
+                    <div class="w3-container" style="margin-top: -1%; margin-left: 720px;">
+                        <button onclick="post('post','image')">KIRIM</button>
                     </div>
                 </div>
-                <!-- <div class="w3-container w3-border" style="margin-top: 20px;">
-                    <div class="w3-container" style="margin-top: 10px;">
-                        <div id="temp"></div>
-                    </div>
-                </div> -->
+
             </div>
         </div>
     </div>

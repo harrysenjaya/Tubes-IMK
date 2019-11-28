@@ -45,11 +45,10 @@ function changePageFromBook(id, id2) {
 function pageLoad() {
   if (window.location.hash) {
     var id = window.location.hash.split("/");
-    changePage(id[0].substring(1,id[0].length), id[1]);
+    changePage(id[0].substring(1, id[0].length), id[1]);
     window.location.hash = "";
   }
 }
-
 
 function dropdown() {
   document.getElementById("myDropdown").classList.toggle("show");
@@ -106,24 +105,36 @@ function register() {
   location.replace("../SignUpPage.html");
 }*/
 
-function post(id) {
+function post(id, id2) {
   var idInput = document.getElementById(id);
   var value = idInput.value;
-  var div = document.createElement("div");
-  div.style.marginTop = "5%";
-  div.style.padding = "1%";
-  div.style.border = "1px solid black";
-  var name = document.createElement("b");
-  name.style.marginLeft = "1%";
-  name.innerHTML = "Harry<br><br>";
-  var p = document.createElement("p");
-  p.style.marginLeft = "1%";
-  p.innerHTML = value;
-  div.appendChild(name);
-  div.appendChild(p);
-  var feed = document.getElementById("feed");
-  var children = feed.childNodes;
-  feed.insertBefore(div, children[5]);
+  var idImage = document.getElementById(id2);
+  if (value != "" || idImage.value != "") {
+    var div = document.createElement("div");
+    div.style.marginTop = "5%";
+    div.style.padding = "1%";
+    div.style.border = "1px solid black";
+    var name = document.createElement("b");
+    name.style.marginLeft = "1%";
+    name.innerHTML = "Harry<br><br>";
+    var p = document.createElement("p");
+    p.style.marginLeft = "1%";
+    p.innerHTML = value;
+    if (idImage.value != "") {
+      var image = document.createElement("img");
+      image.src = URL.createObjectURL(idImage.files[0]);
+      image.style.width = "300px";
+      image.style.height = "300px";
+    }
+    div.appendChild(name);
+    div.appendChild(p);
+    if (idImage.value != "") {
+      div.appendChild(image);
+    }
+    var feed = document.getElementById("feed");
+    var children = feed.childNodes;
+    feed.insertBefore(div, children[6]);
+  }
 }
 
 function login0() {

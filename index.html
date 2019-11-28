@@ -16,7 +16,7 @@
                 ☰
             </button>
             <div class="dropdown-content" id="myDropdown">
-                <a href="index.html" class="w3-button">Halaman Utama</a>
+                <a onclick="changePage('index', 'searchBarIndex');" class="w3-button">Halaman Utama</a>
                 <a onclick="dropdownKategori()" id="dropKategori" style="cursor: pointer;">
                     Kategori <i class="fa fa-caret-right "></i>
                 </a>
@@ -239,7 +239,8 @@
                     </div>
                     <p>
                         <div class="w3-padding w3-panel w3-round-xlarge w3-border w3-right autocomplete">
-                            <input type="text" placeholder="Cari Buku Cetak Ulang" class="w3-padding" id="searchBarCetakUlang">
+                            <input type="text" placeholder="Cari Buku Cetak Ulang" class="w3-padding"
+                                id="searchBarCetakUlang">
                             <button class="search w3-button w3-medium">
                                 <i class="fa fa-search" onclick="search('searchBarCetakUlang')"></i>
                             </button>
@@ -462,7 +463,8 @@
         </div>
     </div>
     <script>
-        changePage("index", "searchBarIndex");
+        pageLoad();
+
     </script>
 </body>
 

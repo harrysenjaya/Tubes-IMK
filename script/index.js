@@ -9,7 +9,6 @@ function changePage(id, id2) {
   var page = document.getElementById(id);
   if (this.pageActive == null) {
     this.pageActive = page;
-    var searchBar = document.getElementById(id2);
     autocomplete(document.getElementById(id2));
   }
   else {
@@ -26,24 +25,31 @@ function changePage(id, id2) {
     }
     else if (id2 == 'searchBarBakalTerbit') {
       this.data = ["Detektif Conan : Toru Amuro Selection (Buku)", "Noragami 20 (Buku)"];
-      var searchBar = document.getElementById(id2);
       autocomplete(document.getElementById(id2));
     }
     else if (id2 == 'searchBarTelahBeredar') {
       this.data = ["Aplikasi SPSS untuk Penelitian dan Riset Pasar (Buku)", "Kolaborasi Macro Excel dan Access untuk Membuat Aplikasi Penjualan (Buku)"];
-      var searchBar = document.getElementById(id2);
       autocomplete(document.getElementById(id2));
     }
     else if (id2 == 'searchBarCetakUlang') {
-
       this.data = ["Gon 1 (Buku)", "Naruto 72 (Buku)"];
-      var searchBar = document.getElementById(id2);
       autocomplete(document.getElementById(id2));
-      console.log(pageActive);
-      console.log(searchBar);
     }
   }
 }
+
+function changePageFromBook(id, id2) {
+  window.location = "../index.html#" + id + "/" + id2;
+}
+
+function pageLoad() {
+  if (window.location.hash) {
+    var id = window.location.hash.split("/");
+    changePage(id[0].substring(1,id[0].length), id[1]);
+    window.location.hash = "";
+  }
+}
+
 
 function dropdown() {
   document.getElementById("myDropdown").classList.toggle("show");
@@ -82,11 +88,13 @@ function pageCetakUlang(id1, id2) {
 function search(id) {
   var temp = document.getElementById(id);
   var value = temp.value;
-  var regex = value.replace(/\s+/g, '');
-  regex = regex.replace("?", "");
-  regex = regex.replace("#", "");
-  regex = regex.substring(0, regex.length - 6);
-  location.replace("PageBuku/" + regex + ".html");
+  if (value != "") {
+    var regex = value.replace(/\s+/g, '');
+    regex = regex.replace("?", "");
+    regex = regex.replace("#", "");
+    regex = regex.substring(0, regex.length - 6);
+    location.replace("PageBuku/" + regex + ".html");
+  }
 }
 
 /*
@@ -115,7 +123,7 @@ function post(id) {
   div.appendChild(p);
   var feed = document.getElementById("feed");
   var children = feed.childNodes;
-  feed.insertBefore(div,children[5]);
+  feed.insertBefore(div, children[5]);
 }
 
 function login0() {

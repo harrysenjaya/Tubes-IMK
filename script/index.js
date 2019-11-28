@@ -35,6 +35,46 @@ function changePage(id, id2) {
       this.data = ["Gon 1 (Buku)", "Naruto 72 (Buku)"];
       autocomplete(document.getElementById(id2));
     }
+    else if(id2 == 'searchBarKategoriAnak'){
+      this.data =["Atlas Binatang Paling Berbahaya Sedunia (Buku)", "Segala Sesuatu tentang Hewan Buas dan Ganas (Buku)", "Opredo Fugo & Stoples Mimpi(Buku)"];
+      autocomplete(document.getElementById(id2));
+    }
+    else if(id2 == 'searchBarKategoriHumaniora'){
+      this.data =["Hitler - Sosok Pria di Balik Monster (Buku)", "The New Seikatsu Kaizen (Buku)", "Shakai Kaizo - Seratus Tahun Reformasi Jepang"];
+      autocomplete(document.getElementById(id2));
+    }
+    else if(id2 == 'searchBarKategoriKomik'){
+      this.data = ["Detektif Conan : Toru Amuro Selection (Buku)", "Noragami 20 (Buku)", "Naruto 72(Buku)", "Gon 1(Buku)"];
+      autocomplete(document.getElementById(id2));
+    }
+    else if(id2 == 'searchBarKategoriKomputer'){
+      this.data = ["Kolaborasi Macro Excel dan Access untuk Membuat Aplikasi Penjualan (Buku)", "Penulisan Business Report Menggunakan Microsoft Word (Buku)", "Aplikasi SPSS untuk Penelitian dan Riset Pasar (Buku)"];
+      autocomplete(document.getElementById(id2));
+    }
+    else if(id2 == 'searchBarManajemen'){
+      this.data =  ["Quarter Life Crisis (Buku)", "The Circle Blueprint (Buku)", "Kerja Kerja Kaya(Buku)"];
+      autocomplete(document.getElementById(id2));
+    }
+    else if(id2 == 'searchBarNovel'){
+      this.data =  ["City Lite: STARTING OVER (Buku)", "Le Mariage: Over the Rain(Collector's Edition) (Buku)", "A Poem I Wrote for You (A Poem with Your Name #2) (Buku)", "City Lite: Algoritme Rasa(Job Series #3)(Buku)"];
+      autocomplete(document.getElementById(id2));
+    }
+    else if(id2 == 'searchBarParenting'){
+      this.data =  ["Functional Food (Buku)", "Adaptive Parenting (Buku)", "Solutif Parenting (Buku)", "Menjadi Orangtua(Buku)"];
+      autocomplete(document.getElementById(id2));
+    }
+    else if(id2 == 'searchBarPendidikan'){
+      this.data = ["Why? People - Jean-Henri Fabre (Buku)", "Why? Veterinary Medicine (Buku)", "Cookie Run Sweet Escape Adventure! – Fenomena Horor"];
+      autocomplete(document.getElementById(id2));
+    }
+    else if(id2 == 'searchBarQuanta'){
+      this.data = ["Obat Malas Dosis Tinggi for Millenial Edition (Buku)", "Pemuda Hebat Penuh Manfaat (Buku)", "Obat Malas Dosis Tinggi(Buku)", "The Puzzles of Life(Buku)"];
+      autocomplete(document.getElementById(id2));
+    }
+    else if(id2 == 'searchBarRupa'){
+      this.data =  ["Basic Railway Photography (Buku)", "Food Photography Series (Buku)"];
+      autocomplete(document.getElementById(id2));
+    }
   }
 }
 
@@ -135,6 +175,10 @@ function post(id, id2) {
     var children = feed.childNodes;
     feed.insertBefore(div, children[6]);
   }
+}
+
+function toProfile(){
+  location.replace("Profile.html");
 }
 
 function login() {

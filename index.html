@@ -21,16 +21,16 @@
                     Kategori <i class="fa fa-caret-right "></i>
                 </a>
                 <div id="kategori" class="w3-hide w3-gray">
-                    <a href="KategoriKomik.html">Komik</a>
-                    <a href="KategoriNovel.html">Novel</a>
-                    <a href="KategoriQuanta.html">Quanta</a>
-                    <a href="KategoriAnak.html">Anak dan Pendidikan</a>
-                    <a href="KategoriParenting.html">Parenting</a>
-                    <a href="KategoriManajemen.html">Manajemen Bisnis</a>
-                    <a href="KategoriKomputer.html">Komputer</a>
-                    <a href="KategoriHumaniora.html">Humaniora dan Sosial</a>
-                    <a href="KategoriRupa.html">Rupa-Rupa</a>
-                    <a href="KategoriPendidikan.html">Komik Pendidikan</a>
+                    <a onclick="changePage('kategorikomik','searchBarKategoriKomik')">Komik</a>
+                    <a onclick="changePage('kategorinovel','searchBarKategoriNovel')">Novel</a>
+                    <a onclick="changePage('kategoriquanta','searchBarKategoriNovel')">Quanta</a>
+                    <a onclick="changePage('kategorianak','searchBarKategoriAnak')">Anak dan Pendidikan</a>
+                    <a onclick="changePage('kategoriparenting','searchBarKategoriNovel')">Parenting</a>
+                    <a onclick="changePage('kategorimanajemen','searchBarKategoriManajemen')">Manajemen Bisnis</a>
+                    <a onclick="changePage('kategorikomputer','searchBarKategoriKomputer')">Komputer</a>
+                    <a onclick="changePage('kategorihumaniora','searchBarKategoriHumaniora')">Humaniora dan Sosial</a>
+                    <a onclick="changePage('kategorirupa','searchBarKategoriNovel')">Rupa-Rupa</a>
+                    <a onclick="changePage('kategoripendidikan','searchBarKategoriNovel')">Komik Pendidikan</a>
                 </div>
                 <a onclick="changePage('bakalterbit','searchBarBakalTerbit')">Bakal Terbit</a>
                 <a onclick="changePage('telahberedar','searchBarTelahBeredar')">Telah Beredar</a>
@@ -38,7 +38,7 @@
                 <a onclick="changePage('tentangkami')">Tentang Kami</a>
             </div>
         </div>
-        <img src="img/elexmediaBanner.png" alt="logo" id="logoElex">
+        <img src="img/elexmediaBanner.png" alt="logo" id="logoElex" onclick="home()">
         <button class="btnMasuk  w3-button w3-right  w3-margin-right w3-gray w3-hover-white"
             onclick="changePage('signin')">Masuk</button>
         <button class="btnDaftar w3-button w3-right  w3-margin-right w3-gray w3-hover-white"
@@ -308,7 +308,994 @@
                         <input class="boxPW w3-input w3-border" name="pass" type="password" placeholder="Password">
                     </p>
                     <p>
-                        <button class="w3-btn w3-gray w3-left w3-margin-bottom" onclick="home()">Masuk</button></p>
+                        <button class="w3-btn w3-gray w3-left w3-margin-bottom" onclick="toProfile()">Masuk</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Kategori Anak-->
+    <div id="kategorianak" class="w3-hide">
+        <div>
+            <div>
+                <div class="w3-center w3-border" style="width: 75%; margin-top: 100px; margin-left: 180px;">
+                    <img src="img/BannerAnak.jpg" id="banner1" style="width:100%">
+                    <div class="w3-container">
+                        <div class="w3-left w3-margin-top">
+                            <h1>Kategori Anak dan Pendidikan</h1>
+                        </div>
+                        <p>
+                            <div class="w3-padding w3-panel w3-round-xlarge w3-border w3-right autocomplete">
+                                <input type="text" placeholder="Cari Buku Kategori Anak" class="w3-padding"
+                                    id="searchBarKategoriAnak">
+                                <button class="search w3-button w3-medium">
+                                    <i class="fa fa-search" onclick="search('searchBar')"></i>
+                                </button>
+                            </div>
+                        </p>
+                    </div>
+                </div>
+
+                <br>
+                <br>
+
+                <div id="page1" class="w3-show">
+                    <div class="w3-card-4 w3-center w3-padding"
+                        style="width:60%;margin-left:290px; margin-bottom: 50px;">
+                        <div class="w3-container" id="komik">
+                            <img src="img/Anak/AtlasHewanBanner.jpg" class="w3-border"
+                                style="width: 100%;margin-top: 10px;">
+                        </div>
+                        <div class="w3-container w3-center" style="margin-bottom: 20px;">
+                            <h4 style="font-weight: bold;">Atlas Binatang Paling Berbahaya Sedunia </h4>
+                            <p>
+                                Buku ini menampilkan 50 spesies hewan mematikan dari seluruh dunia dan mengeksplorasi
+                                tiap
+                                benua, termasuk spesies yang hidup di berbagai habitat: dari hutan dan gurun sampai laut
+                                dalam.
+                            </p>
+                            <a href="PageBuku/AtlasBinatangPalingBerbahayaSedunia.html" style="color: blue;">Lanjutkan
+                                Membaca</a>
+                        </div>
+                    </div>
+                    <div class="w3-card-4 w3-center w3-padding"
+                        style="width: 60%; margin-left:290px; margin-bottom: 50px;">
+                        <div class="w3-container" id="komik">
+                            <img src="img/Anak/HewanBuasBanner.jpg" class="w3-border"
+                                style="width: 100%;margin-top: 10px;">
+                        </div>
+                        <div class="w3-container w3-center" style="margin-bottom: 20px;">
+                            <h4 style="font-weight: bold;">Segala Sesuatu tentang Hewan Buas dan Ganas</h4>
+                            <p>Buku ini menampilkan 50 spesies hewan mematikan dari seluruh dunia dan mengeksplorasi
+                                tiap
+                                benua, termasuk spesies yang hidup di berbagai habitat: dari hutan dan gurun sampai laut
+                                dalam.
+                            </p>
+                            <a href="PageBuku/SegalaSesuatutentangHewanBuasdanGanas.html" style="color: blue;">Lanjutkan
+                                Membaca</a>
+                        </div>
+                    </div>
+                    <div class="w3-card-4 w3-center w3-padding"
+                        style="width:60%;margin-left:290px; margin-bottom: 50px;">
+                        <div class="w3-container" id="komik">
+                            <img src="img/Anak/FugoBanner.jpg" class="w3-border" style="width: 100%;margin-top: 10px;">
+                        </div>
+                        <div class="w3-container w3-center" style="margin-bottom: 20px;">
+                            <h4 style="font-weight: bold;">Opredo Fugo & Stoples Mimpi</h4>
+                            <p>
+                                Fugo Si Paman Rubah menjaga stoples-stoples unik yang berisikan mimpi-mimpi.
+                                Ayo lihat bagaimana Fugo menjaga stoples-stoples itu.
+                                Sebentar… stoples mimpi? Apakah itu?? </p>
+                            <a href="PageBuku/OpredoFugo&StoplesMimpi.html" style="color: blue;">Lanjutkan Membaca</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="w3-center" id="paginationCetakulang" style="margin-bottom: 50px;">
+            <div class="w3-bar">
+                <a onclick="pageCetakUlang('page1','page2')" style="cursor: pointer;" class="w3-button w3-border">1</a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--Kategori Humaniora-->
+    <div id="kategorihumaniora" class="w3-hide">
+        <div>
+            <div>
+                <div class="w3-center w3-border" style="width: 75%; margin-top: 100px; margin-left: 180px;">
+                    <img src="img/BannerHumaniora.jpg" id="banner1" style="width:100%">
+                    <div class="w3-container">
+                        <div class="w3-left w3-margin-top">
+                            <h1>Kategori Humaniora dan Sosial</h1>
+                        </div>
+                        <p>
+                            <div class="w3-padding w3-panel w3-round-xlarge w3-border w3-right autocomplete">
+                                <input type="text" placeholder="Cari Buku Humaniora dan Sosial" class="w3-padding"
+                                    id="searchBarKategoriHumaniora">
+                                <button class="search w3-button w3-medium">
+                                    <i class="fa fa-search" onclick="search('searchBar')"></i>
+                                </button>
+                            </div>
+                        </p>
+                    </div>
+                </div>
+
+                <br>
+                <br>
+
+                <div id="page1" class="w3-show">
+                    <div class="w3-card-4 w3-center w3-padding"
+                        style="width:60%;margin-left:290px; margin-bottom: 50px;">
+                        <div class="w3-container" id="komik">
+                            <img src="img/Humaniora/HitlerBanner.jpg" class="w3-border"
+                                style="width: 100%;margin-top: 10px;">
+                        </div>
+                        <div class="w3-container w3-center" style="margin-bottom: 20px;">
+                            <h4 style="font-weight: bold;">Hitler - Sosok Pria di Balik Monster </h4>
+                            <p>
+                                Bagaimana kita mengukur seseorang yang terbiasa dianggap sebagai monster? Bagaimana kita
+                                memahami
+                                seseorang yang menjadi mitos kejahatan? Begitu mengerikan kejahatan orang ini sehingga
+                                semakin
+                                penting bagi kita untuk membahas Hitler sebagaimana dirinya sebenarnya.
+                            </p>
+                            <a href="PageBuku/Hitler-SosokPriadiBalikMonster.html" style="color: blue;">Lanjutkan
+                                Membaca</a>
+                        </div>
+                    </div>
+                    <div class="w3-card-4 w3-center w3-padding"
+                        style="width: 60%; margin-left:290px; margin-bottom: 50px;">
+                        <div class="w3-container" id="komik">
+                            <img src="img/Humaniora/ShakaiBanner.jpg" class="w3-border"
+                                style="width: 100%;margin-top: 10px;">
+                        </div>
+                        <div class="w3-container w3-center" style="margin-bottom: 20px;">
+                            <h4 style="font-weight: bold;">Shakai Kaizo - Seratus Tahun Reformasi Jepang</h4>
+                            <p>Melanjutkan debutnya dalam Seikatsu Kaizen, Susy Ong kembali memaparkan apa yang terjadi
+                                dalam
+                                tahun ke-100 terjadinya reformasi di Jepang dalam semua aspek kehidupan masyarakatnya.
+                                Demikian
+                                besarnya peran pemerintah, menjadi penentu keberhasilan perubahan pola hidup dan mindset
+                                rakyat
+                                Jepang, dari bangsa yang "tidak tahu aturan" dan kalah perang, menjadi sebuah bangsa
+                                yang unggul di
+                                segala bidang. Buku ini membahas reformasi-reformasi dalam pemerintahan yang juga dapat
+                                ditiru oleh
+                                negara kita untuk menuju masa depan Indonesia yang lebih baik.</p>
+                            <a href="PageBuku/ShakaiKaizo-SeratusTahunReformasiJepang.html"
+                                style="color: blue;">Lanjutkan Membaca</a>
+                        </div>
+                    </div>
+                    <div class="w3-card-4 w3-center w3-padding"
+                        style="width: 60%; margin-left:290px; margin-bottom: 50px;">
+                        <div class="w3-container" id="komik">
+                            <img src="img/Humaniora/SeikatsuBanner.jpg" class="w3-border"
+                                style="width: 100%;margin-top: 10px;">
+                        </div>
+                        <div class="w3-container w3-center" style="margin-bottom: 20px;">
+                            <h4 style="font-weight: bold;">The New Seikatsu Kaizen</h4>
+                            <p>Jepang dikenal sebagai salah satu negara modern dan maju sejak pertengahan abad ke-20
+                                sampai
+                                sekarang. Berbagai keberhasilan tersebut menimbulkan kekaguman bangsa-bangsa lain di
+                                dunia, termasuk
+                                di Indonesia. Dunia akademisi dan jurnalistik Indonesia sering mengutip contoh
+                                keberhasilan Jepang
+                                dengan memberi opini ‘cultural determinism’ atau ‘budaya sebagai faktor penentu’.
+                                Menurut anggapan
+                                itu, Jepang berhasil karena memiliki budaya unggul. Dari opini tersebut, lahirlah
+                                kesimpulan bahwa
+                                jika bangsa lain (termasuk Indonesia) ingin maju seperti Jepang, maka yang perlu
+                                dipelajari adalah
+                                budaya Jepang. </p>
+                            <a href="PageBuku/TheNewSeikatsuKaizen.html" style="color: blue;">Lanjutkan Membaca</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="w3-center" id="paginationCetakulang" style="margin-bottom: 50px;">
+                    <div class="w3-bar">
+                        <a onclick="pageCetakUlang('page1','page2')" style="cursor: pointer;"
+                            class="w3-button w3-border">1</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Kategori  Komik-->
+    <div id="kategorikomik" class="w3-hide">
+        <div>
+            <div>
+                <div class="w3-center w3-border" style="width: 75%; margin-top: 100px; margin-left: 180px;">
+                    <img src="img/BannerKomik.jpg" id="banner1" style="width:100%">
+                    <div class="w3-container">
+                        <div class="w3-left w3-margin-top">
+                            <h1>Kategori Komik</h1>
+                        </div>
+                        <p>
+                            <div class="w3-padding w3-panel w3-round-xlarge w3-border w3-right autocomplete">
+                                <input type="text" placeholder="Cari Buku Kategori Komik" class="w3-padding"
+                                    id="searchBarKategoriKomik">
+                                <button class="search w3-button w3-medium">
+                                    <i class="fa fa-search" onclick="search('searchBar')"></i>
+                                </button>
+                            </div>
+                        </p>
+                    </div>
+                </div>
+
+                <br>
+                <br>
+
+                <div id="page1" class="w3-show">
+                    <div class="w3-card-4 w3-center w3-padding"
+                        style="width:60%;margin-left:290px; margin-bottom: 50px;">
+                        <div class="w3-container" id="komik">
+                            <img src="img/Komik/conan.jpg" class="w3-border" style="width: 100%;margin-top: 10px;">
+                        </div>
+                        <div class="w3-container w3-center" style="margin-bottom: 20px;">
+                            <h4 style="font-weight: bold;">Detektif Conan: Toru Amuro Selection </h4>
+                            <p>
+                                Toru Amuro muncul di hadapan Conan dkk. sebagai detektif, dan ingin menjadi murid Kogoro
+                                Mouri.
+                                Tapi
+                                ternyata, identitas sesungguhnya adalah Bourbon! Anggota organisasi hitam yang ahli
+                                dalam
+                                mengumpulkan informasi. Ditambah lagi, dia juga masih menyimpan rahasia lain…</p>
+                            <a href="PageBuku/DetektifConanToruAmuroSelection.html" style="color: blue;">Lanjutkan
+                                Membaca</a>
+                        </div>
+                    </div>
+                    <div class="w3-card-4 w3-center w3-padding"
+                        style="width: 60%; margin-left:290px; margin-bottom: 50px;">
+                        <div class="w3-container" id="komik">
+                            <img src="img/Komik/noragami.jpg" class="w3-border" style="width: 100%;margin-top: 10px;">
+                        </div>
+                        <div class="w3-container w3-center" style="margin-bottom: 20px;">
+                            <h4 style="font-weight: bold;">Noragami 20</h4>
+                            <p>Sang Pengguna Mantra, orang yang telah mengacaukan langit dan bumi, ternyata juga ayah
+                                dari Yato
+                                sekaligus penyambung nyawanya! Yato yang telah membulatkan tekad untuk melawan dan
+                                membunuh
+                                ayahnya
+                                sendiri, menghilang dari hadapan Hiyori dan Yukine. Yang ia butuhkan sekarang adalah
+                                Shinki yang
+                                mampu mengalahkan Nora!!</p>
+                            <a href="PageBuku/Noragami20.html" style="color: blue;">Lanjutkan Membaca</a>
+                        </div>
+                    </div>
+                    <div class="w3-card-4 w3-center w3-padding"
+                        style="width:60%;margin-left:290px; margin-bottom: 50px;">
+                        <div class="w3-container" id="komik">
+                            <img src="img/Komik/naruto.jpg" class="w3-border" style="width: 100%;margin-top: 10px;">
+                        </div>
+                        <div class="w3-container w3-center" style="margin-bottom: 20px;">
+                            <h4 style="font-weight: bold;">Naruto 72</h4>
+                            <p>
+                                Kaguya berhasil disegel dan perang besar pun berakhir. Namun, Sasuke memulai
+                                pemberontakan! Demi
+                                menyampaikan perasaan mereka yang selalu bertentangan, Naruto dan Sasuke pun saling
+                                berhadapan.Inilah
+                                akhir pertarungan yang mempertaruhkan segalanya di antara dua orang pahlawan! </p>
+                            <a href="PageBuku/Naruto72.html" style="color: blue;">Lanjutkan Membaca</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="page2" class="w3-hide">
+                    <div class="w3-card-4 w3-center w3-padding"
+                        style="width:60%;margin-left:290px; margin-bottom: 50px;">
+                        <div class="w3-container" id="komik">
+                            <img src="img/Komik/gon.jpg" class="w3-border" style="width: 100%;margin-top:10px">
+                        </div>
+                        <div class="w3-container w3-center" style="margin-bottom: 20px;">
+                            <h4 style="font-weight: bold;">Gon 1</h4>
+                            <p>
+                                Buku ini menceritakan tentang anak dinosaurus yang bernama GON. Tingkah lakunya amat
+                                lucu dan
+                                menghibur. Walaupun tanpa teks dan yang bercerita hanyalah gambar, namun pembaca bisa
+                                mengikuti
+                                alur
+                                cerita komik ini dan menangkap kelucuan dari tingkah laku GON si anak dinosaurus.</p>
+                            <a href="PageBuku/Gon1.html" style="color: blue;">Lanjutkan Membaca</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w3-center" id="paginationCetakulang" style="margin-bottom: 50px;">
+                    <div class="w3-bar">
+                        <a onclick="pageCetakUlang('page1','page2')" style="cursor: pointer;"
+                            class="w3-button w3-border">1</a>
+                        <a onclick="pageCetakUlang('page2','page1')" style="cursor: pointer;"
+                            class="w3-button w3-border">2</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Kategori Komputer-->
+    <div id="kategorikomputer" class="w3-hide">
+        <div>
+            <div>
+                <div class="w3-center w3-border" style="width: 75%; margin-top: 100px; margin-left: 180px;">
+                    <img src="img/BannerKomputer.jpg" id="banner1" style="width:100%">
+                    <div class="w3-container">
+                        <div class="w3-left w3-margin-top">
+                            <h1>Kategori Komputer</h1>
+                        </div>
+                        <p>
+                            <div class="w3-padding w3-panel w3-round-xlarge w3-border w3-right autocomplete">
+                                <input type="text" placeholder="Cari Buku Kategori Komputer" class="w3-padding"
+                                    id="searchBarKategoriKomputer">
+                                <button class="search w3-button w3-medium">
+                                    <i class="fa fa-search" onclick="search('searchBar')"></i>
+                                </button>
+                            </div>
+                        </p>
+                    </div>
+                </div>
+
+                <br>
+                <br>
+
+                <div id="page1" class="w3-show">
+                    <div class="w3-card-4 w3-center w3-padding"
+                        style="width:60%;margin-left:290px; margin-bottom: 50px;">
+                        <div class="w3-container" id="komik">
+                            <img src="img/Komputer/MacroExcelBanner.jpg" class="w3-border"
+                                style="width: 100%;margin-top: 10px;">
+                        </div>
+                        <div class="w3-container w3-center" style="margin-bottom: 20px;">
+                            <h4 style="font-weight: bold;">Kolaborasi Macro Excel dan Access untuk Membuat Aplikasi
+                                Penjualan
+                            </h4>
+                            <p>
+                                Excel dan Access merupakan dua program andal yang sudah familiar di Indonesia. Excel
+                                menyediakan
+                                Macro, yaitu fitur otomatisasi untuk menyelesaikan pekerjaan rutin yang kompleks.
+                                Access sendiri
+                                merupakan program database yang terstruktur dan efisien.
+                            </p>
+                            <a href="PageBuku/KolaborasiMacroExceldanAccessuntukMembuatAplikasiPenjualan.html"
+                                style="color: blue;">Lanjutkan Membaca</a>
+                        </div>
+                    </div>
+                    <div class="w3-card-4 w3-center w3-padding"
+                        style="width: 60%; margin-left:290px; margin-bottom: 50px;">
+                        <div class="w3-container" id="komik">
+                            <img src="img/Komputer/beredar1.jpg" class="w3-border"
+                                style="width: 100%;margin-top: 10px;">
+                        </div>
+                        <div class="w3-container w3-center" style="margin-bottom: 20px;">
+                            <h4 style="font-weight: bold;">Aplikasi SPSS untuk Penelitian dan Riset Pasar</h4>
+                            <p>Materi yang terdapat dalam buku ini sangat membantu Anda dalam mengoperasikan SPSS
+                                (Statistical
+                                Package for the Social Sciences), mulai dari pengenalan menu-menu yang ada di SPSS,
+                                input data,
+                                sampai dengan menginterprestasikan data. Saat ini SPSS banyak digunakan mahasiswa
+                                menyusun
+                                skripsi
+                                (S1), tesis (S2), bahkan disertasi (S3) dan Riset Pasar. Selain itu, SPSS juga......
+                            </p>
+                            <a href="PageBuku/AplikasiSPSSuntukPenelitiandanRisetPasar.html"
+                                style="color: blue;">Lanjutkan Membaca</a>
+                        </div>
+                    </div>
+                    <div class="w3-card-4 w3-center w3-padding"
+                        style="width: 60%; margin-left:290px; margin-bottom: 50px;">
+                        <div class="w3-container" id="komik">
+                            <img src="img/Komputer/MicrosoftBanner.jpg" class="w3-border"
+                                style="width: 100%;margin-top: 10px;">
+                        </div>
+                        <div class="w3-container w3-center" style="margin-bottom: 20px;">
+                            <h4 style="font-weight: bold;">Penulisan Business Report Menggunakan Microsoft Word</h4>
+                            <p>Ada keterikatan antara keterampilan menulis laporan dan penguasaan terhadap pengolah
+                                kata
+                                Microsoft Word karena banyak kegiatan dalam menyusun laporan akan sangat terbantu
+                                bila seseorang
+                                menguasai fitur-fitur yang dimiliki Word. Buku ini menjembatani kedua ilmu
+                                keterampilan (skill)
+                                yang akhir-akhir ini semakin dibutuhkan di banyak bidang pekerjaan lebih-lebih yang
+                                menyangkut
+                                manajemen.
+                            </p>
+                            <a href="PageBuku/PenulisanBusinessReportMenggunakanMicrosoftWord.html"
+                                style="color: blue;">Lanjutkan Membaca</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="w3-center" id="paginationCetakulang" style="margin-bottom: 50px;">
+                    <div class="w3-bar">
+                        <a onclick="pageCetakUlang('page1','page2')" style="cursor: pointer;"
+                            class="w3-button w3-border">1</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Kategori Manajemen-->
+    <div id="kategorimanajemen" class="w3-hide">
+        <div>
+            <div>
+                <div class="w3-center w3-border" style="width: 75%; margin-top: 100px; margin-left: 180px;">
+                    <img src="img/BannerParenting.jpg" id="banner1" style="width:100%">
+                    <div class="w3-container">
+                        <div class="w3-left w3-margin-top">
+                            <h1>Kategori Manajemen dan Bisnis</h1>
+                        </div>
+                        <p>
+                            <div class="w3-padding w3-panel w3-round-xlarge w3-border w3-right autocomplete">
+                                <input type="text" placeholder="Cari Buku Kategori Manajemen dan Bisnis"
+                                    class="w3-padding" id="searchBarKategoriManajemen">
+                                <button class="search w3-button w3-medium">
+                                    <i class="fa fa-search" onclick="search('searchBar')"></i>
+                                </button>
+                            </div>
+                        </p>
+                    </div>
+                </div>
+
+                <br>
+                <br>
+
+                <div class="w3-card-4 w3-center w3-padding" style="width:60%;margin-left:290px; margin-bottom: 50px;">
+                    <div class="w3-container" id="komik">
+                        <img src="img/Manajemen/QuarterLifeBanner.jpg" class="w3-border"
+                            style="width: 100%;margin-top: 10px;">
+                    </div>
+                    <div class="w3-container w3-center" style="margin-bottom: 20px;">
+                        <h4 style="font-weight: bold;">Quarter Life Crisis </h4>
+                        <p>
+
+                            Cemas dan bingung dengan masa depan? Bingung memilih karier? Milih pasangan yang cocok?
+                            Idealis atau
+                            realita? Habis lulus mau ngapain?
+                        </p>
+                        <a href="PageBuku/QuarterLifeCrisis.html" style="color: blue;">Lanjutkan Membaca</a>
+                    </div>
+                </div>
+                <div class="w3-card-4 w3-center w3-padding" style="width: 60%; margin-left:290px; margin-bottom: 50px;">
+                    <div class="w3-container" id="komik">
+                        <img src="img/Manajemen/CircleBanner.jpg" class="w3-border"
+                            style="width: 100%;margin-top: 10px;">
+                    </div>
+                    <div class="w3-container w3-center" style="margin-bottom: 20px;">
+                        <h4 style="font-weight: bold;">The Circle Blueprint</h4>
+                        <p>Lingkaran Perencanaan adalah sebuah buku pengembangan diri. Seperti yang sudah dijelaskan
+                            oleh
+                            penulis bukunya, proses perkembangan tidak terkait dengan kesuksesan secara materi. Tentu
+                            saja
+                            kita memerlukan uang untuk mendukung kehidupan kita, tetapi kekayaan yang berlebihan tidak
+                            menambah kepuasan kita akan kehidupan itu sendiri.</p>
+                        <a href="PageBuku/TheCircleBlueprint.html" style="color: blue;">Lanjutkan Membaca</a>
+                    </div>
+                </div>
+                <div class="w3-card-4 w3-center w3-padding" style="width: 60%; margin-left:290px; margin-bottom: 50px;">
+                    <div class="w3-container" id="komik">
+                        <img src="img/Manajemen/kkkBanner.jpg" class="w3-border" style="width: 100%;margin-top: 10px;">
+                    </div>
+                    <div class="w3-container w3-center" style="margin-bottom: 20px;">
+                        <h4 style="font-weight: bold;">Kerja Kerja Kaya</h4>
+                        <p>Semua manusia di dunia ini mencari jawaban untuk meraih kesuksesan, namun sayang banyak yang
+                            telah patah arang dan tidak percaya lagi akan adanya suatu konsep yang dapat mengubah jalan
+                            hidupnya. Motivasi ibarat seorang yang berkaca di depan cermin dan setelah melakukannya ia
+                            merasa telah mengetahui wujud dirinya. Namun, sekali ia meninggalkan cermin, ia langsung
+                            lupa
+                            akan wujudnya. Kebanyakan buku motivasi berisi cerita positif yang enak dibaca, namun hanya
+                            berhenti sampai di situ.</p>
+                        <a href="PageBuku/KerjaKerjaKaya.html" style="color: blue;">Lanjutkan Membaca</a>
+                    </div>
+
+                </div>
+                <div class="w3-center" id="paginationCetakulang" style="margin-bottom: 50px;">
+                    <div class="w3-bar">
+                        <a onclick="pageCetakUlang('page1','page2')" style="cursor: pointer;"
+                            class="w3-button w3-border">1</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Kategori Novel-->
+    <div id="kategorinovel" class="w3-hide">
+        <div>
+            <div>
+                <div class="w3-center w3-border" style="width: 75%; margin-top: 100px; margin-left: 180px;">
+                    <img src="img/BannerNovel1.jpg" id="banner1" style="width:100%">
+                    <div class="w3-container">
+                        <div class="w3-left w3-margin-top">
+                            <h1>Kategori Novel</h1>
+                        </div>
+                        <p>
+                            <div class="w3-padding w3-panel w3-round-xlarge w3-border w3-right autocomplete">
+                                <input type="text" placeholder="Cari Buku Kategori Novel" class="w3-padding"
+                                    id="searchBarKategoriNovel">
+                                <button class="search w3-button w3-medium">
+                                    <i class="fa fa-search" onclick="search('searchBar')"></i>
+                                </button>
+                            </div>
+                        </p>
+                    </div>
+                </div>
+
+                <br>
+                <br>
+
+                <div id="page1" class="w3-show">
+                    <div class="w3-card-4 w3-center w3-padding"
+                        style="width:60%;margin-left:290px; margin-bottom: 50px;">
+                        <div class="w3-container" id="komik">
+                            <img src="img//Novel/StartingOverBanner.jpg" class="w3-border"
+                                style="width: 100%;margin-top: 10px;">
+                        </div>
+                        <div class="w3-container w3-center" style="margin-bottom: 20px;">
+                            <h4 style="font-weight: bold;">City Lite: STARTING OVER </h4>
+                            <p>
+                                Hubungan mereka hanya berlandaskan physical attraction, awalnya Prita mengira
+                                begitu. Hanya
+                                ketertarikan fisik semata. Tidak lebih. Dia mengagumi Erlan yang tampan dengan
+                                setelan kantor
+                                yang membuatnya terlihat sempurna. Namun waktu telah membantu dia menyadari
+                                bahwa perasaannya
+                                kepada laki-laki itu mulai berkembang.</p>
+                            <a href="PageBuku/CityLiteSTARTINGOVER.html" style="color: blue;">Lanjutkan
+                                Membaca</a>
+                        </div>
+                    </div>
+                    <div class="w3-card-4 w3-center w3-padding"
+                        style="width: 60%; margin-left:290px; margin-bottom: 50px;">
+                        <div class="w3-container" id="komik">
+                            <img src="img/Novel/OverTheRainBanner.jpg" class="w3-border"
+                                style="width: 100%;margin-top: 10px;">
+                        </div>
+                        <div class="w3-container w3-center" style="margin-bottom: 20px;">
+                            <h4 style="font-weight: bold;">Le Mariage: Over the Rain(Collector's Edition)</h4>
+                            <p> Mereka mencintai, tapi tidak ada jalan bersama.
+                                Mereka bersama, tapi tidak saling mencintai.
+                                Adalah Bulan yang memimpikan hidup bersama seseorang yang sejak lama
+                                dicintainya.
+                            </p>
+                            <a href="PageBuku/LeMariageOvertheRain(Collector'sEdition).html Edition).html"
+                                style="color: blue;">Lanjutkan Membaca</a>
+                        </div>
+                    </div>
+                    <div class="w3-card-4 w3-center w3-padding"
+                        style="width:60%;margin-left:290px; margin-bottom: 50px;">
+                        <div class="w3-container" id="komik">
+                            <img src="img/Novel/PoemBanner.jpg" class="w3-border" style="width: 100%;margin-top: 10px;">
+                        </div>
+                        <div class="w3-container w3-center" style="margin-bottom: 20px;">
+                            <h4 style="font-weight: bold;">A Poem I Wrote for You (A Poem with Your Name #2)
+                            </h4>
+                            <p>
+                                Dalam setiap embusan napas, ada puisi yang layak dituliskan di antara
+                                bintang-bintang.
+                                Kombinasi puisi klasik dan modern dalam buku ini akan membuat kita memandang
+                                cinta dan kehidupan
+                                pada tingkatan yang berbeda. Setiap kata dalam buku ini akan melahirkan beragam
+                                pertanyaan dan
+                                emosi.
+                            </p>
+                            <a href="PageBuku/APoemIWroteforYou(APoemwithYourName#2).html"
+                                style="color: blue;">Lanjutkan Membaca</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="page2" class="w3-hide">
+                    <div class="w3-card-4 w3-center w3-padding"
+                        style="width:60%;margin-left:290px; margin-bottom: 50px;">
+                        <div class="w3-container" id="komik">
+                            <img src="img/Novel/AlgoritmeRasaBanner.jpg" class="w3-border"
+                                style="width: 100%;margin-top:10px">
+                        </div>
+                        <div class="w3-container w3-center" style="margin-bottom: 20px;">
+                            <h4 style="font-weight: bold;">City Lite: Algoritme Rasa(Job Series #3)</h4>
+                            <p>
+                                Junia Padma adalah seorang senior backend developer yang hobi flirting
+                                kanan-kiri dan selalu
+                                kabur jika ada pria yang tampak mulai serius dengannya. Suatu hari, Bhisma,
+                                mantan pacar
+                                sahabatnya, meminta bantuan Juni untuk ‘menyelamatkan’ Sandra dari tunangannya.
+                                Juni setuju
+                                karena dia juga tidak suka dengan tunangan Sandra yang sekarang. Jadilah Junia
+                                dan Bhisma
+                                mencanangkan misi SandraHarsyaPutus.</p>
+                            <a href="PageBuku/CityLiteAlgoritmeRasa(JobSeries#3).html" style="color: blue;">Lanjutkan
+                                Membaca</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w3-center" id="paginationCetakulang" style="margin-bottom: 50px;">
+                    <div class="w3-bar">
+                        <a onclick="pageCetakUlang('page1','page2')" style="cursor: pointer;"
+                            class="w3-button w3-border">1</a>
+                        <a onclick="pageCetakUlang('page2','page1')" style="cursor: pointer;"
+                            class="w3-button w3-border">2</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--Kategori Parenting-->
+    <div id="kategoriparenting" class="w3-hide">
+        <div>
+            <div>
+                <div class="w3-center w3-border" style="width: 75%; margin-top: 100px; margin-left: 180px;">
+                    <img src="img/BannerParenting.jpg" id="banner1" style="width:100%">
+                    <div class="w3-container">
+                        <div class="w3-left w3-margin-top">
+                            <h1>Kategori Parenting</h1>
+                        </div>
+                        <p>
+                            <div class="w3-padding w3-panel w3-round-xlarge w3-border w3-right autocomplete">
+                                <input type="text" placeholder="Cari Buku Kategori Parenting" class="w3-padding"
+                                    id="searchBarKategoriParenting">
+                                <button class="search w3-button w3-medium">
+                                    <i class="fa fa-search" onclick="search('searchBar')"></i>
+                                </button>
+                            </div>
+                        </p>
+                    </div>
+                </div>
+
+                <br>
+                <br>
+
+                <div id="page1" class="w3-show">
+                    <div class="w3-card-4 w3-center w3-padding"
+                        style="width:60%;margin-left:290px; margin-bottom: 50px;">
+                        <div class="w3-container" id="komik">
+                            <img src="img/Parenting/AdaptiveBanner.jpg" class="w3-border"
+                                style="width: 100%;margin-top: 10px;">
+                        </div>
+                        <div class="w3-container w3-center" style="margin-bottom: 20px;">
+                            <h4 style="font-weight: bold;">Adaptive Parenting </h4>
+                            <p>
+                                <p>
+                                    Buku ini bukan sekadar teori karena berisi pengalaman pribadi dan riset penulis:
+                                </p>
+                                1. Sebagai client psychotherapy yang mengalami sendiri abuse dari orangtua, kemudian
+                                survive,
+                                dan thrive.
+                            </p>
+                            <a href="PageBuku/AdaptiveParenting.html" style="color: blue;">Lanjutkan Membaca</a>
+                        </div>
+                    </div>
+                    <div class="w3-card-4 w3-center w3-padding"
+                        style="width: 60%; margin-left:290px; margin-bottom: 50px;">
+                        <div class="w3-container" id="komik">
+                            <img src="img/Parenting/FunctionalBanner.jpg" class="w3-border"
+                                style="width: 100%;margin-top: 10px;">
+                        </div>
+                        <div class="w3-container w3-center" style="margin-bottom: 20px;">
+                            <h4 style="font-weight: bold;">Functional Food</h4>
+                            <p>Kata-kata bijak ini mengandung makna dalam tentang arti memiliki ilmu pengetahuan,
+                                khususnya
+                                mungkin bagi para cendekiawan. Seperti yang dituliskan Les Giblin dalam bukunya Skill
+                                with
+                                People, “Ilmu sendiri tidaklah punya nilai. Penggunaan ilmu itulah yang membuatnya
+                                bernilai”.
+                                Apalah artinya memiliki ilmu seluas samudera dan setinggi awan di langit, jika tidak
+                                mampu
+                                mengamalkannya. Dampaknya akan luar biasa, ilmu yang dimiliki bisa membawa kemaslahatan
+                                bagi
+                                orang banyak, atau bisa jadi petaka yang membawa derita berkepanjangan bagi umat
+                                manusia.</p>
+                            <a href="PageBuku/FunctionalFood.html" style="color: blue;">Lanjutkan Membaca</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="w3-center" id="paginationCetakulang" style="margin-bottom: 50px;">
+                    <div class="w3-bar">
+                        <a onclick="pageCetakUlang('page1','page2')" style="cursor: pointer;"
+                            class="w3-button w3-border">1</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Kategori Pendidikan-->
+    <div id="kategoripendidikan" class="w3-hide">
+        <div>
+            <div>
+                <div class="w3-center w3-border" style="width: 75%; margin-top: 100px; margin-left: 180px;">
+                    <img src="img/BannerPendidikan.jpg" id="banner1" style="width:100%">
+                    <div class="w3-container">
+                        <div class="w3-left w3-margin-top">
+                            <h1>Kategori Komik Pendidikan</h1>
+                        </div>
+                        <p>
+                            <div class="w3-padding w3-panel w3-round-xlarge w3-border w3-right autocomplete">
+                                <input type="text" placeholder="Cari Buku Kategori Komik Pendidikan" class="w3-padding"
+                                    id="searchBarKategoriPendidikan">
+                                <button class="search w3-button w3-medium">
+                                    <i class="fa fa-search" onclick="search('searchBar')"></i>
+                                </button>
+                            </div>
+                        </p>
+                    </div>
+                </div>
+
+                <br>
+                <br>
+
+                <div id="page1" class="w3-show">
+                    <div class="w3-card-4 w3-center w3-padding"
+                        style="width:60%;margin-left:290px; margin-bottom: 50px;">
+                        <div class="w3-container" id="komik">
+                            <img src="img/Pendidikan/WhyPeopleBanner.jpg" class="w3-border"
+                                style="width: 100%;margin-top: 10px;">
+                        </div>
+                        <div class="w3-container w3-center" style="margin-bottom: 20px;">
+                            <h4 style="font-weight: bold;">Why? People - Jean-Henri Fabre </h4>
+                            <p>
+                                Jean-Henri Fabre lahir dari keluarga petani dengan ekonomi yang kurang. Sejak kecil, dia
+                                sangat
+                                tertarik dengan hewan, bunga, serangga, dan benda-benda lain yang ada di alam. Kondisi
+                                keuangan yang
+                                tidak baik tidak menghalanginya melakukan penelitian dan membuat buku berjudul
+                                ‘Souvenirs
+                                Entomologiques’, yang ditulisnya selama 28 tahun dengan total 10 jilid buku. Kesabaran
+                                dan
+                                pengamatan Fabre dalam meneliti serangga membuat karya-karyanya masih dikagumi oleh
+                                masyarakat
+                                bahkan hingga saat ini.
+                            </p>
+                            <a href="PageBuku/WhyPeople-Jean-HenriFabre.html" style="color: blue;">Lanjutkan Membaca</a>
+                        </div>
+                    </div>
+                    <div class="w3-card-4 w3-center w3-padding"
+                        style="width: 60%; margin-left:290px; margin-bottom: 50px;">
+                        <div class="w3-container" id="komik">
+                            <img src="img/Pendidikan/CookieRunBanner.jpg" class="w3-border"
+                                style="width: 100%;margin-top: 10px;">
+                        </div>
+                        <div class="w3-container w3-center" style="margin-bottom: 20px;">
+                            <h4 style="font-weight: bold;">Cookie Run Sweet Escape Adventure! – Fenomena Horor</h4>
+                            <p>Ayo jelajahi dunia yang menakjubkan dan menyeramkan bersama para Cookie! Dunia ini
+                                menyimpan banyak
+                                misteri dan fenomena-fenomena yang pastinya membuat kalian penasaran, seperti
+                                penjelajahan
+                                planet-planet di tata surya, sains yang ada dalam pembuatan film horor, rahasia sulap
+                                yang
+                                mendebarkan, penyebab mimpi buruk yang menakutkan, dan lain sebagainya. Para Cookie yang
+                                menggemaskan akan membawa kalian untuk mengungkap seluruh misteri tersebut!</p>
+                            <a href="PageBuku/CookieRunSweetEscapeAdventure!–FenomenaHoror.html"
+                                style="color: blue;">Lanjutkan Membaca</a>
+                        </div>
+                    </div>
+                    <div class="w3-card-4 w3-center w3-padding"
+                        style="width: 60%; margin-left:290px; margin-bottom: 50px;">
+                        <div class="w3-container" id="komik">
+                            <img src="img/Pendidikan/WhyAnimalBanner.jpg" class="w3-border"
+                                style="width: 100%;margin-top: 10px;">
+                        </div>
+                        <div class="w3-container w3-center" style="margin-bottom: 20px;">
+                            <h4 style="font-weight: bold;">Why? Veterinary Medicine</h4>
+                            <p>Seberapa mengertinya kita tentang sinyal-sinyal yang diperlihatkan oleh hewan yang tidak
+                                bisa
+                                bicara? Bahkan saat mendengar suara anjing menggonggong dengan mata berbinar, kita masih
+                                bingung
+                                apakah dia ingin makan atau ingin diajak jalan-jalan.</p>
+                            <a href="PageBuku/WhyVeterinaryMedicine.html" style="color: blue;">Lanjutkan Membaca</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="w3-center" id="paginationCetakulang" style="margin-bottom: 50px;">
+                    <div class="w3-bar">
+                        <a onclick="pageCetakUlang('page1','page2')" style="cursor: pointer;"
+                            class="w3-button w3-border">1</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Kategori Rupa-->
+    <div id="kategorirupa" class="w3-hide">
+        <div>
+            <div>
+                <div class="w3-center w3-border" style="width: 75%; margin-top: 100px; margin-left: 180px;">
+                    <img src="img/BannerParenting.jpg" id="banner1" style="width:100%">
+                    <div class="w3-container">
+                        <div class="w3-left w3-margin-top">
+                            <h1>Kategori Rupa - Rupa</h1>
+                        </div>
+                        <p>
+                            <div class="w3-padding w3-panel w3-round-xlarge w3-border w3-right autocomplete">
+                                <input type="text" placeholder="Cari Buku Kategori Rupa - Rupa" class="w3-padding"
+                                    id="searchBarKategoriRupa">
+                                <button class="search w3-button w3-medium">
+                                    <i class="fa fa-search" onclick="search('searchBar')"></i>
+                                </button>
+                            </div>
+                        </p>
+                    </div>
+                </div>
+
+                <br>
+                <br>
+
+                <div id="page1" class="w3-show">
+                    <div class="w3-card-4 w3-center w3-padding"
+                        style="width:60%;margin-left:290px; margin-bottom: 50px;">
+                        <div class="w3-container" id="komik">
+                            <img src="img/Rupa/RailwayBanner.jpg" class="w3-border"
+                                style="width: 100%;margin-top: 10px;">
+                        </div>
+                        <div class="w3-container w3-center" style="margin-bottom: 20px;">
+                            <h4 style="font-weight: bold;">Basic Railway Photography </h4>
+                            <p>
+                                Railway photography bisa dikatakan sebuah genre fotografi yang berakar dari aktivitas
+                                railfanning.
+                                Orang yang menyukai kereta api disebut dengan Railfans. Aktivitas railfaning sendiri
+                                sangat beragam,
+                                mulai dari naik kereta api untuk tujuan kesenangan (joyride), mengoleksi miniatur kereta
+                                api,
+                                mengoleksi visual kereta api baik berupa foto maupun video. Bahkan, tak sedikit Railfans
+                                yang
+                                menggeluti dunia fotografi kereta api.
+                            </p>
+                            <a href="PageBuku/BasicRailwayPhotography.html" style="color: blue;">Lanjutkan Membaca</a>
+                        </div>
+                    </div>
+                    <div class="w3-card-4 w3-center w3-padding"
+                        style="width: 60%; margin-left:290px; margin-bottom: 50px;">
+                        <div class="w3-container" id="komik">
+                            <img src="img/Rupa/FoodPhotoBanner.jpg" class="w3-border"
+                                style="width: 100%;margin-top: 10px;">
+                        </div>
+                        <div class="w3-container w3-center" style="margin-bottom: 20px;">
+                            <h4 style="font-weight: bold;">Food Photography Series</h4>
+                            <p>Buku ini berisi 30+ teknik memotret makanan menggunakan flash atau biasa disebut dengan
+                                teknik
+                                strobist untuk menghasilkan foto yang detail dan memikat selera. Diagram yang ada di
+                                dalam buku
+                                ini akan mempermudah mereka yang baru belajar soal lighting menggunakan strobist.</p>
+                            <a href="PageBuku/FoodPhotographySeries.html" style="color: blue;">Lanjutkan Membaca</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="w3-center" id="paginationCetakulang" style="margin-bottom: 50px;">
+                    <div class="w3-bar">
+                        <a onclick="pageCetakUlang('page1','page2')" style="cursor: pointer;"
+                            class="w3-button w3-border">1</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Kategori Quanta-->
+    <div id="kategoriquanta" class="w3-hide">
+        <div>
+            <div>
+                <div class="w3-center w3-border" style="width: 75%; margin-top: 100px; margin-left: 180px;">
+                    <img src="img/BannerQuanta.jpg" id="banner1" style="width:100%">
+                    <div class="w3-container">
+                        <div class="w3-left w3-margin-top">
+                            <h1>Kategori Quanta</h1>
+                        </div>
+                        <p>
+                            <div class="w3-padding w3-panel w3-round-xlarge w3-border w3-right autocomplete">
+                                <input type="text" placeholder="Cari Buku Kategori Quanta" class="w3-padding"
+                                    id="searchBarKategoriQuanta">
+                                <button class="search w3-button w3-medium">
+                                    <i class="fa fa-search" onclick="search('searchBar')"></i>
+                                </button>
+                            </div>
+                        </p>
+                    </div>
+                </div>
+
+                <br>
+                <br>
+
+                <div id="page1" class="w3-show">
+                    <div class="w3-card-4 w3-center w3-padding"
+                        style="width:60%;margin-left:290px; margin-bottom: 50px;">
+                        <div class="w3-container" id="komik">
+                            <img src="img/Quanta/ObatMalas2Banner.jpg" class="w3-border"
+                                style="width: 100%;margin-top: 10px;">
+                        </div>
+                        <div class="w3-container w3-center" style="margin-bottom: 20px;">
+                            <h4 style="font-weight: bold;">Obat Malas Dosis Tinggi for Millenial Edition </h4>
+                            <p>
+                                Cobalah berpikir lebih dalam maka kamu akan kenal dengan dirimu sendiri. Banyak
+                                pemuda yang
+                                mendapat siraman nikmat yang begitu banyak tapi sedikit pun gak bersyukur. Dik,
+                                bersyukurlah
+                                kepada Allah, berterima kasihlah kepada ortumu dengan cara rajin belajar, rajin
+                                ibadah,
+                                senantiasa aktif dalam kegiatan positif, inilah pemuda yang ideal. </p>
+                            <a href="PageBuku/ObatMalasDosisTinggiforMillenialEdition.html"
+                                style="color: blue;">Lanjutkan Membaca</a>
+                        </div>
+                    </div>
+                    <div class="w3-card-4 w3-center w3-padding"
+                        style="width: 60%; margin-left:290px; margin-bottom: 50px;">
+                        <div class="w3-container" id="komik">
+                            <img src="img/Quanta/PemudaHebatBanner.jpg" class="w3-border"
+                                style="width: 100%;margin-top: 10px;">
+                        </div>
+                        <div class="w3-container w3-center" style="margin-bottom: 20px;">
+                            <h4 style="font-weight: bold;">Pemuda Hebat Penuh Manfaat</h4>
+                            <p>Pemuda Hebat Penuh Manfaat adalah buku kumpulan tulisan dan renungan untuk
+                                orang-orang yang
+                                ingin memberikan kontribusi positif kepada orang lain, agar menjadi pribadi yang
+                                bermanfaat
+                                dengan memaksimalkan potensi dan kemampuan diri.</p>
+                            <a href="PageBuku/PemudaHebatPenuhManfaat.html" style="color: blue;">Lanjutkan
+                                Membaca</a>
+                        </div>
+                    </div>
+                    <div class="w3-card-4 w3-center w3-padding"
+                        style="width:60%;margin-left:290px; margin-bottom: 50px;">
+                        <div class="w3-container" id="komik">
+                            <img src="img/Quanta/ObatMalasBanner.jpg" class="w3-border"
+                                style="width: 100%;margin-top: 10px;">
+                        </div>
+                        <div class="w3-container w3-center" style="margin-bottom: 20px;">
+                            <h4 style="font-weight: bold;">Obat Malas Dosis Tinggi</h4>
+                            <p>
+                                “Obat Malas Dosis Tinggi merupakan karya cerdas, kreatif, inovatif, yang bermanfaat
+                                untuk anak-anak,
+                                remaja, orang tua, dan bahkan para calon dai yang masih belajar mengembangkan diri.”
+                                - Prof.
+                                Sugirin, M.A., Ph.D. (Guru Besar Universitas Negeri Yogyakarta). </p>
+                            <a href="PageBuku/ObatMalasDosisTinggi.html" style="color: blue;">Lanjutkan Membaca</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="page2" class="w3-hide">
+                    <div class="w3-card-4 w3-center w3-padding"
+                        style="width:60%;margin-left:290px; margin-bottom: 50px;">
+                        <div class="w3-container" id="komik">
+                            <img src="img/Quanta/PuzzleOfLifeBanner.jpg" class="w3-border"
+                                style="width: 100%;margin-top:10px">
+                        </div>
+                        <div class="w3-container w3-center" style="margin-bottom: 20px;">
+                            <h4 style="font-weight: bold;">The Puzzles of Life</h4>
+                            <p>
+                                Seperti halnya kepingan puzzle, hidup ini juga memiliki potongan kisah. Ketika
+                                sebuah potongan
+                                puzzle ditemukan, maka potongan kehidupan akan terlihat jelas. Buku ini menceritakan
+                                kepingan-kepingan puzzle kehidupan yang dirangkai menjadi satu guna mencapai tujuan
+                                hidup yang
+                                utuh.</p>
+                            <a href="PageBuku/ThePuzzlesofLife.html" style="color: blue;">Lanjutkan Membaca</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w3-center" id="paginationCetakulang" style="margin-bottom: 50px;">
+                    <div class="w3-bar">
+                        <a onclick="pageCetakUlang('page1','page2')" style="cursor: pointer;"
+                            class="w3-button w3-border">1</a>
+                        <a onclick="pageCetakUlang('page2','page1')" style="cursor: pointer;"
+                            class="w3-button w3-border">2</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -325,23 +1312,29 @@
                 </div>
                 <div class="contentIsi">
                     <p>
-                        PT Elex Media Komputindo adalah sebuah perusahaan penerbit di Indonesia yang mengkhususkan diri
+                        PT Elex Media Komputindo adalah sebuah perusahaan penerbit di Indonesia yang
+                        mengkhususkan diri
                         dalam
-                        penerbitan buku, komik, majalah, novel, dan media cetak lainnya. Didirikan pada tanggal 15
+                        penerbitan buku, komik, majalah, novel, dan media cetak lainnya. Didirikan pada tanggal
+                        15
                         Januari 1985,
-                        Elex Media Komputindo merupakan salah satu anak perusahaan dari Kompas Gramedia Group. Kantor
+                        Elex Media Komputindo merupakan salah satu anak perusahaan dari Kompas Gramedia Group.
+                        Kantor
                         pusatnya
                         berada di Tanah Abang, Jakarta Pusat.
                     </p>
                     <p>
-                        Elex Media Komputindo dikenal sebagai pelopor penerbitan manga di Indonesia, dan sekarang
+                        Elex Media Komputindo dikenal sebagai pelopor penerbitan manga di Indonesia, dan
+                        sekarang
                         merupakan
                         salah satu penerbit komik terbesar di Indonesia.
                     </p>
                     <p>
-                        Elex Media mendirikan subdivisi penerbit manga khusus dewasa dengan nama Level Comics pada tahun
+                        Elex Media mendirikan subdivisi penerbit manga khusus dewasa dengan nama Level Comics
+                        pada tahun
                         2005,
-                        juga mengadopsi sistem pembatasan usia (age rating) untuk para pembaca. Semua komik dan manga
+                        juga mengadopsi sistem pembatasan usia (age rating) untuk para pembaca. Semua komik dan
+                        manga
                         bertema dewasa diterbitkan di bawah label Level Comics.
                     </p>
 
@@ -374,7 +1367,8 @@
                         <p>
                             Sebelum mendaftar, kami memiliki patokan bernama Term and Conditions di sini. Namun
                             sebagian besar
-                            pengguna biasanya tidak suka membaca teks yang panjang. Oleh karena itu, kami ringkas
+                            pengguna biasanya tidak suka membaca teks yang panjang. Oleh karena itu, kami
+                            ringkas
                             saja bagian
                             terpenting di sini.
                             <ul>
@@ -385,17 +1379,20 @@
                                 </li>
                                 <br>
                                 <li>
-                                    Anda bisa melihat seluruh lingkungan portal Elex Media sebagai anggota dan hanya
+                                    Anda bisa melihat seluruh lingkungan portal Elex Media sebagai anggota dan
+                                    hanya
                                     sebagian
                                     saja
                                     apabila tidak sebagai anggota.
                                 </li>
                                 <br>
                                 <li>
-                                    Isi informasi yang Anda sebarkan adalah tanggung jawab pribadi. Segala tindakan
+                                    Isi informasi yang Anda sebarkan adalah tanggung jawab pribadi. Segala
+                                    tindakan
                                     melawan
                                     hukum seperti
-                                    menyebar barang bajakan, pornografi, kabar bohong, fitnah, atau kebencian adalah
+                                    menyebar barang bajakan, pornografi, kabar bohong, fitnah, atau kebencian
+                                    adalah
                                     tanggungjawab
                                     pribadi pengirim dan penyebarluas secara pribadi.
                                 </li>
@@ -462,6 +1459,7 @@
             </div>
         </div>
     </div>
+
     <script>
         changePage('index', 'searchBarIndex')
         pageLoad();

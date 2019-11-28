@@ -137,12 +137,12 @@ function post(id, id2) {
   }
 }
 
-function login0() {
-  location.replace("SignInPage.html");
+function login() {
+  location.replace("../SignInPage.html");
 }
 
-function register0() {
-  location.replace("SignUpPage.html");
+function register() {
+  location.replace("../SignUpPage.html");
 }
 
 function home() {

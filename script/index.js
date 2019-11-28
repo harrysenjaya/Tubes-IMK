@@ -82,6 +82,10 @@ function changePageFromBook(id, id2) {
   window.location = "../index.html#" + id + "/" + id2;
 }
 
+function changePageFromProfile(id,id2){
+  window.location = "index.html#" + id + "/" + id2;
+}
+
 function pageLoad() {
   if (window.location.hash) {
     var id = window.location.hash.split("/");
@@ -136,15 +140,6 @@ function search(id) {
     location.replace("PageBuku/" + regex + ".html");
   }
 }
-
-/*
-function login() {
-  location.replace("../SignInPage.html");
-}
-
-function register() {
-  location.replace("../SignUpPage.html");
-}*/
 
 function post(id, id2) {
   var idInput = document.getElementById(id);

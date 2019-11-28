@@ -23,14 +23,14 @@
                 <div id="kategori" class="w3-hide w3-gray">
                     <a onclick="changePage('kategorikomik','searchBarKategoriKomik')">Komik</a>
                     <a onclick="changePage('kategorinovel','searchBarKategoriNovel')">Novel</a>
-                    <a onclick="changePage('kategoriquanta','searchBarKategoriNovel')">Quanta</a>
+                    <a onclick="changePage('kategoriquanta','searchBarKategoriQuanta')">Quanta</a>
                     <a onclick="changePage('kategorianak','searchBarKategoriAnak')">Anak dan Pendidikan</a>
-                    <a onclick="changePage('kategoriparenting','searchBarKategoriNovel')">Parenting</a>
+                    <a onclick="changePage('kategoriparenting','searchBarKategoriParenting')">Parenting</a>
                     <a onclick="changePage('kategorimanajemen','searchBarKategoriManajemen')">Manajemen Bisnis</a>
                     <a onclick="changePage('kategorikomputer','searchBarKategoriKomputer')">Komputer</a>
                     <a onclick="changePage('kategorihumaniora','searchBarKategoriHumaniora')">Humaniora dan Sosial</a>
-                    <a onclick="changePage('kategorirupa','searchBarKategoriNovel')">Rupa-Rupa</a>
-                    <a onclick="changePage('kategoripendidikan','searchBarKategoriNovel')">Komik Pendidikan</a>
+                    <a onclick="changePage('kategorirupa','searchBarKategoriRupa')">Rupa-Rupa</a>
+                    <a onclick="changePage('kategoripendidikan','searchBarKategoriPendidikan')">Komik Pendidikan</a>
                 </div>
                 <a onclick="changePage('bakalterbit','searchBarBakalTerbit')">Bakal Terbit</a>
                 <a onclick="changePage('telahberedar','searchBarTelahBeredar')">Telah Beredar</a>
@@ -329,7 +329,7 @@
                                 <input type="text" placeholder="Cari Buku Kategori Anak" class="w3-padding"
                                     id="searchBarKategoriAnak">
                                 <button class="search w3-button w3-medium">
-                                    <i class="fa fa-search" onclick="search('searchBar')"></i>
+                                    <i class="fa fa-search" onclick="search('searchBarKategoriAnak')"></i>
                                 </button>
                             </div>
                         </p>
@@ -418,7 +418,7 @@
                                 <input type="text" placeholder="Cari Buku Humaniora dan Sosial" class="w3-padding"
                                     id="searchBarKategoriHumaniora">
                                 <button class="search w3-button w3-medium">
-                                    <i class="fa fa-search" onclick="search('searchBar')"></i>
+                                    <i class="fa fa-search" onclick="search('searchBarKategoriHumaniora')"></i>
                                 </button>
                             </div>
                         </p>
@@ -522,7 +522,7 @@
                                 <input type="text" placeholder="Cari Buku Kategori Komik" class="w3-padding"
                                     id="searchBarKategoriKomik">
                                 <button class="search w3-button w3-medium">
-                                    <i class="fa fa-search" onclick="search('searchBar')"></i>
+                                    <i class="fa fa-search" onclick="search('searchBarKategoriKomik')"></i>
                                 </button>
                             </div>
                         </p>
@@ -635,7 +635,7 @@
                                 <input type="text" placeholder="Cari Buku Kategori Komputer" class="w3-padding"
                                     id="searchBarKategoriKomputer">
                                 <button class="search w3-button w3-medium">
-                                    <i class="fa fa-search" onclick="search('searchBar')"></i>
+                                    <i class="fa fa-search" onclick="search('searchBarKategoriKomputer')"></i>
                                 </button>
                             </div>
                         </p>
@@ -737,7 +737,7 @@
                                 <input type="text" placeholder="Cari Buku Kategori Manajemen dan Bisnis"
                                     class="w3-padding" id="searchBarKategoriManajemen">
                                 <button class="search w3-button w3-medium">
-                                    <i class="fa fa-search" onclick="search('searchBar')"></i>
+                                    <i class="fa fa-search" onclick="search('searchBarKategoriManajemen')"></i>
                                 </button>
                             </div>
                         </p>
@@ -822,7 +822,7 @@
                                 <input type="text" placeholder="Cari Buku Kategori Novel" class="w3-padding"
                                     id="searchBarKategoriNovel">
                                 <button class="search w3-button w3-medium">
-                                    <i class="fa fa-search" onclick="search('searchBar')"></i>
+                                    <i class="fa fa-search" onclick="search('searchBarKategoriNovel')"></i>
                                 </button>
                             </div>
                         </p>
@@ -946,7 +946,7 @@
                                 <input type="text" placeholder="Cari Buku Kategori Parenting" class="w3-padding"
                                     id="searchBarKategoriParenting">
                                 <button class="search w3-button w3-medium">
-                                    <i class="fa fa-search" onclick="search('searchBar')"></i>
+                                    <i class="fa fa-search" onclick="search('searchBarKategoriParenting')"></i>
                                 </button>
                             </div>
                         </p>
@@ -1026,7 +1026,7 @@
                                 <input type="text" placeholder="Cari Buku Kategori Komik Pendidikan" class="w3-padding"
                                     id="searchBarKategoriPendidikan">
                                 <button class="search w3-button w3-medium">
-                                    <i class="fa fa-search" onclick="search('searchBar')"></i>
+                                    <i class="fa fa-search" onclick="search('searchBarKategoriPendidikan')"></i>
                                 </button>
                             </div>
                         </p>
@@ -1125,7 +1125,7 @@
                                 <input type="text" placeholder="Cari Buku Kategori Rupa - Rupa" class="w3-padding"
                                     id="searchBarKategoriRupa">
                                 <button class="search w3-button w3-medium">
-                                    <i class="fa fa-search" onclick="search('searchBar')"></i>
+                                    <i class="fa fa-search" onclick="search('searchBarKategoriRupa')"></i>
                                 </button>
                             </div>
                         </p>
@@ -1201,7 +1201,7 @@
                                 <input type="text" placeholder="Cari Buku Kategori Quanta" class="w3-padding"
                                     id="searchBarKategoriQuanta">
                                 <button class="search w3-button w3-medium">
-                                    <i class="fa fa-search" onclick="search('searchBar')"></i>
+                                    <i class="fa fa-search" onclick="search('searchBarKategoriQuanta')"></i>
                                 </button>
                             </div>
                         </p>

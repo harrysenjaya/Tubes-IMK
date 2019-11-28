@@ -51,27 +51,27 @@ function changePage(id, id2) {
       this.data = ["Kolaborasi Macro Excel dan Access untuk Membuat Aplikasi Penjualan (Buku)", "Penulisan Business Report Menggunakan Microsoft Word (Buku)", "Aplikasi SPSS untuk Penelitian dan Riset Pasar (Buku)"];
       autocomplete(document.getElementById(id2));
     }
-    else if(id2 == 'searchBarManajemen'){
+    else if(id2 == 'searchBarKategoriManajemen'){
       this.data =  ["Quarter Life Crisis (Buku)", "The Circle Blueprint (Buku)", "Kerja Kerja Kaya(Buku)"];
       autocomplete(document.getElementById(id2));
     }
-    else if(id2 == 'searchBarNovel'){
+    else if(id2 == 'searchBarKategoriNovel'){
       this.data =  ["City Lite: STARTING OVER (Buku)", "Le Mariage: Over the Rain(Collector's Edition) (Buku)", "A Poem I Wrote for You (A Poem with Your Name #2) (Buku)", "City Lite: Algoritme Rasa(Job Series #3)(Buku)"];
       autocomplete(document.getElementById(id2));
     }
-    else if(id2 == 'searchBarParenting'){
+    else if(id2 == 'searchBarKategoriParenting'){
       this.data =  ["Functional Food (Buku)", "Adaptive Parenting (Buku)", "Solutif Parenting (Buku)", "Menjadi Orangtua(Buku)"];
       autocomplete(document.getElementById(id2));
     }
-    else if(id2 == 'searchBarPendidikan'){
+    else if(id2 == 'searchBarKategoriPendidikan'){
       this.data = ["Why? People - Jean-Henri Fabre (Buku)", "Why? Veterinary Medicine (Buku)", "Cookie Run Sweet Escape Adventure! – Fenomena Horor"];
       autocomplete(document.getElementById(id2));
     }
-    else if(id2 == 'searchBarQuanta'){
+    else if(id2 == 'searchBarKategoriQuanta'){
       this.data = ["Obat Malas Dosis Tinggi for Millenial Edition (Buku)", "Pemuda Hebat Penuh Manfaat (Buku)", "Obat Malas Dosis Tinggi(Buku)", "The Puzzles of Life(Buku)"];
       autocomplete(document.getElementById(id2));
     }
-    else if(id2 == 'searchBarRupa'){
+    else if(id2 == 'searchBarKategoriRupa'){
       this.data =  ["Basic Railway Photography (Buku)", "Food Photography Series (Buku)"];
       autocomplete(document.getElementById(id2));
     }

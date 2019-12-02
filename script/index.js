@@ -1,4 +1,4 @@
-var data = ["Christopher (User)", "Harry (User)", "Detektif Conan : Toru Amuro Selection (Buku)", "Aplikasi SPSS untuk Penelitian dan Riset Pasar (Buku)", "Gon 1 (Buku)", "Kolaborasi Macro Excel dan Access untuk Membuat Aplikasi Penjualan (Buku)", "Naruto 72 (Buku)", "Noragami 20 (Buku)",
+var data = ["Harry (User)", "Detektif Conan : Toru Amuro Selection (Buku)", "Aplikasi SPSS untuk Penelitian dan Riset Pasar (Buku)", "Gon 1 (Buku)", "Kolaborasi Macro Excel dan Access untuk Membuat Aplikasi Penjualan (Buku)", "Naruto 72 (Buku)", "Noragami 20 (Buku)",
   "Atlas Binatang Paling Berbahaya Sedunia (Buku)", "Segala Sesuatu tentang Hewan Buas dan Ganas (Buku)", "Opredo Fugo & Stoples Mimpi (Buku)", "Hitler - Sosok Pria di Balik Monster (Buku)", "Shakai Kaizo - Seratus Tahun Reformasi Jepang (Buku)", "The New Seikatsu Kaizen (Buku)", "Kolaborasi Macro Excel dan Access untuk Membuat Aplikasi Penjualan (Buku)",
   "Aplikasi SPSS untuk Penelitian dan Riset Pasar (Buku)", "Penulisan Business Report Menggunakan Microsoft Word (Buku)", "Quarter Life Crisis (Buku)", "The Circle Blueprint (Buku)", "Kerja Kerja Kaya (Buku)", "City Lite: STARTING OVER (Buku)", "Le Mariage: Over the Rain(Collector's Edition) (Buku)", "A Poem I Wrote for You (A Poem with Your Name #2) (Buku)",
   "City Lite: Algoritme Rasa(Job Series #3) (Buku)", "Adaptive Parenting (Buku)", "Functional Food (Buku)", "Obat Malas Dosis Tinggi for Millenial Edition (Buku)", "Pemuda Hebat Penuh Manfaat (Buku)", "Obat Malas Dosis Tinggi (Buku)", "The Puzzles of Life (Buku)", "Why? People - Jean-Henri Fabre (Buku)", "Cookie Run Sweet Escape Adventure! – Fenomena Horor (Buku)",
@@ -17,7 +17,7 @@ function changePage(id, id2) {
     this.pageActive.className = this.pageActive.className.replace("w3-hide", "w3-show");
 
     if (id2 == 'searchBarIndex') {
-      this.data = ["Christopher (User)", "Harry (User)", "Detektif Conan : Toru Amuro Selection (Buku)", "Aplikasi SPSS untuk Penelitian dan Riset Pasar (Buku)", "Gon 1 (Buku)", "Kolaborasi Macro Excel dan Access untuk Membuat Aplikasi Penjualan (Buku)", "Naruto 72 (Buku)", "Noragami 20 (Buku)",
+      this.data = ["Harry (User)", "Detektif Conan : Toru Amuro Selection (Buku)", "Aplikasi SPSS untuk Penelitian dan Riset Pasar (Buku)", "Gon 1 (Buku)", "Kolaborasi Macro Excel dan Access untuk Membuat Aplikasi Penjualan (Buku)", "Naruto 72 (Buku)", "Noragami 20 (Buku)",
         "Atlas Binatang Paling Berbahaya Sedunia (Buku)", "Segala Sesuatu tentang Hewan Buas dan Ganas (Buku)", "Opredo Fugo & Stoples Mimpi (Buku)", "Hitler - Sosok Pria di Balik Monster (Buku)", "Shakai Kaizo - Seratus Tahun Reformasi Jepang (Buku)", "The New Seikatsu Kaizen (Buku)", "Kolaborasi Macro Excel dan Access untuk Membuat Aplikasi Penjualan (Buku)",
         "Aplikasi SPSS untuk Penelitian dan Riset Pasar (Buku)", "Penulisan Business Report Menggunakan Microsoft Word (Buku)", "Quarter Life Crisis (Buku)", "The Circle Blueprint (Buku)", "Kerja Kerja Kaya (Buku)", "City Lite: STARTING OVER (Buku)", "Le Mariage: Over the Rain(Collector's Edition) (Buku)", "A Poem I Wrote for You (A Poem with Your Name #2) (Buku)",
         "City Lite: Algoritme Rasa(Job Series #3) (Buku)", "Adaptive Parenting (Buku)", "Functional Food (Buku)", "Obat Malas Dosis Tinggi for Millenial Edition (Buku)", "Pemuda Hebat Penuh Manfaat (Buku)", "Obat Malas Dosis Tinggi (Buku)", "The Puzzles of Life (Buku)", "Why? People - Jean-Henri Fabre (Buku)", "Cookie Run Sweet Escape Adventure! – Fenomena Horor (Buku)",
@@ -35,44 +35,44 @@ function changePage(id, id2) {
       this.data = ["Gon 1 (Buku)", "Naruto 72 (Buku)"];
       autocomplete(document.getElementById(id2));
     }
-    else if(id2 == 'searchBarKategoriAnak'){
-      this.data =["Atlas Binatang Paling Berbahaya Sedunia (Buku)", "Segala Sesuatu tentang Hewan Buas dan Ganas (Buku)", "Opredo Fugo & Stoples Mimpi(Buku)"];
+    else if (id2 == 'searchBarKategoriAnak') {
+      this.data = ["Atlas Binatang Paling Berbahaya Sedunia (Buku)", "Segala Sesuatu tentang Hewan Buas dan Ganas (Buku)", "Opredo Fugo & Stoples Mimpi(Buku)"];
       autocomplete(document.getElementById(id2));
     }
-    else if(id2 == 'searchBarKategoriHumaniora'){
-      this.data =["Hitler - Sosok Pria di Balik Monster (Buku)", "The New Seikatsu Kaizen (Buku)", "Shakai Kaizo - Seratus Tahun Reformasi Jepang"];
+    else if (id2 == 'searchBarKategoriHumaniora') {
+      this.data = ["Hitler - Sosok Pria di Balik Monster (Buku)", "The New Seikatsu Kaizen (Buku)", "Shakai Kaizo - Seratus Tahun Reformasi Jepang"];
       autocomplete(document.getElementById(id2));
     }
-    else if(id2 == 'searchBarKategoriKomik'){
+    else if (id2 == 'searchBarKategoriKomik') {
       this.data = ["Detektif Conan : Toru Amuro Selection (Buku)", "Noragami 20 (Buku)", "Naruto 72(Buku)", "Gon 1(Buku)"];
       autocomplete(document.getElementById(id2));
     }
-    else if(id2 == 'searchBarKategoriKomputer'){
+    else if (id2 == 'searchBarKategoriKomputer') {
       this.data = ["Kolaborasi Macro Excel dan Access untuk Membuat Aplikasi Penjualan (Buku)", "Penulisan Business Report Menggunakan Microsoft Word (Buku)", "Aplikasi SPSS untuk Penelitian dan Riset Pasar (Buku)"];
       autocomplete(document.getElementById(id2));
     }
-    else if(id2 == 'searchBarKategoriManajemen'){
-      this.data =  ["Quarter Life Crisis (Buku)", "The Circle Blueprint (Buku)", "Kerja Kerja Kaya(Buku)"];
+    else if (id2 == 'searchBarKategoriManajemen') {
+      this.data = ["Quarter Life Crisis (Buku)", "The Circle Blueprint (Buku)", "Kerja Kerja Kaya(Buku)"];
       autocomplete(document.getElementById(id2));
     }
-    else if(id2 == 'searchBarKategoriNovel'){
-      this.data =  ["City Lite: STARTING OVER (Buku)", "Le Mariage: Over the Rain(Collector's Edition) (Buku)", "A Poem I Wrote for You (A Poem with Your Name #2) (Buku)", "City Lite: Algoritme Rasa(Job Series #3)(Buku)"];
+    else if (id2 == 'searchBarKategoriNovel') {
+      this.data = ["City Lite: STARTING OVER (Buku)", "Le Mariage: Over the Rain(Collector's Edition) (Buku)", "A Poem I Wrote for You (A Poem with Your Name #2) (Buku)", "City Lite: Algoritme Rasa(Job Series #3)(Buku)"];
       autocomplete(document.getElementById(id2));
     }
-    else if(id2 == 'searchBarKategoriParenting'){
-      this.data =  ["Functional Food (Buku)", "Adaptive Parenting (Buku)", "Solutif Parenting (Buku)", "Menjadi Orangtua(Buku)"];
+    else if (id2 == 'searchBarKategoriParenting') {
+      this.data = ["Functional Food (Buku)", "Adaptive Parenting (Buku)", "Solutif Parenting (Buku)", "Menjadi Orangtua(Buku)"];
       autocomplete(document.getElementById(id2));
     }
-    else if(id2 == 'searchBarKategoriPendidikan'){
+    else if (id2 == 'searchBarKategoriPendidikan') {
       this.data = ["Why? People - Jean-Henri Fabre (Buku)", "Why? Veterinary Medicine (Buku)", "Cookie Run Sweet Escape Adventure! – Fenomena Horor"];
       autocomplete(document.getElementById(id2));
     }
-    else if(id2 == 'searchBarKategoriQuanta'){
+    else if (id2 == 'searchBarKategoriQuanta') {
       this.data = ["Obat Malas Dosis Tinggi for Millenial Edition (Buku)", "Pemuda Hebat Penuh Manfaat (Buku)", "Obat Malas Dosis Tinggi(Buku)", "The Puzzles of Life(Buku)"];
       autocomplete(document.getElementById(id2));
     }
-    else if(id2 == 'searchBarKategoriRupa'){
-      this.data =  ["Basic Railway Photography (Buku)", "Food Photography Series (Buku)"];
+    else if (id2 == 'searchBarKategoriRupa') {
+      this.data = ["Basic Railway Photography (Buku)", "Food Photography Series (Buku)"];
       autocomplete(document.getElementById(id2));
     }
   }
@@ -82,7 +82,7 @@ function changePageFromBook(id, id2) {
   window.location = "../index.html#" + id + "/" + id2;
 }
 
-function changePageFromProfile(id,id2){
+function changePageFromProfile(id, id2) {
   window.location = "index.html#" + id + "/" + id2;
 }
 
@@ -132,12 +132,17 @@ function search(id) {
   var temp = document.getElementById(id);
   var value = temp.value;
   if (value != "") {
-    var regex = value.replace(/\s+/g, '');
-    regex = regex.replace("?", "");
-    regex = regex.replace("#", "");
-    regex = regex.replace(":", "");
-    regex = regex.substring(0, regex.length - 6);
-    location.replace("PageBuku/" + regex + ".html");
+    if (value == "Harry (User)") {
+      location.replace("Profile.html");
+    }
+    else {
+      var regex = value.replace(/\s+/g, '');
+      regex = regex.replace("?", "");
+      regex = regex.replace("#", "");
+      regex = regex.replace(":", "");
+      regex = regex.substring(0, regex.length - 6);
+      location.replace("PageBuku/" + regex + ".html");
+    }
   }
 }
 
@@ -173,7 +178,7 @@ function post(id, id2) {
   }
 }
 
-function toProfile(){
+function toProfile() {
   location.replace("Profile.html");
 }
 

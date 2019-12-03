@@ -124,8 +124,12 @@ function dropdownKategori() {
 function pageCetakUlang(id1, id2) {
   var x = document.getElementById(id1);
   var y = document.getElementById(id2);
+  console.log(x);
+  console.log(y);
   x.className = x.className.replace("w3-hide", "w3-show");
   y.className = y.className.replace("w3-show", "w3-hide");
+  console.log(x);
+  console.log(y);
 }
 
 function search(id) {
